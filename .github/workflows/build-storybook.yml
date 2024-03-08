@@ -44,13 +44,11 @@ jobs:
       - name: Build project
         run: |
           npm run build
-          echo 'book-template.innei.in' > out/CNAME
-          cd out && touch '.nojekyll'
         env:
           CI: true
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npx gh-pages -d out -u "github-actions-bot <support+actions@github.com>" --no-history
+          npx gh-pages -d out -u "github-actions-bot <support+actions@github.com>" --no-history --cname "book-template.innei.in" --nojekyll
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
