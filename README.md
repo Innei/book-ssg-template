@@ -1,6 +1,10 @@
 # Book SSG Template
 
-Another template for document SSG.
+Yet another template for document SSG.
+
+## Motivation
+
+I kind of want to write a booklet, but don't want to use an off-the-shelf SSG tool like vite , nextra or others. For one, it's too heavy to write and probably not for me, and secondly, using these tools would require me to make a lot of tweaks to the default styles. So I wrote an SSG tool from scratch. The good thing is that Next.js is really great at SSG.
 
 Uses Next.js App Router + Server Component to optimize the package size of the SSG generated product to a greater extent.
 
@@ -27,11 +31,9 @@ In `src/app.config.ts`, you can optionally change some of the configuration.
 | `CONFIG`  | `object`                                                                                | Related Configurations                               |
 | `DONATE`  | `object`                                                                                | Sponsored Configuration, Links and Images for Button |
 
-
 ## More..
 
 For more details and usage, plz go to ..
-
 
 ## License
 
