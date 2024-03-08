@@ -52,6 +52,7 @@ jobs:
       - name: Build project
         run: |
           npm run build
+          ehco 'book-template.innei.in' > out/CNAME
         env:
           CI: true
       - name: Deploy with gh-pages

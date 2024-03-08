@@ -12,6 +12,8 @@ In any case, it's still all about the writing. The focus of this template is ult
 
 Online preview of this template:
 
+[Demo](https://book-template.innei.in)
+
 ## Using this template
 
 ```bash
@@ -33,7 +35,7 @@ In `src/app.config.ts`, you can optionally change some of the configuration.
 
 ## More..
 
-For more details and usage, plz go to ..
+For more details and usage, plz go to [Documentation](https://book-template.innei.in).
 
 ## License
 
