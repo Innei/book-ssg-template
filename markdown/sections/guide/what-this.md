@@ -20,11 +20,12 @@ git clone https://github.com/Innei/book-ssg-template
 
 在 `src/app.config.ts` 中，你可以选择的更换一些配置。
 
-| 变量 | 类型 | 描述|
-| ----- | ----------------------------------------------------------------------------- ||
-| `SEO` | [`Metadata`](https://nextjs.org/docs/app/building-your-application/optimizing/metadata) |SEO 的配置，由 Next.js 提供|
-| `DONATE` | `object`| 赞助 Button 的内容，链接和图片|
-| `CONFIG` | `object`| 相关配置|
+| Variables | Types                                                                                   | Descriptions                                         |
+| --------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| `SEO`     | [`Metadata`](https://nextjs.org/docs/app/building-your-application/optimizing/metadata) | Configuration for SEO, provided by Next.js           |
+| `DONATE`  | `object`                                                                                | Sponsored Button content, links and images           |
+| `CONFIG`  | `object`                                                                                | Related Configurations                               |
+| `DONATE`  | `object`                                                                                | Sponsored Configuration, Links and Images for Button |
 
 ## 小节存放位置
 
@@ -49,15 +50,11 @@ git clone https://github.com/Innei/book-ssg-template
 ```json filename="index.json"
 [
   {
-    "paths": [
-      "./sections/guide/what-this.md"
-    ],
+    "paths": ["./sections/guide/what-this.md"],
     "title": "开始"
   },
   {
-    "paths": [
-      "./sections/usage/markdown.md"
-    ],
+    "paths": ["./sections/usage/markdown.md"],
     "title": "使用"
   }
 ]
