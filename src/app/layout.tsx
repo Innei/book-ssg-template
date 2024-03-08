@@ -1,0 +1,45 @@
+import '../styles/index.css'
+
+import type { Metadata } from 'next'
+import type { PropsWithChildren } from 'react'
+
+import { SEO } from '~/app.config'
+import { AccentColorStyleInjector } from '~/components/shared/AccentColorStyleInjector'
+import { Analyze } from '~/components/shared/Tracker'
+
+import { Providers } from './providers'
+
+export const metadata: Metadata = SEO
+
+export default async (props: PropsWithChildren) => {
+  return (
+    <html>
+      <head>
+        <meta charSet="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+          rel="stylesheet"
+        />
+        <script
+          async
+          src="https://analyze.innei.ren/script.js"
+          data-website-id="f27f49ae-7796-4b5d-adc6-860298a54d35"
+        />
+        <AccentColorStyleInjector />
+      </head>
+
+      <body className="m-0 flex h-full flex-grow flex-col p-0 font-sans">
+        <Providers>
+          {props.children}
+          <Analyze />
+        </Providers>
+      </body>
+    </html>
+  )
+}

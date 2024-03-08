@@ -1,0 +1,17 @@
+[
+  {
+    "paths": [
+      "./sections/guide/what-this.md"
+    ],
+    "title": "开始"
+  },
+  {
+    "paths": [
+      "./sections/usage/markdown.md",
+      "./sections/usage/draw.md",
+      "./sections/usage/custom-component.md",
+      "./sections/usage/highlight.md"
+    ],
+    "title": "使用"
+  }
+]
