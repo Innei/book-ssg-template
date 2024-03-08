@@ -53,6 +53,7 @@ jobs:
         run: |
           npm run build
           echo 'book-template.innei.in' > out/CNAME
+          cd out && touch '.nojekyll'
         env:
           CI: true
       - name: Deploy with gh-pages
