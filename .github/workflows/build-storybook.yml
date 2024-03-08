@@ -18,12 +18,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3.0.0
+        with:
+          version: 8.x.x
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
 
+      - name: Install dependencies
+        run: pnpm install
       - uses: actions/cache@v4
         with:
           # See here for caching with `yarn` https://github.com/actions/cache/blob/main/examples.md#node---yarn or you can leverage caching with actions/setup-node https://github.com/actions/setup-node
@@ -36,10 +41,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
 
-      - uses: pnpm/action-setup@v3.0.0
-        with:
-          version: 8.x.x
-          run_install: true
       - name: Build project
         run: |
           npm run build
