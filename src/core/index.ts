@@ -1,5 +1,8 @@
+import { join } from 'path'
+
 import _jsonData from '~/../markdown/index.json'
 import { symbolsCount, symbolsTime } from '~/lib/count'
+import { getLastGitUpdateTime } from '~/lib/git'
 import {
   extractFirstHeadingText,
   parseYamlFrontMatterSync,
@@ -26,6 +29,8 @@ export type PostItem = {
   title: string
   rawFilePath: string
   meta: Record<string, unknown>
+
+  updatedAt: Date | null
 }
 
 export type Section = {
@@ -63,6 +68,9 @@ export const buildSectionData = () => {
       const appPath = path.replace('.md', '').replace('./sections/', '')
 
       const meta = parseYamlFrontMatterSync(file)
+      const fileOriginPath = join('markdown/', path)
+      const gitUpdateTime = getLastGitUpdateTime(fileOriginPath)
+
       const item: PostItem = {
         path: appPath,
         text: removeYamlFrontMatter(file),
@@ -78,6 +86,8 @@ export const buildSectionData = () => {
         rawFilePath: path,
 
         meta,
+
+        updatedAt: gitUpdateTime,
       }
 
       section.items.push(item)

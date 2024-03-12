@@ -1,14 +1,16 @@
 import { join } from 'path'
 import { cache } from 'react'
 import { notFound } from 'next/navigation'
-import type { GitHistory } from '~/lib/git'
+import type { TGitHistory } from '~/lib/git'
 import type { Metadata, ResolvingMetadata } from 'next'
 
+import { Divider } from '~/components/divider'
 import { MainMarkdown } from '~/components/markdown'
 import { buildSectionData as _buildSectionData } from '~/core'
 import { getFileGitHistory } from '~/lib/git'
 import { cloneDeep } from '~/lib/lodash'
 
+import { GitHistory } from './components/git-history'
 import { Hooks } from './hooks'
 
 const buildSectionData = cache(_buildSectionData)
@@ -56,7 +58,7 @@ const getServerProps = cache(async (params: { all: string[] }) => {
     join('markdown/', path2SectionMap[path].rawFilePath),
   )
 
-  const historyList = [] as GitHistory[]
+  const historyList = [] as TGitHistory[]
   if (histories) {
     histories.split('\n').forEach((line) => {
       const [hash, author_name, time, commit_message] = line.split(' ')
@@ -99,12 +101,30 @@ export default async (props: {
     all: string[]
   }
 }) => {
-  const { text, count, readingTime, title } = await getServerProps(props.params)
+  const { text, count, readingTime, title, history, updatedAt } =
+    await getServerProps(props.params)
 
   return (
     <div className="prose min-h-[calc(100vh-25rem)]">
       <Hooks {...{ count, readingTime, title }} />
       <MainMarkdown>{text}</MainMarkdown>
+
+      {updatedAt && (
+        <>
+          <Divider className="ml-auto mt-6 w-1/4" />
+
+          <p className="text-right opacity-80">
+            最后更新于{' '}
+            {updatedAt
+              ? new Date(updatedAt).toLocaleString('zh-CN', {
+                  timeZone: 'Asia/Shanghai',
+                })
+              : 'N/A'}
+          </p>
+        </>
+      )}
+
+      <GitHistory history={history} />
     </div>
   )
 }
