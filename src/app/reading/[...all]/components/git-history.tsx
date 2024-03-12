@@ -8,7 +8,7 @@ import { repository } from '~/../package.json'
 import { CollapseContent } from '~/components/collapse'
 import { IonIosArrowDown } from '~/components/icons/arrow'
 
-export const GitHistory = ({ history }: { history: Git.GitHistory[] }) => {
+export const GitHistory = ({ history }: { history: Git.TGitHistory[] }) => {
   const [isOpened, setIsOpened] = useState(false)
   return (
     <section className="mt-12" data-hide-print>
