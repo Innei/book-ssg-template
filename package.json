@@ -52,7 +52,7 @@
     "next": "14.1.0",
     "next-seo": "6.5.0",
     "next-themes": "0.2.1",
-    "rc-modal-sheet": "0.0.3",
+    "rc-modal-sheet": "0.1.0",
     "react": "^18",
     "react-dom": "^18",
     "react-intersection-observer": "9.8.0",
