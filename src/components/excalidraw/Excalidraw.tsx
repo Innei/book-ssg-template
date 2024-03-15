@@ -1,6 +1,7 @@
 'use client'
 
 import React, { forwardRef, useEffect, useMemo, useRef, useState } from 'react'
+import { useModalStack } from 'rc-modal-sheet'
 import type { ExcalidrawElement } from '@excalidraw/excalidraw/types/element/types'
 import type {
   AppState,
@@ -16,7 +17,6 @@ import { stopPropagation } from '~/lib/dom'
 import { clsxm, safeJsonParse } from '~/lib/helper'
 
 import { MotionButtonBase } from '../button'
-import { useModalStack } from '../modal'
 
 export interface ExcalidrawProps {
   zenModeEnabled?: boolean
@@ -187,7 +187,7 @@ const ExcalidrawImpl = forwardRef<InternelExcalidrawRefObject, ExcalidrawProps>(
                       refUrl={refUrl}
                     />
                   ),
-                  clickOutsideToDismiss: true,
+
                   max: true,
                 })
               }

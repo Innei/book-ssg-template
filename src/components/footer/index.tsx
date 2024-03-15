@@ -1,11 +1,12 @@
 'use client'
 
+import { useModalStack } from 'rc-modal-sheet'
+
 import { useIsMobile } from '~/atoms/hooks'
 
 import { MotionButtonBase } from '../button'
 import { DividerVertical } from '../divider'
 import { MLink } from '../link'
-import { useModalStack } from '../modal'
 import { DonateContent } from '../shared/AsideDonateButton'
 
 export const PageFooter = () => {

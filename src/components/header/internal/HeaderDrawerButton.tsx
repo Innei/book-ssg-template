@@ -1,8 +1,8 @@
 'use client'
 
 import { useContext } from 'react'
+import { PresentSheet } from 'rc-modal-sheet'
 
-import { PresentSheet } from '~/components/sheet'
 import { useIsClient } from '~/hooks/common/use-is-client'
 
 import { HeaderDrawerContentContext } from '../provider'

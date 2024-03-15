@@ -2,11 +2,11 @@
 
 import { useCallback, useMemo } from 'react'
 import { useParams, usePathname } from 'next/navigation'
+import { useModalStack } from 'rc-modal-sheet'
 
 import { MAIN_MARKDOWN_ID } from '~/constants/dom-id'
 
 import { FABPortable } from '../fab'
-import { useModalStack } from '../modal'
 import { TocTree } from './TocTree'
 
 export const TocFAB = () => {
@@ -32,7 +32,7 @@ export const TocFAB = () => {
   const presentToc = useCallback(() => {
     const dispose = present({
       title: 'Table of Content',
-      clickOutsideToDismiss: true,
+
       content: () => (
         <TocTree
           $headings={$headings!}

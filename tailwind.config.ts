@@ -166,7 +166,10 @@ const UIKitColors = {
 }
 
 const twConfig: Config = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+    './node_modules/rc-modal-sheet/dist/**/*.js',
+  ],
   darkMode: ['class', '[data-theme="dark"]'],
   safelist: [
     'font-light',

@@ -71,6 +71,9 @@ dependencies:
   next-themes:
     specifier: 0.2.1
     version: 0.2.1(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
+  rc-modal-sheet:
+    specifier: 0.0.3
+    version: 0.0.3(@radix-ui/react-dialog@1.0.5)(clsx@2.1.0)(framer-motion@11.0.5)(tailwind-merge@2.2.1)(vaul@0.9.0)
   react:
     specifier: ^18
     version: 18.2.0
@@ -5826,6 +5829,22 @@ packages:
   /quick-lru@6.1.2:
     resolution: {integrity: sha512-AAFUA5O1d83pIHEhJwWCq/RQcRukCkn/NSm2QsTEMle5f2hP0ChI2+3Xb051PZCkLryI/Ir1MVKviT2FIloaTQ==}
     engines: {node: '>=12'}
+    dev: false
+
+  /rc-modal-sheet@0.0.3(@radix-ui/react-dialog@1.0.5)(clsx@2.1.0)(framer-motion@11.0.5)(tailwind-merge@2.2.1)(vaul@0.9.0):
+    resolution: {integrity: sha512-91i/szNy216YHndLAgasMHBmKMeNptW5j8l6kT4ZGS8O1xtlp+wOs59lxWk7Ry9hhRe/GbyHJtqnwIt1JP2g8w==}
+    peerDependencies:
+      '@radix-ui/react-dialog': ^1
+      clsx: '*'
+      framer-motion: ^11
+      tailwind-merge: ^2
+      vaul: ^0.9.0
+    dependencies:
+      '@radix-ui/react-dialog': 1.0.5(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
+      clsx: 2.1.0
+      framer-motion: 11.0.5(react-dom@18.2.0)(react@18.2.0)
+      tailwind-merge: 2.2.1
+      vaul: 0.9.0(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /react-devtools-inline@4.4.0:
