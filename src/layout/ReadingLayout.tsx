@@ -25,7 +25,7 @@ export const ReadingLayout = async ({ children }: PropsWithChildren) => {
           <LeftAside />
         </div>
 
-        <main className="min-w-0 px-4 py-14 lg:px-2">
+        <main className="min-w-0 px-4 py-14 lg:px-8 xl:px-2">
           <WrappedElementProvider>
             <BanCopyWrapper>{children}</BanCopyWrapper>
 

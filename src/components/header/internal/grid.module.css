@@ -6,7 +6,7 @@
   grid-area: center;
 }
 
-@screen lg {
+@screen xl {
   .header--grid__logo {
     grid-area: left;
   }

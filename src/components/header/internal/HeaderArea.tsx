@@ -23,7 +23,7 @@ export const HeaderLeftButtonArea: Component = ({ children }) => {
   return (
     <div
       className={clsxm(
-        'relative flex h-full w-full items-center justify-center lg:hidden',
+        'relative flex h-full w-full items-center justify-center xl:hidden',
       )}
     >
       {children}
