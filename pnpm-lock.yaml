@@ -116,11 +116,11 @@ devDependencies:
     specifier: 0.1.4
     version: 0.1.4
   '@innei/eslint-config-react-ts':
-    specifier: 0.12.6
-    version: 0.12.6(tailwindcss@3.4.1)(typescript@5.4.3)
+    specifier: 0.13.0
+    version: 0.13.0(tailwindcss@3.4.1)(typescript@5.4.3)
   '@innei/prettier':
-    specifier: 0.12.6
-    version: 0.12.6
+    specifier: 0.13.0
+    version: 0.13.0
   '@shikijs/transformers':
     specifier: 1.2.0
     version: 1.2.0
@@ -131,8 +131,8 @@ devDependencies:
     specifier: 4.0.9
     version: 4.0.9
   '@types/node':
-    specifier: ^20.11.30
-    version: 20.11.30
+    specifier: ^20.12.4
+    version: 20.12.4
   '@types/react':
     specifier: ^18.0.38
     version: 18.2.64
@@ -143,8 +143,8 @@ devDependencies:
     specifier: ^10.0.4
     version: 10.4.18(postcss@8.4.35)
   daisyui:
-    specifier: 4.7.3
-    version: 4.7.3(postcss@8.4.35)
+    specifier: 4.9.0
+    version: 4.9.0(postcss@8.4.35)
   eslint:
     specifier: 8.57.0
     version: 8.57.0
@@ -1080,12 +1080,12 @@ packages:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
 
-  /@innei/eslint-config-react-ts@0.12.6(tailwindcss@3.4.1)(typescript@5.4.3):
-    resolution: {integrity: sha512-L+gEhe8uYEjDaMrXbURK/zPQGSmOPr1VA1EtVS9ystbAWZa5xZnpcZpUf5qB8zn6PhVxRUXU30uYQpeif4g9bw==}
+  /@innei/eslint-config-react-ts@0.13.0(tailwindcss@3.4.1)(typescript@5.4.3):
+    resolution: {integrity: sha512-Hbgli7SV9i2/3tny2wYT5ByFNxIB9sKeVNXMgGGKXkl5zHjKoXcH+eIvdtU7d6xRhCVaqrCqIpHrx+EVSWBUmg==}
     peerDependencies:
       typescript: '>=4'
     dependencies:
-      '@innei/eslint-config-ts': 0.12.6(typescript@5.4.3)
+      '@innei/eslint-config-ts': 0.13.0(typescript@5.4.3)
       '@typescript-eslint/eslint-plugin': 7.3.1(@typescript-eslint/parser@7.1.1)(eslint@8.57.0)(typescript@5.4.3)
       '@typescript-eslint/parser': 7.1.1(eslint@8.57.0)(typescript@5.4.3)
       eslint: 8.57.0
@@ -1103,8 +1103,8 @@ packages:
       - tailwindcss
     dev: true
 
-  /@innei/eslint-config-ts@0.12.6(typescript@5.4.3):
-    resolution: {integrity: sha512-u7cehvDkeuRbkd820t2e4FTrjJEW/R4PjioVAkWNuUtKXtKJfb+LvuHSaUl4bLpmzB+mc7Jz5ppkxhT0g1o1mw==}
+  /@innei/eslint-config-ts@0.13.0(typescript@5.4.3):
+    resolution: {integrity: sha512-btoLZ0O/ySPxK4fIwlflTQqvWW/q9syvWs92wfK0ur/c7pFKHwMK34+NWBLQGExGA2cO40+o8iAH9tW0/dkJHw==}
     peerDependencies:
       typescript: '>=4'
     dependencies:
@@ -1130,8 +1130,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@innei/prettier@0.12.6:
-    resolution: {integrity: sha512-p169tzofOESdMNrxieYm1n9OgESDS7pDWbWZnHhWyn4OqbcBYpYl188hZvzJNF44VRNeB0UR3SchHqHLo6iwvA==}
+  /@innei/prettier@0.13.0:
+    resolution: {integrity: sha512-G2l4uaODrUyp7mab/6z9No7J+1XAfU4GStjFsn7C8yuRxADGBwzsqOWzIzzyH5i2xAaDSbUMRVuiDrFGemkbTA==}
     dependencies:
       '@ianvs/prettier-plugin-sort-imports': 4.2.1(prettier@3.2.5)
       prettier: 3.2.5
@@ -1830,8 +1830,8 @@ packages:
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
     dev: false
 
-  /@types/node@20.11.30:
-    resolution: {integrity: sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==}
+  /@types/node@20.12.4:
+    resolution: {integrity: sha512-E+Fa9z3wSQpzgYQdYmme5X3OTuejnnTx88A6p6vkkJosR3KBz+HpE3kqNm98VE6cfLFcISx7zW7MsJkH6KwbTw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -2957,8 +2957,8 @@ packages:
       lodash-es: 4.17.21
     dev: false
 
-  /daisyui@4.7.3(postcss@8.4.35):
-    resolution: {integrity: sha512-R8jUpBMAUm4rSyxzGa9QqFdJTkzREtb1QahXdDoOfElGiF4VbSuu5bfqQoOro1kkSagPy+aTKu5WtSSXmH3u3g==}
+  /daisyui@4.9.0(postcss@8.4.35):
+    resolution: {integrity: sha512-9JsDx4E+30kPxThE+6yEwQokqg1957uwTx/skP2RE98fG6Ten6U+S9YXeQg1a3CI958aF5aOb0oEA+KZFfrZUA==}
     engines: {node: '>=16.9.0'}
     dependencies:
       css-selector-tokenizer: 0.8.0
