@@ -4,7 +4,7 @@ import { useState } from 'react'
 import clsx from 'clsx'
 import type * as Git from '~/lib/git'
 
-import { repository } from '~/../package.json'
+import PKG from '~/../package.json'
 import { CollapseContent } from '~/components/collapse'
 import { IonIosArrowDown } from '~/components/icons/arrow'
 
@@ -25,10 +25,7 @@ export const GitHistory = ({ history }: { history: Git.TGitHistory[] }) => {
         </div>
 
         <div
-          className={clsx(
-            'flex-shrink-0 text-gray-400',
-            isOpened && 'rotate-180 transform',
-          )}
+          className={clsx('shrink-0 text-gray-400', isOpened && 'rotate-180')}
         >
           <IonIosArrowDown />
         </div>
@@ -45,7 +42,7 @@ export const GitHistory = ({ history }: { history: Git.TGitHistory[] }) => {
                       className="rounded bg-gray-200 p-1 dark:bg-zinc-800"
                       target="_blank"
                       rel="noreferrer"
-                      href={`${repository.url}/commit/${item.hash}`}
+                      href={`${PKG.repository.url}/commit/${item.hash}`}
                     >
                       {item.hash.slice(0, 8)}
                     </a>

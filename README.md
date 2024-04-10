@@ -14,6 +14,13 @@ Online preview of this template:
 
 [Demo](https://book-template.innei.in)
 
+## Features
+
+- Markdown support with [Shiro Flavored Markdown](https://shiro.innei.in/#/markdown)
+- Page Open Graph and SEO support
+- Nice UI
+- Mobile responsive
+
 ## Using this template
 
 ```bash

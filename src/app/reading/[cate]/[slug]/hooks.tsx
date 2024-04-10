@@ -7,7 +7,6 @@ import { usePathname } from 'next/navigation'
 import { SEO } from '~/app.config'
 import { currentPostMetaAtom } from '~/atoms/current'
 import { useSetHeaderMetaInfo } from '~/components/header/internal/hooks'
-import { DOMCustomEvents } from '~/constants/event'
 import { isDev } from '~/lib/env'
 import { springScrollToTop } from '~/lib/scroller'
 
@@ -33,15 +32,11 @@ export const Hooks = ({
     })
   }, [count, readingTime, setCurrentPost])
 
-  useEffect(() => {
-    document.dispatchEvent(new CustomEvent(DOMCustomEvents.RefreshToc))
-  }, [title])
-
   const setPageMeta = useSetHeaderMetaInfo()
   useEffect(() => {
     setPageMeta({
       title,
-      description: SEO.title.absolute,
+      description: SEO.title,
     })
 
     if (!isDev) springScrollToTop()

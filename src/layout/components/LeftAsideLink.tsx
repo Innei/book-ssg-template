@@ -22,7 +22,8 @@ export const LeftAsideLink = memo(
   }) => {
     const params = useParams()
 
-    const readingPath = (params.all as string[]).join('/')
+    const readingPath = `${params.cate}/${params.slug}`
+
     return (
       <li
         className={clsxm(
