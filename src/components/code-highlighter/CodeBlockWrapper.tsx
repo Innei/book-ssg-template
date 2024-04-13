@@ -59,9 +59,19 @@ export const CodeBlockWrapper: FC<CodeBlockProps> = (props) => {
     if ($elScrollHeight >= halfWindowHeight) {
       setIsOverflow(true)
 
-      $el.querySelector('.highlighted, .diff')?.scrollIntoView({
-        block: 'center',
-      })
+      const $hightlighted = $el.querySelector('.highlighted, .diff')
+      if ($hightlighted) {
+        const lineHeight = parseInt(
+          getComputedStyle($hightlighted).height || '0',
+          10,
+        )
+        const $code = $el.querySelector('pre > code')!
+        const childIndexInParent = Array.from($code.children).indexOf(
+          $hightlighted,
+        )
+
+        $el.scrollTop = lineHeight * childIndexInParent - 30
+      }
     } else {
       setIsOverflow(false)
     }
