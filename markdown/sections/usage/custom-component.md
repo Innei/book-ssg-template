@@ -32,31 +32,31 @@ export const markdownComponents: MarkdownToJSX.Overrides = {
 ### Tab
 
 <Tabs>
-<Tab label="layout.tsx">
-  ```tsx filename="app/server-action/layout.tsx"
-  import type { PropsWithChildren } from 'react'
+  <Tab label="layout.tsx">
+    ```tsx filename="app/server-action/layout.tsx"
+    import type { PropsWithChildren } from 'react'
 
-  export default async ({ children }: PropsWithChildren) => {
-    return (
-      <div className="m-auto mt-12 max-w-[800px]">
-        <div>Layout Render At: {Date.now()}</div>
-        {children}
-      </div>
-    )
-  }
-  ```
-</Tab>
-<Tab label="action.tsx">
-  ```tsx filename="app/server-action/action.tsx"
-  'use server'
+    export default async ({ children }: PropsWithChildren) => {
+      return (
+        <div className="m-auto mt-12 max-w-[800px]">
+          <div>Layout Render At: {Date.now()}</div>
+          {children}
+        </div>
+      )
+    }
+    ```
+  </Tab>
+  <Tab label="action.tsx">
+    ```tsx filename="app/server-action/action.tsx"
+    'use server'
 
-  import { revalidatePath } from 'next/cache'
+    import { revalidatePath } from 'next/cache'
 
-  export const actionRevalidate = async () => {
-    revalidatePath('/server-action')
-  }
-  ```
-</Tab>
+    export const actionRevalidate = async () => {
+      revalidatePath('/server-action')
+    }
+    ```
+  </Tab>
 </Tabs>
 
 代码为：
