@@ -10,10 +10,12 @@ export const LeftAside = async ({ asWeight }: { asWeight?: boolean }) => {
   return (
     <aside className={asWeight ? '' : 'sticky top-16 mt-16 min-h-[300px]'}>
       <h1 className="text-center text-lg font-bold lg:text-left">
-        {SEO.title.absolute}
+        {SEO.title}
       </h1>
       <Divider className="scale-x-50" />
-      <ul>
+      <ul
+        className={asWeight ? 'max-h-[calc(100dvh-13rem)] overflow-auto' : ''}
+      >
         {sections.map((section) => {
           return (
             <li key={section.title} className="mt-8 font-semibold">
