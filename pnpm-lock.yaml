@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@codesandbox/sandpack-react':
-        specifier: 2.13.8
-        version: 2.13.8(@lezer/common@1.2.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 2.13.10
+        version: 2.13.10(@lezer/common@1.2.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@excalidraw/excalidraw':
         specifier: 0.17.6
         version: 0.17.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -127,8 +127,8 @@ importers:
         specifier: 1.3.0
         version: 1.3.0
       '@tailwindcss/typography':
-        specifier: 0.5.12
-        version: 0.5.12(tailwindcss@3.4.3)
+        specifier: 0.5.13
+        version: 0.5.13(tailwindcss@3.4.3)
       '@types/js-yaml':
         specifier: 4.0.9
         version: 4.0.9
@@ -333,8 +333,8 @@ packages:
   '@codesandbox/sandpack-client@2.13.8':
     resolution: {integrity: sha512-IjVlqfVK0fascNyUVH9hs5UZBx4KhKtyZyDrxdiDyQBtLmgESNaFWelAf4a/PX4gJp+H+WW6/iC6KzR7XtK//w==}
 
-  '@codesandbox/sandpack-react@2.13.8':
-    resolution: {integrity: sha512-+/OnUyrNidSzDDiek7drf8UUTJJl4Cd05dCG3BK51OBKoBCieRmsaUlIM3CU2nFDVAgvcSp9Cmu2CXQmwuJ58w==}
+  '@codesandbox/sandpack-react@2.13.10':
+    resolution: {integrity: sha512-0ipH4gbMqS/o4tyv7pApXehklTqEJi4qNNtKuL6UJd7Tc05fHLqlbEqG8VQ0AkrJ+e+CEL4R26B0k7WqLMLiIg==}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18
       react-dom: ^16.8.0 || ^17 || ^18
@@ -1011,8 +1011,8 @@ packages:
   '@swc/helpers@0.5.5':
     resolution: {integrity: sha512-KGYxvIOXcceOAbEk4bi/dVLEK9z8sZ0uBB3Il5b1rhfClSpcX0yfRO0KmTkqR2cnQDymwLB+25ZyMzICg/cm/A==}
 
-  '@tailwindcss/typography@0.5.12':
-    resolution: {integrity: sha512-CNwpBpconcP7ppxmuq3qvaCxiRWnbhANpY/ruH4L5qs2GCiVDJXde/pjj2HWPV1+Q4G9+V/etrwUYopdcjAlyg==}
+  '@tailwindcss/typography@0.5.13':
+    resolution: {integrity: sha512-ADGcJ8dX21dVVHIwTRgzrcunY6YY9uSlAHHGVKvkA+vLc5qLwEszvKts40lx7z0qc4clpjclwLeK5rVCV2P/uw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
 
@@ -3962,7 +3962,7 @@ snapshots:
       outvariant: 1.4.0
       static-browser-server: 1.0.3
 
-  '@codesandbox/sandpack-react@2.13.8(@lezer/common@1.2.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@codesandbox/sandpack-react@2.13.10(@lezer/common@1.2.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@codemirror/autocomplete': 6.13.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.25.1)(@lezer/common@1.2.1)
       '@codemirror/commands': 6.3.3
@@ -4691,7 +4691,7 @@ snapshots:
       '@swc/counter': 0.1.3
       tslib: 2.6.2
 
-  '@tailwindcss/typography@0.5.12(tailwindcss@3.4.3)':
+  '@tailwindcss/typography@0.5.13(tailwindcss@3.4.3)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
