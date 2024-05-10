@@ -36,7 +36,7 @@ export const Hooks = ({
   useEffect(() => {
     setPageMeta({
       title,
-      description: SEO.title,
+      description: SEO.title.absolute,
     })
 
     if (!isDev) springScrollToTop()
