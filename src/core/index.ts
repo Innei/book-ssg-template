@@ -9,9 +9,15 @@ import {
   removeYamlFrontMatter,
 } from '~/lib/remark'
 
+interface PageMeta {
+  hide?: boolean
+}
+export type PathWithMeta = [string, PageMeta?]
+
 interface Tree {
   title: string
-  paths: string[]
+  slug: string
+  paths: (string | PathWithMeta)[]
   children?: Tree[]
 }
 type JSONData = Tree[]
@@ -58,17 +64,23 @@ export const buildSectionData = () => {
 
   const dfs = (tree: Tree, depth = 1, parentPath?: string) => {
     const paths = tree.paths
+    const slug = tree.slug
     const section: Section = {
       items: [],
       title: tree.title,
     }
     for (const path of paths) {
-      const file = importMarkdownFile(path)
+      const nextPath = `./sections/${slug}/${Array.isArray(path) ? path[0] : path}`
 
-      const appPath = path.replace('.md', '').replace('./sections/', '')
+      const pageMeta = Array.isArray(path) ? path[1] ?? {} : ({} as PageMeta)
 
-      const meta = parseYamlFrontMatterSync(file)
-      const fileOriginPath = join('markdown/', path)
+      if (pageMeta.hide) continue
+      const file = importMarkdownFile(nextPath)
+
+      const appPath = nextPath.replace('.md', '').replace('./sections/', '')
+
+      const meta = Object.assign({}, parseYamlFrontMatterSync(file), pageMeta)
+      const fileOriginPath = join('markdown/', nextPath)
       const gitUpdateTime = getLastGitUpdateTime(fileOriginPath)
 
       const item: PostItem = {
@@ -83,7 +95,7 @@ export const buildSectionData = () => {
         parent: parentPath || null,
 
         title: meta?.title || extractFirstHeadingText(file) || '',
-        rawFilePath: path,
+        rawFilePath: nextPath,
 
         meta,
 

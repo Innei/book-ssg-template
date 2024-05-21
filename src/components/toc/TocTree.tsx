@@ -133,10 +133,7 @@ export const TocTree: Component<
 
   return (
     <ul
-      className={clsxm(
-        'flex flex-grow flex-col px-2 scrollbar-none',
-        className,
-      )}
+      className={clsxm('flex grow flex-col px-2 scrollbar-none', className)}
       ref={containerRef}
     >
       <ul
@@ -156,7 +153,7 @@ export const TocTree: Component<
         })}
       </ul>
       {accessoryElement && (
-        <li className="flex-shrink-0">
+        <li className="shrink-0">
           {!!toc.length && <Divider />}
           {accessoryElement}
         </li>
@@ -217,7 +214,7 @@ const MemoedItem = memo<{
         <m.span
           layoutId="active-toc-item"
           layout
-          className="absolute bottom-[3px] left-0 top-[3px] w-[2px] rounded-sm bg-accent"
+          className="absolute inset-y-[3px] left-0 w-[2px] rounded-sm bg-accent"
         />
       )}
       <TocItem

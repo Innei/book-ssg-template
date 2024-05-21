@@ -10,5 +10,6 @@ module.exports = {
     ],
     'prefer-arrow-callback': 'off',
     'react/display-name': 'off',
+    'tailwindcss/migration-from-tailwind-2': 0,
   },
 }

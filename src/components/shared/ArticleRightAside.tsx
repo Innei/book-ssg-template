@@ -25,7 +25,7 @@ const ArticleRightAsideImpl: FC<{
         <TocAside
           as="div"
           className="static ml-4"
-          treeClassName={clsx('absolute h-full min-h-[120px] flex flex-col')}
+          treeClassName={clsx('absolute flex h-full min-h-[120px] flex-col')}
           accessory={ReadIndicator}
         />
       </div>

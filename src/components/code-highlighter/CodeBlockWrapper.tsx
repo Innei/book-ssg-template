@@ -89,9 +89,9 @@ export const CodeBlockWrapper: FC<CodeBlockProps> = (props) => {
     <div className={clsx(styles['code-card'], 'group')}>
       {!!filename && (
         <div className="flex w-full items-center justify-between rounded-t-xl bg-accent/20 px-4 py-2 text-sm">
-          <span className="shrink-0 flex-grow truncate">{filename}</span>
+          <span className="shrink-0 grow truncate">{filename}</span>
           <span
-            className="pointer-events-none flex-shrink-0 flex-grow-0 text-[20px]"
+            className="pointer-events-none shrink-0 grow-0 text-[20px]"
             aria-hidden
           >
             {langIcon}
@@ -102,7 +102,7 @@ export const CodeBlockWrapper: FC<CodeBlockProps> = (props) => {
       {!filename && !!language && (
         <div
           aria-hidden
-          className="pointer-events-none absolute bottom-3 right-3 text-[20px] text-sm opacity-60"
+          className="pointer-events-none absolute bottom-3 right-3 text-sm opacity-60"
         >
           {langIcon}
         </div>
@@ -111,20 +111,20 @@ export const CodeBlockWrapper: FC<CodeBlockProps> = (props) => {
         <MotionButtonBase
           onClick={handleCopy}
           className={clsxm(
-            'absolute right-2 top-2 z-[1] flex rounded border border-current p-2 text-xs center',
+            'absolute right-2 top-2 z-[1] flex text-xs center',
             'rounded-md border border-black/5 bg-accent/80 p-1.5 text-white backdrop-blur duration-200 dark:border-white/10',
             'opacity-0 group-hover:opacity-100',
             filename && 'top-12',
           )}
         >
-          <i className="icon-[mingcute--copy-2-fill] h-4 w-4" />
+          <i className="icon-[mingcute--copy-2-fill] size-4" />
         </MotionButtonBase>
         <AutoResizeHeight spring className="relative">
           <div
             ref={codeBlockRef}
             className={clsxm(
-              'relative max-h-[50vh] w-full flex-grow overflow-auto scrollbar-none',
-              !isCollapsed ? '!max-h-[100%]' : isOverflow ? maskClassName : '',
+              'relative max-h-[50vh] w-full grow overflow-auto scrollbar-none',
+              !isCollapsed ? '!max-h-full' : isOverflow ? maskClassName : '',
             )}
             dangerouslySetInnerHTML={{
               __html: renderedHtml,
@@ -133,7 +133,7 @@ export const CodeBlockWrapper: FC<CodeBlockProps> = (props) => {
 
           {isOverflow && isCollapsed && (
             <div
-              className={`absolute bottom-0 left-0 right-0 flex justify-center py-2 duration-200 ${
+              className={`absolute inset-x-0 bottom-0 flex justify-center py-2 duration-200 ${
                 ['mask-both-lg', 'mask-b-lg'].includes(maskClassName)
                   ? ''
                   : 'pointer-events-none opacity-0'

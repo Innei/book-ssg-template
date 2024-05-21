@@ -1,17 +1,19 @@
 [
   {
     "paths": [
-      "./sections/guide/what-this.md"
+      "what-this.md"
     ],
+    "slug": "guide",
     "title": "开始"
   },
   {
     "paths": [
-      "./sections/usage/markdown.md",
-      "./sections/usage/draw.md",
-      "./sections/usage/custom-component.md",
-      "./sections/usage/highlight.md"
+      "custom-component.md",
+      "draw.md",
+      "highlight.md",
+      "markdown.md"
     ],
+    "slug": "usage",
     "title": "使用"
   }
 ]

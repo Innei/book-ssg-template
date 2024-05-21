@@ -34,7 +34,7 @@ export default async (props: PropsWithChildren) => {
         <AccentColorStyleInjector />
       </head>
 
-      <body className="m-0 flex h-full flex-grow flex-col p-0 font-sans">
+      <body className="m-0 flex h-full grow flex-col p-0 font-sans">
         <Providers>
           {props.children}
           <Analyze />
