@@ -42,8 +42,8 @@ importers:
         specifier: 2.0.17
         version: 2.0.17
       foxact:
-        specifier: 0.2.34
-        version: 0.2.34(react@18.3.1)
+        specifier: 0.2.35
+        version: 0.2.35(react@18.3.1)
       framer-motion:
         specifier: 11.2.10
         version: 11.2.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2000,8 +2000,8 @@ packages:
     resolution: {integrity: sha512-TMKDUnIte6bfb5nWv7V/caI169OHgvwjb7V4WkeUvbQQdjr5rWKqHFiKWb/fcOwB+CzBT+qbWjvj+DVwRskpIg==}
     engines: {node: '>=14'}
 
-  foxact@0.2.34:
-    resolution: {integrity: sha512-9GrB4NPhTjaJ5pzMkfYFatLGgt5LWq3hhVhYR7zG/PaHhtt3ObOzdRVmmO/whh5E7W8JBykiS6RLtnjeLZLSeg==}
+  foxact@0.2.35:
+    resolution: {integrity: sha512-5e2p34TcBETZTTMhmf4WuljS07lgtv3laimqJer9OGOqYgOpYHgKfR0Cie8Q2IxH1FFhVkm1l0+2W/XL8nBL7Q==}
     peerDependencies:
       react: '*'
     peerDependenciesMeta:
@@ -5880,7 +5880,7 @@ snapshots:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
 
-  foxact@0.2.34(react@18.3.1):
+  foxact@0.2.35(react@18.3.1):
     dependencies:
       client-only: 0.0.1
       server-only: 0.0.1
