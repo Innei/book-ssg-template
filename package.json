@@ -42,7 +42,7 @@
     "colorjs.io": "0.5.0",
     "devtools-detector": "2.0.18",
     "foxact": "0.2.35",
-    "framer-motion": "11.2.10",
+    "framer-motion": "11.2.11",
     "globby": "^14.0.1",
     "immer": "10.1.1",
     "jotai": "2.8.3",
@@ -63,12 +63,12 @@
     "shiki": "1.5.2",
     "swr": "2.2.5",
     "tailwind-merge": "2.3.0",
-    "unified": "11.0.4",
+    "unified": "11.0.5",
     "unist-util-visit": "5.0.0",
     "vaul": "0.9.1"
   },
   "devDependencies": {
-    "@iconify-json/mingcute": "1.1.17",
+    "@iconify-json/mingcute": "1.1.18",
     "@iconify/tailwind": "1.1.1",
     "@innei/eslint-config-react-ts": "0.13.2",
     "@innei/prettier": "0.13.2",
