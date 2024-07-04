@@ -45,8 +45,8 @@ importers:
         specifier: 0.2.35
         version: 0.2.35(react@18.3.1)
       framer-motion:
-        specifier: 11.2.12
-        version: 11.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 11.2.13
+        version: 11.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       globby:
         specifier: ^14.0.2
         version: 14.0.2
@@ -82,7 +82,7 @@ importers:
         version: 0.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       rc-modal-sheet:
         specifier: 0.2.4
-        version: 0.2.4(@radix-ui/react-dialog@1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(clsx@2.1.1)(framer-motion@11.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwind-merge@2.3.0)(vaul@0.9.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+        version: 0.2.4(@radix-ui/react-dialog@1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(clsx@2.1.1)(framer-motion@11.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwind-merge@2.3.0)(vaul@0.9.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -2024,8 +2024,8 @@ packages:
   fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
 
-  framer-motion@11.2.12:
-    resolution: {integrity: sha512-lCjkV4nA9rWOy2bhR4RZzkp2xpB++kFmUZ6D44V9VQaxk+JDmbDd5lq+u58DjJIIllE8AZEXp9OG/TyDN4FB/w==}
+  framer-motion@11.2.13:
+    resolution: {integrity: sha512-AyIeegfkXlkX1lWEudRYsJlC+0A59cE8oFK9IsN9bUQzxLwcvN3AEaYaznkELiWlHC7a0eD7pxsYQo7BC05S5A==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0
@@ -5922,7 +5922,7 @@ snapshots:
 
   fraction.js@4.3.7: {}
 
-  framer-motion@11.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  framer-motion@11.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       tslib: 2.6.2
     optionalDependencies:
@@ -7250,11 +7250,11 @@ snapshots:
 
   quick-lru@6.1.2: {}
 
-  rc-modal-sheet@0.2.4(@radix-ui/react-dialog@1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(clsx@2.1.1)(framer-motion@11.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwind-merge@2.3.0)(vaul@0.9.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+  rc-modal-sheet@0.2.4(@radix-ui/react-dialog@1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(clsx@2.1.1)(framer-motion@11.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwind-merge@2.3.0)(vaul@0.9.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
       '@radix-ui/react-dialog': 1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx: 2.1.1
-      framer-motion: 11.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      framer-motion: 11.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       tailwind-merge: 2.3.0
       vaul: 0.9.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
