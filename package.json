@@ -42,7 +42,7 @@
     "colorjs.io": "0.5.2",
     "devtools-detector": "2.0.20",
     "foxact": "0.2.36",
-    "framer-motion": "11.3.17",
+    "framer-motion": "11.3.19",
     "globby": "^14.0.2",
     "immer": "10.1.1",
     "jotai": "2.9.1",
@@ -69,13 +69,13 @@
   },
   "devDependencies": {
     "@iconify-json/mingcute": "1.1.18",
-    "@iconify/tailwind": "1.1.1",
-    "@innei/eslint-config-react-ts": "0.14.0",
-    "@innei/prettier": "0.14.0",
+    "@iconify/tailwind": "1.1.2",
+    "@innei/eslint-config-react-ts": "0.14.2",
+    "@innei/prettier": "0.14.2",
     "@shikijs/transformers": "1.11.2",
     "@tailwindcss/typography": "0.5.13",
     "@types/js-yaml": "4.0.9",
-    "@types/node": "^20.14.12",
+    "@types/node": "^20.14.13",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",
@@ -91,7 +91,7 @@
     "simple-git-hooks": "2.11.1",
     "tailwind-scrollbar": "3.1.0",
     "tailwind-variants": "0.2.1",
-    "tailwindcss": "^3.4.6",
+    "tailwindcss": "^3.4.7",
     "typescript": "5.5.4"
   }
 }
