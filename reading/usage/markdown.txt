@@ -1,0 +1,642 @@
+4:I[2731,[],""]
+6:I[561,[],""]
+5:["cate","usage","d"]
+0:["KlgNlRRLIc5hLkIew3ECT",[[["",{"children":["reading",{"children":[["cate","usage","d"],{"children":[["slug","markdown","d"],{"children":["__PAGE__?{\"cate\":\"usage\",\"slug\":\"markdown\"}",{}]}]}]}]},"$undefined","$undefined",true],["",{"children":["reading",{"children":[["cate","usage","d"],{"children":[["slug","markdown","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$L3",null],null]},["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children","reading","children","$5","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/913b8a538edc3d67.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children","reading","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$L7",null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d1807e5a7b5a6575.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[8233,["185","static/chunks/app/layout-b505698b98510c5a.js"],"Providers"]
+7:["$","html",null,{"children":[["$","head",null,{"children":[["$","meta",null,{"charSet":"UTF-8"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap","rel":"stylesheet"}],["$","script",null,{"async":true,"src":"https://analyze.innei.ren/script.js","data-website-id":"f27f49ae-7796-4b5d-adc6-860298a54d35"}],["$","style",null,{"id":"accent-color-style","data-light":"#26A69A","data-dark":"#ff7b7b","dangerouslySetInnerHTML":{"__html":"\n        html[data-theme='light'] {\n          --a: 0.6563333914048498 0.10709194021455246 185.34459620333453;\n        }\n        html[data-theme='dark'] {\n          --a: 0.7362546796663882 0.16138062813003226 21.802663851078194;\n        }\n        "}}]]}],["$","body",null,{"className":"m-0 flex h-full grow flex-col p-0 font-sans","children":["$","$L9",null,{"children":[["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$La","notFoundStyles":[],"styles":null}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"(function(){document.addEventListener(\"click\",async e=>{let t=e.target,n=t,r=t.dataset.event;for(;!r&&n&&n!==document.body;)r=n.dataset.event,n=n.parentElement;r&&(console.log(\"dom track click event\",r),window.umami?.track(r,{type:\"click\"}))},!0),document.addEventListener(\"impression\",async e=>{let t=e.detail;console.log(t,\"detail\"),window.umami?.track(t.label,{type:\"impression\"})})})();"}}]]}]}]]}]
+b:I[8274,["873","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/layout-27b00cfdc2b60c61.js"],"HeaderDrawerContentProvider"]
+d:I[7,["873","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/layout-27b00cfdc2b60c61.js"],"MobileHeader"]
+e:I[2373,["873","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/layout-27b00cfdc2b60c61.js"],"LayoutContainer"]
+10:I[2728,["873","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/layout-27b00cfdc2b60c61.js"],"WrappedElementProvider"]
+11:I[5292,["873","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/layout-27b00cfdc2b60c61.js"],"BanCopyWrapper"]
+13:I[272,["873","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/layout-27b00cfdc2b60c61.js"],"OnlyDesktop"]
+14:I[444,["873","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/layout-27b00cfdc2b60c61.js"],"ArticleRightAside"]
+15:I[3238,["873","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/layout-27b00cfdc2b60c61.js"],"ActionAsideContainer"]
+16:I[439,["873","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/layout-27b00cfdc2b60c61.js"],"AsideDonateButton"]
+17:I[6094,["873","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/layout-27b00cfdc2b60c61.js"],"OnlyMobile"]
+18:I[8929,["873","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/layout-27b00cfdc2b60c61.js"],"TocFAB"]
+19:I[3668,["873","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/layout-27b00cfdc2b60c61.js"],"PageFooter"]
+1a:I[8356,["873","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/layout-27b00cfdc2b60c61.js"],"FontSettingFab"]
+12:["slug","markdown","d"]
+3:["$","$Lb",null,{"element":"$Lc","children":[["$","$Ld",null,{}],["$","$Le",null,{"children":[["$","div",null,{"className":"relative mr-4 hidden min-w-0 xl:block","data-hide-print":true,"children":"$Lf"}],["$","main",null,{"className":"min-w-0 px-4 py-14 lg:px-8 xl:px-2","children":["$","$L10",null,{"children":[["$","$L11",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children","reading","children","$5","children","$12","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d3bad823974f97f6.css","precedence":"next","crossOrigin":"$undefined"}]]}]}],["$","div",null,{"className":"relative hidden xl:block print:!hidden","children":[["$","$L13",null,{"children":["$","$L14",null,{"children":["$","$L15",null,{"children":["$","$L16",null,{}]}]}]}],["$","$L17",null,{"children":["$","$L18",null,{}]}]]}]]}]}]]}],["$","$L19",null,{}],["$","$L1a",null,{}]]}]
+a:E{"digest":"NEXT_REDIRECT;replace;/reading/guide/what-this;307;"}
+1b:I[7037,["873","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/layout-27b00cfdc2b60c61.js"],"LeftAsideLink"]
+c:["$","aside",null,{"className":"","children":[["$","h1",null,{"className":"text-center text-lg font-bold lg:text-left","children":"Book SSG Template"}],["$","hr",null,{"className":"my-4 h-[0.5px] border-0 bg-black !bg-opacity-30 dark:bg-white scale-x-50"}],["$","ul",null,{"className":"max-h-[calc(100dvh-13rem)] overflow-auto","children":[["$","li","开始",{"className":"mt-8 font-semibold","children":["开始",["$","ul",null,{"className":"mt-4 flex flex-col gap-1","children":[["$","$L1b","Book SSG Template",{"fullPath":"/reading/guide/what-this","depth":1,"path":"guide/what-this","title":"Book SSG Template"}]]}]]}],["$","li","使用",{"className":"mt-8 font-semibold","children":["使用",["$","ul",null,{"className":"mt-4 flex flex-col gap-1","children":[["$","$L1b","自定义组件",{"fullPath":"/reading/usage/custom-component","depth":1,"path":"usage/custom-component","title":"自定义组件"}],["$","$L1b","画板",{"fullPath":"/reading/usage/draw","depth":1,"path":"usage/draw","title":"画板"}],["$","$L1b","代码高亮",{"fullPath":"/reading/usage/highlight","depth":1,"path":"usage/highlight","title":"代码高亮"}],["$","$L1b","Markdown 语法",{"fullPath":"/reading/usage/markdown","depth":1,"path":"usage/markdown","title":"Markdown 语法"}]]}]]}]]}]]}]
+f:["$","aside",null,{"className":"sticky top-16 mt-16 min-h-[300px]","children":[["$","h1",null,{"className":"text-center text-lg font-bold lg:text-left","children":"Book SSG Template"}],["$","hr",null,{"className":"my-4 h-[0.5px] border-0 bg-black !bg-opacity-30 dark:bg-white scale-x-50"}],["$","ul",null,{"className":"","children":[["$","li","开始",{"className":"mt-8 font-semibold","children":["开始",["$","ul",null,{"className":"mt-4 flex flex-col gap-1","children":[["$","$L1b","Book SSG Template",{"fullPath":"/reading/guide/what-this","depth":1,"path":"guide/what-this","title":"Book SSG Template"}]]}]]}],["$","li","使用",{"className":"mt-8 font-semibold","children":["使用",["$","ul",null,{"className":"mt-4 flex flex-col gap-1","children":[["$","$L1b","自定义组件",{"fullPath":"/reading/usage/custom-component","depth":1,"path":"usage/custom-component","title":"自定义组件"}],["$","$L1b","画板",{"fullPath":"/reading/usage/draw","depth":1,"path":"usage/draw","title":"画板"}],["$","$L1b","代码高亮",{"fullPath":"/reading/usage/highlight","depth":1,"path":"usage/highlight","title":"代码高亮"}],["$","$L1b","Markdown 语法",{"fullPath":"/reading/usage/markdown","depth":1,"path":"usage/markdown","title":"Markdown 语法"}]]}]]}]]}]]}]
+1c:I[7792,["229","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/page-639cd4655b12dc9f.js"],"Hooks"]
+1d:"$Sreact.fragment"
+1e:I[6974,["229","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/page-639cd4655b12dc9f.js"],"MHeader"]
+38:I[4784,["229","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/page-639cd4655b12dc9f.js"],"MLink"]
+47:I[1769,["229","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/page-639cd4655b12dc9f.js"],"GitHistory"]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Markdown 语法 | Book SSG Template"}],["$","meta","3",{"property":"og:title","content":"Markdown 语法 | Book SSG Template"}],["$","meta","4",{"property":"og:image","content":"https://nextjs-book.innei.in/reading/usage/markdown/og.png"}],["$","meta","5",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","6",{"name":"twitter:site","content":"https://innei.in"}],["$","meta","7",{"name":"twitter:creator","content":"@__oQuery"}],["$","meta","8",{"name":"twitter:title","content":"Markdown 语法 | Book SSG Template"}],["$","meta","9",{"name":"twitter:image","content":"https://nextjs-book.innei.in/reading/usage/markdown/og.png"}]]
+1:null
+3d:T44b,M7.5 0C3.35625 0 0 3.35625 0 7.5C0 10.8187 2.14687 13.6219 5.12812 14.6156C5.50312 14.6813 5.64375 14.4563 5.64375 14.2594C5.64375 14.0813 5.63438 13.4906 5.63438 12.8625C3.75 13.2094 3.2625 12.4031 3.1125 11.9812C3.02812 11.7656 2.6625 11.1 2.34375 10.9219C2.08125 10.7812 1.70625 10.4344 2.33438 10.425C2.925 10.4156 3.34688 10.9687 3.4875 11.1937C4.1625 12.3281 5.24063 12.0094 5.67188 11.8125C5.7375 11.325 5.93437 10.9969 6.15 10.8094C4.48125 10.6219 2.7375 9.975 2.7375 7.10625C2.7375 6.29062 3.02813 5.61562 3.50625 5.09062C3.43125 4.90312 3.16875 4.13437 3.58125 3.10312C3.58125 3.10312 4.20938 2.90625 5.64375 3.87188C6.24375 3.70313 6.88125 3.61875 7.51875 3.61875C8.15625 3.61875 8.79375 3.70313 9.39375 3.87188C10.8281 2.89688 11.4563 3.10312 11.4563 3.10312C11.8688 4.13437 11.6063 4.90312 11.5313 5.09062C12.0094 5.61562 12.3 6.28125 12.3 7.10625C12.3 9.98437 10.5469 10.6219 8.87813 10.8094C9.15 11.0437 9.38438 11.4938 9.38438 12.1969C9.38438 13.2 9.375 14.0063 9.375 14.2594C9.375 14.4563 9.51563 14.6906 9.89063 14.6156C12.8531 13.6219 15 10.8094 15 7.5C15 3.35625 11.6438 0 7.5 0Z40:Tb94,<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mo>±</mo><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">c = \pm\sqrt{a^2 + b^2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.1266em;"></span><span class="mord">±</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9134em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em;"><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em;"><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-2.8734em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1266em;"><span></span></span></span></span></span></span></span></span>42:Tb94,<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mo>±</mo><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">c = \pm\sqrt{a^2 + b^2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.1266em;"></span><span class="mord">±</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9134em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em;"><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em;"><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-2.8734em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1266em;"><span></span></span></span></span></span></span></span></span>43:T157b,<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msub><mi>a</mi><mi>n</mi></msub><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><mi>x</mi><mo>+</mo><msub><mi>a</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">P(x) = a_nx^n+a_{n-1}x^{n-1} + \dots + a_1x + a_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8144em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0224em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>46:T175f,<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mrow><mo fence="true">(</mo><mi>U</mi><mo separator="true">,</mo><mi>T</mi><mo fence="true">)</mo></mrow><mo>=</mo><mn>100</mn><mrow><mo fence="true">(</mo><mn>0.6</mn><mi>min</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mn>1</mn><mo separator="true">,</mo><mfrac><mrow><mi>U</mi><mo>−</mo><mn>0.70</mn></mrow><mrow><mn>0.90</mn><mo>−</mo><mn>0.70</mn></mrow></mfrac><mo fence="true">)</mo></mrow><mo>+</mo><mn>0.4</mn><mi>min</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mn>1</mn><mo separator="true">,</mo><mfrac><mrow><mi>T</mi><mo>−</mo><mn>4000</mn></mrow><mrow><mn>14000</mn><mo>−</mo><mn>4000</mn></mrow></mfrac><mo fence="true">)</mo></mrow><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+
+P\left(U,T\right)=100\left.\left(0.6\min\left(1,\frac{U-0.70}{0.90-0.70}\right)+0.4\min\left(1,\frac{T-4000}{14000-4000}\right)\right)\right.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="mord">100</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen nulldelimiter"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord">0.6</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">min</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0.90</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">0.70</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">0.70</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">0.4</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">min</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">14000</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">4000</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">4000</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>2:["$","div",null,{"className":"prose min-h-[calc(100vh-25rem)]","children":[["$","$L1c",null,{"count":"3.2k","readingTime":"16 ","title":"Markdown 语法"}],["$","main",null,{"style":"$undefined","id":"main-markdown-render","className":"markdown_md__MU_T2","children":["$","$1d","outer",{"children":[["$","$L1e","0",{"id":"markdown-语法","level":1,"children":["Markdown 语法"]}],["$","p",null,{"className":"paragraph","children":["Markdown 语法在 GFM 中进行了其他扩展。"]}],"\n",["$","$L1e","3",{"id":"alert","level":2,"children":["Alert"]}],["$","p",null,{"className":"paragraph","children":["此语法是 GFM 的新增的。"]}],"$L1f",["$","blockquote","6",{"className":"border-blue-500 dark:border-blue-400 not-italic","children":[["$","span",null,{"className":"text-semibold mb-1 inline-flex items-center text-blue-500 dark:text-blue-400","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","viewBox":"0 0 256 256","className":"shrink-0 text-3xl md:mr-2 md:self-start md:text-left","children":["$","path",null,{"fill":"currentColor","d":"M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Zm16-40a8 8 0 0 1-8 8a16 16 0 0 1-16-16v-40a8 8 0 0 1 0-16a16 16 0 0 1 16 16v40a8 8 0 0 1 8 8Zm-32-92a12 12 0 1 1 12 12a12 12 0 0 1-12-12Z"}]}],"Note"]}],["$","br",null,{}],["$","div",null,{"style":"$undefined","className":"markdown_md__MU_T2 prose w-full [&>p:first-child]:mt-0 [&_p]:before:!content-none","children":["$","p",null,{"className":"paragraph","children":["Highlights information that users should take into account, even when skimming."]}]}]]}],"\n",["$","blockquote","8",{"className":"border-accent not-italic","children":[["$","span",null,{"className":"text-semibold mb-1 inline-flex items-center text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","viewBox":"0 0 28 28","className":"shrink-0 text-3xl md:mr-2 md:self-start md:text-left","children":["$","path",null,{"fill":"currentColor","d":"M14 10.55a.75.75 0 0 1 .75.75v5a.75.75 0 0 1-1.5 0v-5a.75.75 0 0 1 .75-.75Zm0 10a1 1 0 1 0 0-2a1 1 0 0 0 0 2ZM12.039 5.207c.86-1.53 3.062-1.53 3.922 0l8.685 15.44c.844 1.5-.24 3.353-1.96 3.353H5.314c-1.721 0-2.805-1.853-1.961-3.353l8.685-15.44Zm2.615.735a.75.75 0 0 0-1.308 0l-8.685 15.44a.75.75 0 0 0 .654 1.118h17.37a.75.75 0 0 0 .654-1.118l-8.685-15.44Z"}]}],"Important"]}],["$","br",null,{}],["$","div",null,{"style":"$undefined","className":"markdown_md__MU_T2 prose w-full [&>p:first-child]:mt-0 [&_p]:before:!content-none","children":["$","p",null,{"className":"paragraph","children":["Crucial information necessary for users to succeed."]}]}]]}],"\n",["$","blockquote","10",{"className":"border-amber-500 dark:border-amber-400 not-italic","children":[["$","span",null,{"className":"text-semibold mb-1 inline-flex items-center text-amber-500 dark:text-amber-400","children":[["$","svg",null,{"width":"1em","height":"1em","viewBox":"0 0 20 20","className":"shrink-0 text-3xl md:mr-2 md:self-start md:text-left","children":["$","path",null,{"fill":"currentColor","d":"M10 6a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0v-5A.5.5 0 0 1 10 6Zm0 8.5a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5ZM9.723 2.084a.5.5 0 0 1 .554 0a15.05 15.05 0 0 0 6.294 2.421A.5.5 0 0 1 17 5v4.5c0 3.891-2.307 6.73-6.82 8.467a.5.5 0 0 1-.36 0C5.308 16.23 3 13.39 3 9.5V5a.5.5 0 0 1 .43-.495a15.05 15.05 0 0 0 6.293-2.421Zm-.124 1.262A15.969 15.969 0 0 1 4 5.428V9.5c0 3.392 1.968 5.863 6 7.463c4.032-1.6 6-4.071 6-7.463V5.428a15.969 15.969 0 0 1-5.6-2.082l-.4-.249l-.4.249Z"}]}],"Warning"]}],["$","br",null,{}],["$","div",null,{"style":"$undefined","className":"markdown_md__MU_T2 prose w-full [&>p:first-child]:mt-0 [&_p]:before:!content-none","children":["$","p",null,{"className":"paragraph","children":["Critical content demanding immediate user attention due to potential risks."]}]}]]}],"\n",["$","$L1e","12",{"id":"notice","level":2,"children":["Notice"]}],"$L20",["$","div",null,{"className":"flex flex-col items-center gap-4 rounded-md border p-6 text-neutral-900 dark:bg-opacity-10 dark:text-[#c4c4c4] md:flex md:flex-row bg-amber-50 dark:bg-amber-300 border-amber-300 justify-center my-4","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","viewBox":"0 0 28 28","className":"shrink-0 text-3xl md:mr-2 md:self-start md:text-left text-amber-500","children":["$","path",null,{"fill":"currentColor","d":"M14 10.55a.75.75 0 0 1 .75.75v5a.75.75 0 0 1-1.5 0v-5a.75.75 0 0 1 .75-.75Zm0 10a1 1 0 1 0 0-2a1 1 0 0 0 0 2ZM12.039 5.207c.86-1.53 3.062-1.53 3.922 0l8.685 15.44c.844 1.5-.24 3.353-1.96 3.353H5.314c-1.721 0-2.805-1.853-1.961-3.353l8.685-15.44Zm2.615.735a.75.75 0 0 0-1.308 0l-8.685 15.44a.75.75 0 0 0 .654 1.118h17.37a.75.75 0 0 0 .654-1.118l-8.685-15.44Z"}]}],["$","div",null,{"style":"$undefined","className":"markdown_md__MU_T2 w-full [&>p:first-child]:mt-0","children":["$","em","0",{"className":"$undefined","children":["here be dragons"]}]}]]}],["$","div",null,{"className":"flex flex-col items-center gap-4 rounded-md border p-6 text-neutral-900 dark:bg-opacity-10 dark:text-[#c4c4c4] md:flex md:flex-row bg-red-50 dark:bg-red-300 border-red-300 justify-center my-4","children":[["$","svg",null,{"width":"1em","height":"1em","viewBox":"0 0 20 20","className":"shrink-0 text-3xl md:mr-2 md:self-start md:text-left text-red-500","children":["$","path",null,{"fill":"currentColor","d":"M10 6a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0v-5A.5.5 0 0 1 10 6Zm0 8.5a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5ZM9.723 2.084a.5.5 0 0 1 .554 0a15.05 15.05 0 0 0 6.294 2.421A.5.5 0 0 1 17 5v4.5c0 3.891-2.307 6.73-6.82 8.467a.5.5 0 0 1-.36 0C5.308 16.23 3 13.39 3 9.5V5a.5.5 0 0 1 .43-.495a15.05 15.05 0 0 0 6.293-2.421Zm-.124 1.262A15.969 15.969 0 0 1 4 5.428V9.5c0 3.392 1.968 5.863 6 7.463c4.032-1.6 6-4.071 6-7.463V5.428a15.969 15.969 0 0 1-5.6-2.082l-.4-.249l-.4.249Z"}]}],["$","div",null,{"style":"$undefined","className":"markdown_md__MU_T2 w-full [&>p:first-child]:mt-0","children":["$","em","0",{"className":"$undefined","children":["here be dragons"]}]}]]}],["$","div",null,{"className":"flex flex-col items-center gap-4 rounded-md border p-6 text-neutral-900 dark:bg-opacity-10 dark:text-[#c4c4c4] md:flex md:flex-row bg-blue-50 dark:bg-blue-300 border-blue-300 justify-center my-4","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","viewBox":"0 0 256 256","className":"shrink-0 text-3xl md:mr-2 md:self-start md:text-left text-blue-500","children":["$","path",null,{"fill":"currentColor","d":"M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Zm16-40a8 8 0 0 1-8 8a16 16 0 0 1-16-16v-40a8 8 0 0 1 0-16a16 16 0 0 1 16 16v40a8 8 0 0 1 8 8Zm-32-92a12 12 0 1 1 12 12a12 12 0 0 1-12-12Z"}]}],["$","div",null,{"style":"$undefined","className":"markdown_md__MU_T2 w-full [&>p:first-child]:mt-0","children":["$","em","0",{"className":"$undefined","children":["here be dragons"]}]}]]}],["$","$L1e","17",{"id":"rich-link","level":2,"children":["Rich Link"]}],["$","p",null,{"className":"paragraph","children":["对于单独成行的链接，会有做出不用的渲染。"]}],"$L21","$L22","$L23","$L24","$L25","$L26","$L27","$L28","$L29","$L2a","$L2b","$L2c","$L2d","$L2e","$L2f","$L30","$L31","$L32","$L33","$L34","$L35","$L36","\n",["$","$L1e","42",{"id":"inline-link-parser","level":2,"children":["Inline Link Parser"]}],["$","p",null,{"className":"paragraph","children":["对于内联链接，会根据内置解析增加 Favicon。"]}],"$L37",["$","p",null,{"className":"paragraph","children":["Inline ",["$","$L38","1",{"href":"https://github.com/Innei","title":"$undefined","text":"Innei","children":["Innei"]}]]}],"$L39",["$","p",null,{"className":"paragraph","children":["Inline ",["$","$L38","1",{"href":"https://twitter.com/pseudo_yu","title":"$undefined","text":"pseudoyu","children":["pseudoyu"]}]]}],"$L3a",["$","p",null,{"className":"paragraph","children":["Inline ",["$","$L38","1",{"href":"https://github.com/Innei","title":"$undefined","text":"https://github.com/Innei","children":["https://github.com/Innei"]}]]}],"$L3b",["$","p",null,{"className":"paragraph","children":["Inline ",["$","$L38","1",{"href":"https://github.com/Innei","title":"$undefined","text":"https://github.com/Innei","children":["https://github.com/Innei"]}]]}],["$","$L1e","52",{"id":"mention","level":2,"children":["Mention"]}],["$","p",null,{"className":"paragraph","children":["使用一些 Mention？"]}],"$L3c",["$","p",null,{"className":"paragraph","children":[["$","span",null,{"className":"mx-1 inline-flex items-center space-x-1 align-text-bottom","children":[["$","span",null,{"className":"mx-1 inline-flex [&_svg]:inline [&_svg]:!h-[0.8em]","children":["$","svg",null,{"width":"1em","height":"1em","viewBox":"0 0 15 15","xmlns":"http://www.w3.org/2000/svg","className":"text-[#1D2127] dark:text-[#FFFFFF]","children":["$","path",null,{"fillRule":"evenodd","clipRule":"evenodd","d":"$3d","fill":"currentColor"}]}]}],["$","a",null,{"target":"_blank","rel":"noreferrer nofollow","href":"https://github.com/Innei 太菜了","className":"underline-offset-2","children":"Innei 太菜了"}]]}]]}],["$","$L1e","56",{"id":"spoiler","level":2,"children":["Spoiler"]}],["$","p",null,{"className":"paragraph","children":["和删除线有所不同。"]}],"$L3e",["$","p",null,{"className":"paragraph","children":["Hi, this is ",["$","del","2",{"className":"spoiler","title":"你知道的太多了","children":["Spoiler"]}]]}],"\n",["$","$L1e","61",{"id":"katex","level":2,"children":["KateX"]}],"$L3f",["$","p",null,{"className":"paragraph","children":[["$","span",null,{"dangerouslySetInnerHTML":{"__html":"$40"}}]]}],"$L41",["$","p",null,{"className":"paragraph","children":[["$","span",null,{"dangerouslySetInnerHTML":{"__html":"$42"}}]]}],["$","p",null,{"className":"paragraph","children":[["$","span",null,{"dangerouslySetInnerHTML":{"__html":"$43"}}]]}],"$L44","$L45",["$","div","69",{"children":["$","span",null,{"dangerouslySetInnerHTML":{"__html":"$46"}}]}]]}]}],[["$","hr",null,{"className":"my-4 h-[0.5px] border-0 bg-black !bg-opacity-30 dark:bg-white ml-auto mt-6 w-1/4"}],["$","p",null,{"className":"text-right opacity-80","children":["最后更新于"," ","2024/8/15 21:57:42"]}]],["$","$L47",null,{"history":[{"time":"2024-08-15","commit_message":"fix(deps):","author_name":"renovate[bot]","hash":"2e7c1a935d27820b1a76ab82ff8fb0adacde34fa"}]}],[["$","hr",null,{"className":"my-4 h-[0.5px] border-0 bg-black !bg-opacity-30 dark:bg-white mt-12"}],["$","p",null,{"children":"本书还在编写中.."}],["$","p",null,{"children":["前往"," ",["$","a",null,{"href":"https://innei.in/posts/technology/my-first-nextjs-book-here#comment","target":"_blank","rel":"noreferrer","children":"https://innei.in/posts/tech/my-first-nextjs-book-here#comment"}]," ","发表你的观点吧。"]}]]]}]
+48:I[1457,["229","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/page-639cd4655b12dc9f.js"],"LinkCard"]
+4a:I[6523,["229","static/chunks/app/reading/%5Bcate%5D/%5Bslug%5D/page-639cd4655b12dc9f.js"],"CodeBlockWrapper"]
+22:["$","$L48",null,{"id":"Innei/Shiro","source":"gh-repo"}]
+24:["$","p",null,{"children":["$","$L38",null,{"href":"https://twitter.com/zhizijun/status/1649822091234148352?s=20","children":["https://twitter.com/zhizijun/status/1649822091234148352?s=20"]}]}]
+26:["$","div",null,{"className":"mockup-window my-16 bg-base-300","children":["$","div",null,{"className":"flex justify-center px-4","children":["$","div",null,{"className":"relative my-8 h-0 w-full","style":{"paddingBottom":"58%"},"children":["$","iframe",null,{"src":"https://www.youtube.com/embed/N93cTbtLCIM","className":"absolute inset-0 size-full border-0","allow":"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture","allowFullScreen":true,"title":"YouTube video player"}]}]}]}]
+28:["$","p",null,{"children":["$","$L38",null,{"href":"https://gist.github.com/Innei/94b3e8f078d29e1820813a24a3d8b04e","children":["https://gist.github.com/Innei/94b3e8f078d29e1820813a24a3d8b04e"]}]}]
+2a:[["$","p",null,{"children":["$","$L38",null,{"href":"https://github.com/vuejs/vitepress/commit/71eb11f72e60706a546b756dc3fd72d06e2ae4e2","children":"https://github.com/vuejs/vitepress/commit/71eb11f72e60706a546b756dc3fd72d06e2ae4e2"}]}],["$","$L48",null,{"fallbackUrl":"https://github.com/vuejs/vitepress/commit/71eb11f72e60706a546b756dc3fd72d06e2ae4e2","id":"vuejs/vitepress/commit/71eb11f72e60706a546b756dc3fd72d06e2ae4e2","source":"gh-commit"}]]
+2c:["$","div",null,{"className":"mockup-window my-16 bg-base-300","children":["$","div",null,{"className":"flex justify-center px-4","children":["$","div",null,{"className":"relative my-8 h-0 w-full","style":{"paddingBottom":"58%"},"children":["$","iframe",null,{"className":"absolute inset-0 size-full rounded-md border-0","src":"https://codesandbox.io/embed//framer-motion-layoutroot-prop-forked-p39g96?fontsize=14&hidenavigation=1&theme=dark"}]}]}]}]
+2e:["$","div",null,{"className":"flex w-full flex-col items-center","children":["$L49",["$","div",null,{"className":"mt-4","children":["$","$L38",null,{"href":"https://github.com/Innei/Shiro/blob/108d4c3e927e1c9c9304e41a0631f91958477d9f/src/providers/root/modal-stack-provider.tsx","children":"https://github.com/Innei/Shiro/blob/108d4c3e927e1c9c9304e41a0631f91958477d9f/src/providers/root/modal-stack-provider.tsx"}]}]]}]
+30:["$","$L48",null,{"fallbackUrl":"https://github.com/Innei/Shiro/pull/129","id":"Innei/Shiro/129","source":"gh-pr"}]
+32:[["$","p",null,{"children":["$","$L38",null,{"href":"https://github.com/Innei/Shiro/commit/6957e011439eb2d3cbf42bfb67ed81b07d4bcc2a","children":"https://github.com/Innei/Shiro/commit/6957e011439eb2d3cbf42bfb67ed81b07d4bcc2a"}]}],["$","$L48",null,{"fallbackUrl":"https://github.com/Innei/Shiro/commit/6957e011439eb2d3cbf42bfb67ed81b07d4bcc2a","id":"Innei/Shiro/commit/6957e011439eb2d3cbf42bfb67ed81b07d4bcc2a","source":"gh-commit"}]]
+34:["$","p",null,{"children":["$","$L38",null,{"href":"https://trpc.io/docs/client/react/useInfiniteQuery","children":["https://trpc.io/docs/client/react/useInfiniteQuery"]}]}]
+36:["$","p",null,{"children":["$","$L38",null,{"href":"https://trpc.io/docs/client/react/useInfiniteQuery","children":["TRPC"]}]}]
+4b:T5e2,<pre class="shiki shiki-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">> [</span><span style="color:#032F62;--shiki-dark:#DBEDFF;text-decoration:underline;--shiki-dark-text-decoration:underline">!NOTE</span><span style="color:#22863A;--shiki-dark:#85E89D">]</span></span>
+<span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">> Highlights information that users should take into account, even when skimming.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">> [</span><span style="color:#032F62;--shiki-dark:#DBEDFF;text-decoration:underline;--shiki-dark-text-decoration:underline">!IMPORTANT</span><span style="color:#22863A;--shiki-dark:#85E89D">]</span></span>
+<span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">> Crucial information necessary for users to succeed.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">> [</span><span style="color:#032F62;--shiki-dark:#DBEDFF;text-decoration:underline;--shiki-dark-text-decoration:underline">!WARNING</span><span style="color:#22863A;--shiki-dark:#85E89D">]</span></span>
+<span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">> Critical content demanding immediate user attention due to potential risks.</span></span></code></pre>1f:["$","$L4a",null,{"content":"> [!NOTE]\n> Highlights information that users should take into account, even when skimming.\n\n> [!IMPORTANT]\n> Crucial information necessary for users to succeed.\n\n> [!WARNING]\n> Critical content demanding immediate user attention due to potential risks.","lang":"md","raw":"\n```md\n> [!NOTE]\n> Highlights information that users should take into account, even when skimming.\n\n> [!IMPORTANT]\n> Crucial information necessary for users to succeed.\n\n> [!WARNING]\n> Critical content demanding immediate user attention due to potential risks.\n```\n\n","attrs":"$undefined","renderedHtml":"$4b","langIcon":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","viewBox":"0 0 24 24","children":["$","path",null,{"fill":"currentColor","d":"M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m4 12.5v-4l2 2l2-2v4h2v-7h-2l-2 2l-2-2H5v7zm11-3v-4h-2v4h-2l3 3l3-3z"}]}]}]
+4c:T4cf,<pre class="shiki shiki-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">::: warning</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8;font-style:italic;--shiki-dark-font-style:italic">_here be dragons_</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">:::</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">::: banner {error}</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8;font-style:italic;--shiki-dark-font-style:italic">_here be dragons_</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">:::</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">::: banner {note}</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8;font-style:italic;--shiki-dark-font-style:italic">_here be dragons_</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">:::</span></span></code></pre>4d:["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","viewBox":"0 0 24 24","children":["$","path",null,{"fill":"currentColor","d":"M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m4 12.5v-4l2 2l2-2v4h2v-7h-2l-2 2l-2-2H5v7zm11-3v-4h-2v4h-2l3 3l3-3z"}]}]
+20:["$","$L4a",null,{"content":"::: warning\n_here be dragons_\n:::\n\n::: banner {error}\n_here be dragons_\n:::\n\n::: banner {note}\n_here be dragons_\n:::","lang":"md","raw":"```md\n::: warning\n_here be dragons_\n:::\n\n::: banner {error}\n_here be dragons_\n:::\n\n::: banner {note}\n_here be dragons_\n:::\n\n```\n\n","attrs":"$undefined","renderedHtml":"$4c","langIcon":"$4d"}]
+21:["$","$L4a",null,{"content":"https://github.com/Innei/Shiro","lang":"$undefined","raw":"```\nhttps://github.com/Innei/Shiro\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>https://github.com/Innei/Shiro</span></span></code></pre>","langIcon":"$undefined"}]
+23:["$","$L4a",null,{"content":"https://twitter.com/zhizijun/status/1649822091234148352?s=20","lang":"$undefined","raw":"```\nhttps://twitter.com/zhizijun/status/1649822091234148352?s=20\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>https://twitter.com/zhizijun/status/1649822091234148352?s=20</span></span></code></pre>","langIcon":"$undefined"}]
+25:["$","$L4a",null,{"content":"https://www.youtube.com/watch?v=N93cTbtLCIM","lang":"$undefined","raw":"```\nhttps://www.youtube.com/watch?v=N93cTbtLCIM\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>https://www.youtube.com/watch?v=N93cTbtLCIM</span></span></code></pre>","langIcon":"$undefined"}]
+27:["$","$L4a",null,{"content":"https://gist.github.com/Innei/94b3e8f078d29e1820813a24a3d8b04e","lang":"$undefined","raw":"```\nhttps://gist.github.com/Innei/94b3e8f078d29e1820813a24a3d8b04e\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>https://gist.github.com/Innei/94b3e8f078d29e1820813a24a3d8b04e</span></span></code></pre>","langIcon":"$undefined"}]
+29:["$","$L4a",null,{"content":"https://github.com/vuejs/vitepress/commit/71eb11f72e60706a546b756dc3fd72d06e2ae4e2","lang":"$undefined","raw":"```\nhttps://github.com/vuejs/vitepress/commit/71eb11f72e60706a546b756dc3fd72d06e2ae4e2\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>https://github.com/vuejs/vitepress/commit/71eb11f72e60706a546b756dc3fd72d06e2ae4e2</span></span></code></pre>","langIcon":"$undefined"}]
+2b:["$","$L4a",null,{"content":"https://codesandbox.io/s/framer-motion-layoutroot-prop-forked-p39g96","lang":"$undefined","raw":"```\nhttps://codesandbox.io/s/framer-motion-layoutroot-prop-forked-p39g96\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>https://codesandbox.io/s/framer-motion-layoutroot-prop-forked-p39g96</span></span></code></pre>","langIcon":"$undefined"}]
+2d:["$","$L4a",null,{"content":"https://github.com/Innei/Shiro/blob/108d4c3e927e1c9c9304e41a0631f91958477d9f/src/providers/root/modal-stack-provider.tsx","lang":"$undefined","raw":"```\nhttps://github.com/Innei/Shiro/blob/108d4c3e927e1c9c9304e41a0631f91958477d9f/src/providers/root/modal-stack-provider.tsx\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>https://github.com/Innei/Shiro/blob/108d4c3e927e1c9c9304e41a0631f91958477d9f/src/providers/root/modal-stack-provider.tsx</span></span></code></pre>","langIcon":"$undefined"}]
+2f:["$","$L4a",null,{"content":"https://github.com/Innei/Shiro/pull/129","lang":"$undefined","raw":"```\nhttps://github.com/Innei/Shiro/pull/129\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>https://github.com/Innei/Shiro/pull/129</span></span></code></pre>","langIcon":"$undefined"}]
+31:["$","$L4a",null,{"content":"https://github.com/Innei/Shiro/commit/6957e011439eb2d3cbf42bfb67ed81b07d4bcc2a","lang":"$undefined","raw":"```\nhttps://github.com/Innei/Shiro/commit/6957e011439eb2d3cbf42bfb67ed81b07d4bcc2a\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>https://github.com/Innei/Shiro/commit/6957e011439eb2d3cbf42bfb67ed81b07d4bcc2a</span></span></code></pre>","langIcon":"$undefined"}]
+33:["$","$L4a",null,{"content":"https://trpc.io/docs/client/react/useInfiniteQuery","lang":"$undefined","raw":"```\nhttps://trpc.io/docs/client/react/useInfiniteQuery\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>https://trpc.io/docs/client/react/useInfiniteQuery</span></span></code></pre>","langIcon":"$undefined"}]
+35:["$","$L4a",null,{"content":"[TRPC](https://trpc.io/docs/client/react/useInfiniteQuery)","lang":"$undefined","raw":"```\n[TRPC](https://trpc.io/docs/client/react/useInfiniteQuery)\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>[TRPC](https://trpc.io/docs/client/react/useInfiniteQuery)</span></span></code></pre>","langIcon":"$undefined"}]
+37:["$","$L4a",null,{"content":"Inline [Innei](https://github.com/Innei)","lang":"$undefined","raw":"```\nInline [Innei](https://github.com/Innei)\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>Inline [Innei](https://github.com/Innei)</span></span></code></pre>","langIcon":"$undefined"}]
+39:["$","$L4a",null,{"content":"Inline [pseudoyu](https://twitter.com/pseudo_yu)","lang":"$undefined","raw":"```\nInline [pseudoyu](https://twitter.com/pseudo_yu)\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>Inline [pseudoyu](https://twitter.com/pseudo_yu)</span></span></code></pre>","langIcon":"$undefined"}]
+3a:["$","$L4a",null,{"content":"Inline <https://github.com/Innei>","lang":"$undefined","raw":"```\nInline <https://github.com/Innei>\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>Inline &#x3C;https://github.com/Innei></span></span></code></pre>","langIcon":"$undefined"}]
+3b:["$","$L4a",null,{"content":"Inline https://github.com/Innei","lang":"$undefined","raw":"```\nInline https://github.com/Innei\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>Inline https://github.com/Innei</span></span></code></pre>","langIcon":"$undefined"}]
+3c:["$","$L4a",null,{"content":"[Innei]{GH@Innei}","lang":"$undefined","raw":"```\n[Innei]{GH@Innei}\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>[Innei]{GH@Innei}</span></span></code></pre>","langIcon":"$undefined"}]
+3e:["$","$L4a",null,{"content":"Hi, this is ||Spoiler||","lang":"md","raw":"```md\nHi, this is ||Spoiler||\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">Hi, this is ||Spoiler||</span></span></code></pre>","langIcon":"$4d"}]
+3f:["$","$L4a",null,{"content":"$$ c = \\pm\\sqrt{a^2 + b^2} $","lang":"$undefined","raw":"```\n$ c = \\pm\\sqrt{a^2 + b^2} $\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>$ c = \\pm\\sqrt{a^2 + b^2} $</span></span></code></pre>","langIcon":"$undefined"}]
+41:["$","$L4a",null,{"content":"$$c = \\pm\\sqrt{a^2 + b^2}$","lang":"$undefined","raw":"```\n$c = \\pm\\sqrt{a^2 + b^2}$\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>$c = \\pm\\sqrt{a^2 + b^2}$</span></span></code></pre>","langIcon":"$undefined"}]
+44:["$","$L4a",null,{"content":"$$P(x) = a_nx^n+a_{n-1}x^{n-1} + \\dots + a_1x + a_0$","lang":"$undefined","raw":"```\n$P(x) = a_nx^n+a_{n-1}x^{n-1} + \\dots + a_1x + a_0$\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>$P(x) = a_nx^n+a_{n-1}x^{n-1} + \\dots + a_1x + a_0$</span></span></code></pre>","langIcon":"$undefined"}]
+45:["$","$L4a",null,{"content":"$$$\n\nP\\left(U,T\\right)=100\\left.\\left(0.6\\min\\left(1,\\frac{U-0.70}{0.90-0.70}\\right)+0.4\\min\\left(1,\\frac{T-4000}{14000-4000}\\right)\\right)\\right.\n\n$$","lang":"$undefined","raw":"```\n$$\n\nP\\left(U,T\\right)=100\\left.\\left(0.6\\min\\left(1,\\frac{U-0.70}{0.90-0.70}\\right)+0.4\\min\\left(1,\\frac{T-4000}{14000-4000}\\right)\\right)\\right.\n\n$$\n```\n\n","attrs":"$undefined","renderedHtml":"<pre class=\"shiki shiki-themes github-light github-dark\" style=\"background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8\" tabindex=\"0\"><code><span class=\"line\"><span>$$</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>P\\left(U,T\\right)=100\\left.\\left(0.6\\min\\left(1,\\frac{U-0.70}{0.90-0.70}\\right)+0.4\\min\\left(1,\\frac{T-4000}{14000-4000}\\right)\\right)\\right.</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>$$</span></span></code></pre>","langIcon":"$undefined"}]
+4e:T1b81,'use client'
+
+import * as Dialog from '@radix-ui/react-dialog'
+import {
+  createElement,
+  memo,
+  useCallback,
+  useEffect,
+  useId,
+  useMemo,
+  useRef,
+} from 'react'
+import { AnimatePresence, m, useAnimationControls } from 'framer-motion'
+import { atom, useAtomValue, useSetAtom } from 'jotai'
+import { usePathname } from 'next/navigation'
+import type { Target, Transition } from 'framer-motion'
+import type { FC, PropsWithChildren, SyntheticEvent } from 'react'
+
+import { CloseIcon } from '~/components/icons/close'
+import { DialogOverlay } from '~/components/ui/dialog/DialogOverlay'
+import { Divider } from '~/components/ui/divider'
+import { microReboundPreset } from '~/constants/spring'
+import { useEventCallback } from '~/hooks/common/use-event-callback'
+import { useIsClient } from '~/hooks/common/use-is-client'
+import { stopPropagation } from '~/lib/dom'
+import { clsxm } from '~/lib/helper'
+import { jotaiStore } from '~/lib/store'
+
+const modalIdToPropsMap = {} as Record<string, ModalProps>
+
+export type ModalContentComponent<T> = FC<ModalContentPropsInternal & T>
+type ModalContentPropsInternal = {
+  dismiss: () => void
+}
+
+interface ModalProps {
+  title: string
+  content: FC<ModalContentPropsInternal>
+  CustomModalComponent?: FC<PropsWithChildren>
+  clickOutsideToDismiss?: boolean
+  modalClassName?: string
+  modalContainerClassName?: string
+}
+
+const modalStackAtom = atom([] as (ModalProps & { id: string })[])
+
+const useDismissAllWhenRouterChange = () => {
+  const pathname = usePathname()
+  useEffect(() => {
+    actions.dismissAll()
+  }, [pathname])
+}
+
+export const useModalStack = () => {
+  const id = useId()
+  const currentCount = useRef(0)
+  return {
+    present(props: ModalProps & { id?: string }) {
+      const modalId = `${id}-${currentCount.current++}`
+      jotaiStore.set(modalStackAtom, (p) => {
+        const modalProps = {
+          ...props,
+          id: props.id ?? modalId,
+        }
+        modalIdToPropsMap[modalProps.id] = modalProps
+        return p.concat(modalProps)
+      })
+
+      return () => {
+        jotaiStore.set(modalStackAtom, (p) => {
+          return p.filter((item) => item.id !== modalId)
+        })
+      }
+    },
+
+    ...actions,
+  }
+}
+
+const actions = {
+  dismiss(id: string) {
+    jotaiStore.set(modalStackAtom, (p) => {
+      return p.filter((item) => item.id !== id)
+    })
+  },
+  dismissTop() {
+    jotaiStore.set(modalStackAtom, (p) => {
+      return p.slice(0, -1)
+    })
+  },
+  dismissAll() {
+    jotaiStore.set(modalStackAtom, [])
+  },
+}
+export const ModalStackProvider: FC<PropsWithChildren> = ({ children }) => {
+  return (
+    <>
+      {children}
+      <ModalStack />
+    </>
+  )
+}
+
+const ModalStack = () => {
+  const stack = useAtomValue(modalStackAtom)
+
+  const isClient = useIsClient()
+  useDismissAllWhenRouterChange()
+  if (!isClient) return null
+
+  return (
+    <AnimatePresence>
+      {stack.map((item, index) => {
+        return <Modal key={item.id} item={item} index={index} />
+      })}
+    </AnimatePresence>
+  )
+}
+
+const enterStyle: Target = {
+  scale: 1,
+  opacity: 1,
+}
+
+const initialStyle: Target = {
+  scale: 0.96,
+  opacity: 0,
+}
+
+const modalTransition: Transition = {
+  ...microReboundPreset,
+}
+
+const Modal: Component<{
+  item: ModalProps & { id: string }
+  index: number
+}> = memo(function Modal({ item, index }) {
+  const setStack = useSetAtom(modalStackAtom)
+  const close = useEventCallback(() => {
+    setStack((p) => {
+      return p.filter((modal) => modal.id !== item.id)
+    })
+  })
+
+  const onClose = useCallback(
+    (open: boolean): void => {
+      if (!open) {
+        close()
+      }
+    },
+    [close],
+  )
+  const animateController = useAnimationControls()
+  useEffect(() => {
+    animateController.start(enterStyle)
+  }, [])
+  const {
+    CustomModalComponent,
+    modalClassName,
+    content,
+    title,
+    clickOutsideToDismiss,
+    modalContainerClassName,
+  } = item
+  const modalStyle = useMemo(() => ({ zIndex: 99 + index }), [index])
+  const dismiss = useCallback(
+    (e: SyntheticEvent) => {
+      stopPropagation(e)
+      close()
+    },
+    [close],
+  )
+  const noticeModal = useCallback(() => {
+    animateController
+      .start({
+        scale: 1.05,
+        transition: {
+          duration: 0.06,
+        },
+      })
+      .then(() => {
+        animateController.start({
+          scale: 1,
+        })
+      })
+  }, [animateController])
+
+  const ModalProps: ModalContentPropsInternal = {
+    dismiss: close,
+  }
+
+  if (CustomModalComponent) {
+    return (
+      <Dialog.Root open onOpenChange={onClose}>
+        <Dialog.Portal>
+          <DialogOverlay zIndex={20} />
+          <Dialog.Content asChild>
+            <div
+              className={clsxm(
+                'fixed inset-0 z-[20] overflow-auto',
+                modalContainerClassName,
+              )}
+              onClick={clickOutsideToDismiss ? dismiss : undefined}
+            >
+              <div className="contents" onClick={stopPropagation}>
+                <CustomModalComponent>
+                  {createElement(content, ModalProps)}
+                </CustomModalComponent>
+              </div>
+            </div>
+          </Dialog.Content>
+        </Dialog.Portal>
+      </Dialog.Root>
+    )
+  }
+  return (
+    <Dialog.Root open onOpenChange={onClose}>
+      <Dialog.Portal>
+        <DialogOverlay zIndex={20} />
+        <Dialog.Content asChild>
+          <div
+            className={clsxm(
+              'fixed inset-0 z-[20] flex center',
+              modalContainerClassName,
+            )}
+            onClick={clickOutsideToDismiss ? dismiss : noticeModal}
+          >
+            <m.div
+              style={modalStyle}
+              exit={initialStyle}
+              initial={initialStyle}
+              animate={animateController}
+              transition={modalTransition}
+              className={clsxm(
+                'relative flex flex-col overflow-hidden rounded-lg',
+                'bg-slate-50/80 dark:bg-neutral-900/80',
+                'p-2 shadow-2xl shadow-stone-300 backdrop-blur-sm dark:shadow-stone-800',
+                'max-h-[70vh] min-w-[300px] max-w-[90vw] lg:max-h-[calc(100vh-20rem)] lg:max-w-[70vw]',
+                'border border-slate-200 dark:border-neutral-800',
+                modalClassName,
+              )}
+              onClick={stopPropagation}
+            >
+              <Dialog.Title className="flex-shrink-0 px-4 py-2 text-lg font-medium">
+                {title}
+              </Dialog.Title>
+              <Divider className="my-2 flex-shrink-0 border-slate-200 opacity-80 dark:border-neutral-800" />
+
+              <div className="min-h-0 flex-shrink flex-grow overflow-auto px-4 py-2">
+                {createElement(content, ModalProps)}
+              </div>
+
+              <Dialog.DialogClose
+                onClick={close}
+                className="absolute right-0 top-0 z-[9] p-5"
+              >
+                <CloseIcon />
+              </Dialog.DialogClose>
+            </m.div>
+          </div>
+        </Dialog.Content>
+      </Dialog.Portal>
+    </Dialog.Root>
+  )
+})
+4f:Tefb4,<pre class="shiki shiki-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8" tabindex="0"><code><span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">'use client'</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> *</span><span style="color:#D73A49;--shiki-dark:#F97583"> as</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Dialog </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> '@radix-ui/react-dialog'</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  createElement,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  memo,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  useCallback,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  useEffect,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  useId,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  useMemo,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  useRef,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">} </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> 'react'</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { AnimatePresence, m, useAnimationControls } </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> 'framer-motion'</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { atom, useAtomValue, useSetAtom } </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> 'jotai'</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { usePathname } </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> 'next/navigation'</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#D73A49;--shiki-dark:#F97583"> type</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { Target, Transition } </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> 'framer-motion'</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#D73A49;--shiki-dark:#F97583"> type</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { FC, PropsWithChildren, SyntheticEvent } </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> 'react'</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { CloseIcon } </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> '~/components/icons/close'</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { DialogOverlay } </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> '~/components/ui/dialog/DialogOverlay'</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { Divider } </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> '~/components/ui/divider'</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { microReboundPreset } </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> '~/constants/spring'</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { useEventCallback } </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> '~/hooks/common/use-event-callback'</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { useIsClient } </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> '~/hooks/common/use-is-client'</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { stopPropagation } </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> '~/lib/dom'</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { clsxm } </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> '~/lib/helper'</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { jotaiStore } </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> '~/lib/store'</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> modalIdToPropsMap</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {} </span><span style="color:#D73A49;--shiki-dark:#F97583">as</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> Record</span><span style="color:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="color:#005CC5;--shiki-dark:#79B8FF">string</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#6F42C1;--shiki-dark:#B392F0">ModalProps</span><span style="color:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">export</span><span style="color:#D73A49;--shiki-dark:#F97583"> type</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> ModalContentComponent</span><span style="color:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="color:#6F42C1;--shiki-dark:#B392F0">T</span><span style="color:#24292E;--shiki-dark:#E1E4E8">> </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> FC</span><span style="color:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="color:#6F42C1;--shiki-dark:#B392F0">ModalContentPropsInternal</span><span style="color:#D73A49;--shiki-dark:#F97583"> &#x26;</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> T</span><span style="color:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">type</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> ModalContentPropsInternal</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">  dismiss</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> () </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#005CC5;--shiki-dark:#79B8FF"> void</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">interface</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> ModalProps</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  title</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> string</span></span>
+<span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  content</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> FC</span><span style="color:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="color:#6F42C1;--shiki-dark:#B392F0">ModalContentPropsInternal</span><span style="color:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  CustomModalComponent</span><span style="color:#D73A49;--shiki-dark:#F97583">?:</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> FC</span><span style="color:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="color:#6F42C1;--shiki-dark:#B392F0">PropsWithChildren</span><span style="color:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  clickOutsideToDismiss</span><span style="color:#D73A49;--shiki-dark:#F97583">?:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> boolean</span></span>
+<span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  modalClassName</span><span style="color:#D73A49;--shiki-dark:#F97583">?:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> string</span></span>
+<span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  modalContainerClassName</span><span style="color:#D73A49;--shiki-dark:#F97583">?:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> string</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> modalStackAtom</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> atom</span><span style="color:#24292E;--shiki-dark:#E1E4E8">([] </span><span style="color:#D73A49;--shiki-dark:#F97583">as</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#6F42C1;--shiki-dark:#B392F0">ModalProps</span><span style="color:#D73A49;--shiki-dark:#F97583"> &#x26;</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="color:#E36209;--shiki-dark:#FFAB70">id</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> })[])</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">const</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> useDismissAllWhenRouterChange</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> () </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> pathname</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> usePathname</span><span style="color:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">  useEffect</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(() </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    actions.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">dismissAll</span><span style="color:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  }, [pathname])</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">export</span><span style="color:#D73A49;--shiki-dark:#F97583"> const</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> useModalStack</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> () </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> id</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> useId</span><span style="color:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> currentCount</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> useRef</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">    present</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">props</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> ModalProps</span><span style="color:#D73A49;--shiki-dark:#F97583"> &#x26;</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="color:#E36209;--shiki-dark:#FFAB70">id</span><span style="color:#D73A49;--shiki-dark:#F97583">?:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> }) {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">      const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> modalId</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> `${</span><span style="color:#24292E;--shiki-dark:#E1E4E8">id</span><span style="color:#032F62;--shiki-dark:#9ECBFF">}-${</span><span style="color:#24292E;--shiki-dark:#E1E4E8">currentCount</span><span style="color:#032F62;--shiki-dark:#9ECBFF">.</span><span style="color:#24292E;--shiki-dark:#E1E4E8">current</span><span style="color:#D73A49;--shiki-dark:#F97583">++</span><span style="color:#032F62;--shiki-dark:#9ECBFF">}`</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      jotaiStore.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">set</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(modalStackAtom, (</span><span style="color:#E36209;--shiki-dark:#FFAB70">p</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> modalProps</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">          ...</span><span style="color:#24292E;--shiki-dark:#E1E4E8">props,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          id: props.id </span><span style="color:#D73A49;--shiki-dark:#F97583">??</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> modalId,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        }</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        modalIdToPropsMap[modalProps.id] </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> modalProps</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> p.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">concat</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(modalProps)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      })</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">      return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> () </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        jotaiStore.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">set</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(modalStackAtom, (</span><span style="color:#E36209;--shiki-dark:#FFAB70">p</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">          return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> p.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">filter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">((</span><span style="color:#E36209;--shiki-dark:#FFAB70">item</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> item.id </span><span style="color:#D73A49;--shiki-dark:#F97583">!==</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> modalId)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        })</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      }</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    },</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    ...</span><span style="color:#24292E;--shiki-dark:#E1E4E8">actions,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> actions</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">  dismiss</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">id</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    jotaiStore.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">set</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(modalStackAtom, (</span><span style="color:#E36209;--shiki-dark:#FFAB70">p</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">      return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> p.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">filter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">((</span><span style="color:#E36209;--shiki-dark:#FFAB70">item</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> item.id </span><span style="color:#D73A49;--shiki-dark:#F97583">!==</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> id)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    })</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  },</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">  dismissTop</span><span style="color:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    jotaiStore.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">set</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(modalStackAtom, (</span><span style="color:#E36209;--shiki-dark:#FFAB70">p</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">      return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> p.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">slice</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#D73A49;--shiki-dark:#F97583">-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    })</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  },</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">  dismissAll</span><span style="color:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    jotaiStore.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">set</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(modalStackAtom, [])</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  },</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">export</span><span style="color:#D73A49;--shiki-dark:#F97583"> const</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> ModalStackProvider</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> FC</span><span style="color:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="color:#6F42C1;--shiki-dark:#B392F0">PropsWithChildren</span><span style="color:#24292E;--shiki-dark:#E1E4E8">> </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ({ </span><span style="color:#E36209;--shiki-dark:#FFAB70">children</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> }) </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    &#x3C;></span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      {</span><span style="color:#E36209;--shiki-dark:#FFAB70">children</span><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">      &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">ModalStack </span><span style="color:#D73A49;--shiki-dark:#F97583">/></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    &#x3C;/></span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  )</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">const</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> ModalStack</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> () </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> stack</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> useAtomValue</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(modalStackAtom)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> isClient</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> useIsClient</span><span style="color:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">  useDismissAllWhenRouterChange</span><span style="color:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">!</span><span style="color:#24292E;--shiki-dark:#E1E4E8">isClient) </span><span style="color:#D73A49;--shiki-dark:#F97583">return</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> null</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="color:#6F42C1;--shiki-dark:#B392F0">AnimatePresence</span><span style="color:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      {</span><span style="color:#E36209;--shiki-dark:#FFAB70">stack</span><span style="color:#24292E;--shiki-dark:#E1E4E8">.</span><span style="color:#E36209;--shiki-dark:#FFAB70">map</span><span style="color:#24292E;--shiki-dark:#E1E4E8">((</span><span style="color:#E36209;--shiki-dark:#FFAB70">item</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">index</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        return &#x3C;Modal key</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{item.id} item</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{item} index</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{index} </span><span style="color:#D73A49;--shiki-dark:#F97583">/></span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      })}</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    &#x3C;/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">AnimatePresence</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  )</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> enterStyle</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> Target</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  scale: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  opacity: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> initialStyle</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> Target</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  scale: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0.96</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  opacity: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> modalTransition</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> Transition</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  ...</span><span style="color:#24292E;--shiki-dark:#E1E4E8">microReboundPreset,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> Modal</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> Component</span><span style="color:#24292E;--shiki-dark:#E1E4E8">&#x3C;{</span></span>
+<span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  item</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> ModalProps</span><span style="color:#D73A49;--shiki-dark:#F97583"> &#x26;</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="color:#E36209;--shiki-dark:#FFAB70">id</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  index</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> number</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}> </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> memo</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">function</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> Modal</span><span style="color:#24292E;--shiki-dark:#E1E4E8">({ </span><span style="color:#E36209;--shiki-dark:#FFAB70">item</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">index</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> }) {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> setStack</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> useSetAtom</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(modalStackAtom)</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> close</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> useEventCallback</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(() </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">    setStack</span><span style="color:#24292E;--shiki-dark:#E1E4E8">((</span><span style="color:#E36209;--shiki-dark:#FFAB70">p</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">      return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> p.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">filter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">((</span><span style="color:#E36209;--shiki-dark:#FFAB70">modal</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> modal.id </span><span style="color:#D73A49;--shiki-dark:#F97583">!==</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> item.id)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    })</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  })</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> onClose</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> useCallback</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#E36209;--shiki-dark:#FFAB70">open</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> boolean</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> void</span><span style="color:#D73A49;--shiki-dark:#F97583"> =></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">      if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">!</span><span style="color:#24292E;--shiki-dark:#E1E4E8">open) {</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">        close</span><span style="color:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      }</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    [close],</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  )</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> animateController</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> useAnimationControls</span><span style="color:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">  useEffect</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(() </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    animateController.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">start</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(enterStyle)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  }, [])</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  const</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    CustomModalComponent</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    modalClassName</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    content</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    title</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    clickOutsideToDismiss</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    modalContainerClassName</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  } </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> item</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> modalStyle</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> useMemo</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(() </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ({ zIndex: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">99</span><span style="color:#D73A49;--shiki-dark:#F97583"> +</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> index }), [index])</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> dismiss</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> useCallback</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#E36209;--shiki-dark:#FFAB70">e</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> SyntheticEvent</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">      stopPropagation</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(e)</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">      close</span><span style="color:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    [close],</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  )</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> noticeModal</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> useCallback</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(() </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    animateController</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      .</span><span style="color:#6F42C1;--shiki-dark:#B392F0">start</span><span style="color:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        scale: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1.05</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        transition: {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          duration: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0.06</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        },</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      })</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      .</span><span style="color:#6F42C1;--shiki-dark:#B392F0">then</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(() </span><span style="color:#D73A49;--shiki-dark:#F97583">=></span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        animateController.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">start</span><span style="color:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          scale: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        })</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      })</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  }, [animateController])</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> ModalProps</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> ModalContentPropsInternal</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    dismiss: close,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (CustomModalComponent) {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">      &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.Root open onOpenChange</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{onClose}</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.Portal</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">          &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">DialogOverlay zIndex</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{</span><span style="color:#005CC5;--shiki-dark:#79B8FF">20</span><span style="color:#24292E;--shiki-dark:#E1E4E8">} </span><span style="color:#D73A49;--shiki-dark:#F97583">/></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">          &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.Content asChild</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">            &#x3C;</span><span style="color:#E36209;--shiki-dark:#FFAB70">div</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">              className</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{</span><span style="color:#6F42C1;--shiki-dark:#B392F0">clsxm</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">                'fixed inset-0 z-[20] overflow-auto'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">                modalContainerClassName</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">              )}</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">              onClick</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{clickOutsideToDismiss ? dismiss : </span><span style="color:#005CC5;--shiki-dark:#79B8FF">undefined</span><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">            ></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">              &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">div className</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"contents"</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> onClick</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{stopPropagation}</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">                &#x3C;</span><span style="color:#6F42C1;--shiki-dark:#B392F0">CustomModalComponent</span><span style="color:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">                  {</span><span style="color:#E36209;--shiki-dark:#FFAB70">createElement</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">content</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">ModalProps</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)}</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">                &#x3C;/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">CustomModalComponent</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">              &#x3C;/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">div</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">            &#x3C;/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">div</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">          &#x3C;/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.Content</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        &#x3C;/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.Portal</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">      &#x3C;/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.Root</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    )</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.Root open onOpenChange</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{onClose}</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">      &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.Portal</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">DialogOverlay zIndex</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{</span><span style="color:#005CC5;--shiki-dark:#79B8FF">20</span><span style="color:#24292E;--shiki-dark:#E1E4E8">} </span><span style="color:#D73A49;--shiki-dark:#F97583">/></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.Content asChild</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">          &#x3C;</span><span style="color:#E36209;--shiki-dark:#FFAB70">div</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">            className</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{</span><span style="color:#6F42C1;--shiki-dark:#B392F0">clsxm</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">              'fixed inset-0 z-[20] flex center'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">              modalContainerClassName</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">            )}</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">            onClick</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{clickOutsideToDismiss ? dismiss : noticeModal}</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">          ></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">            &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">m.div</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">              style</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{modalStyle}</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">              exit</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{initialStyle}</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">              initial</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{initialStyle}</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">              animate</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{animateController}</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">              transition</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{modalTransition}</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">              className</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{</span><span style="color:#6F42C1;--shiki-dark:#B392F0">clsxm</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">                'relative flex flex-col overflow-hidden rounded-lg'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">                'bg-slate-50/80 dark:bg-neutral-900/80'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">                'p-2 shadow-2xl shadow-stone-300 backdrop-blur-sm dark:shadow-stone-800'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">                'max-h-[70vh] min-w-[300px] max-w-[90vw] lg:max-h-[calc(100vh-20rem)] lg:max-w-[70vw]'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">                'border border-slate-200 dark:border-neutral-800'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">                modalClassName</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">              )}</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">              onClick</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{stopPropagation}</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">            ></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">              &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.Title className</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"flex-shrink-0 px-4 py-2 text-lg font-medium"</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">                {</span><span style="color:#E36209;--shiki-dark:#FFAB70">title</span><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">              &#x3C;/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.Title</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">              &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Divider className</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"my-2 flex-shrink-0 border-slate-200 opacity-80 dark:border-neutral-800"</span><span style="color:#D73A49;--shiki-dark:#F97583"> /></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">              &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">div className</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"min-h-0 flex-shrink flex-grow overflow-auto px-4 py-2"</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">                {</span><span style="color:#E36209;--shiki-dark:#FFAB70">createElement</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">content</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">ModalProps</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)}</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">              &#x3C;/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">div</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">              &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.DialogClose</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">                onClick</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">{close}</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">                className</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"absolute right-0 top-0 z-[9] p-5"</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">              ></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">                &#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">CloseIcon </span><span style="color:#D73A49;--shiki-dark:#F97583">/></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">              &#x3C;/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.DialogClose</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">            &#x3C;/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">m.div</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">          &#x3C;/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">div</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        &#x3C;/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.Content</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">      &#x3C;/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.Portal</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    &#x3C;/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">Dialog.Root</span><span style="color:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  )</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">})</span></span>
+<span class="line"></span></code></pre>49:["$","$L4a",null,{"content":"$4e","lang":"typescript","renderedHtml":"$4f","langIcon":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","viewBox":"0 0 24 24","children":["$","path",null,{"fill":"currentColor","d":"M3 3h18v18H3zm10.71 14.86c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03zM13 11.25H8v1.5h1.5V20h1.75v-7.25H13z"}]}]}]
