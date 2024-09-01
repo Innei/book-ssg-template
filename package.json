@@ -81,7 +81,7 @@
     "autoprefixer": "^10.4.20",
     "daisyui": "4.12.10",
     "eslint": "8.57.0",
-    "lint-staged": "15.2.9",
+    "lint-staged": "15.2.10",
     "postcss-import": "16.1.0",
     "postcss-nested": "6.2.0",
     "postcss-preset-env": "9.6.0",
