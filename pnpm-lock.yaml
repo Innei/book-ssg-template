@@ -42,8 +42,8 @@ importers:
         specifier: 2.0.22
         version: 2.0.22
       foxact:
-        specifier: 0.2.39
-        version: 0.2.39(react@18.3.1)
+        specifier: 0.2.40
+        version: 0.2.40(react@18.3.1)
       framer-motion:
         specifier: 11.3.31
         version: 11.3.31(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -151,8 +151,8 @@ importers:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.35)
       daisyui:
-        specifier: 4.12.13
-        version: 4.12.13(postcss@8.4.35)
+        specifier: 4.12.14
+        version: 4.12.14(postcss@8.4.35)
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -1683,8 +1683,8 @@ packages:
   dagre-d3-es@7.0.10:
     resolution: {integrity: sha512-qTCQmEhcynucuaZgY5/+ti3X/rnszKZhEQH/ZdWdtP1tA/y3VoHJzcVrO9pjjJCNpigfscAtoUB5ONcd2wNn0A==}
 
-  daisyui@4.12.13:
-    resolution: {integrity: sha512-BnXyQoOByUF/7wSdIKubyhXxbtL8gxwY3u2cNMkxGP39TSVJqMmlItqtpY903fQnLI/NokC+bc+ZV+PEPsppPw==}
+  daisyui@4.12.14:
+    resolution: {integrity: sha512-hA27cdBasdwd4/iEjn+aidoCrRroDuo3G5W9NDKaVCJI437Mm/3eSL/2u7MkZ0pt8a+TrYF3aT2pFVemTS3how==}
     engines: {node: '>=16.9.0'}
 
   data-view-buffer@1.0.1:
@@ -2041,8 +2041,8 @@ packages:
     resolution: {integrity: sha512-TMKDUnIte6bfb5nWv7V/caI169OHgvwjb7V4WkeUvbQQdjr5rWKqHFiKWb/fcOwB+CzBT+qbWjvj+DVwRskpIg==}
     engines: {node: '>=14'}
 
-  foxact@0.2.39:
-    resolution: {integrity: sha512-iIe0eakDQuGL5ArCVzijffkSAm6jNGC3apTkUWBarvnIZuX6tmx/nhXYFNirKG4Vxo+fM3sL6GP36BE/3w4xng==}
+  foxact@0.2.40:
+    resolution: {integrity: sha512-XqgFJ5vpTUL9SPAEmFFRiJtJ5B52f3GtGW+VAs7nTIMIrz9OsyUr72YrBMNfP9bINL6lPd5KrO3xz7gNcvybzw==}
     peerDependencies:
       react: '*'
     peerDependenciesMeta:
@@ -5478,7 +5478,7 @@ snapshots:
       d3: 7.8.5
       lodash-es: 4.17.21
 
-  daisyui@4.12.13(postcss@8.4.35):
+  daisyui@4.12.14(postcss@8.4.35):
     dependencies:
       css-selector-tokenizer: 0.8.0
       culori: 3.3.0
@@ -5955,7 +5955,7 @@ snapshots:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
 
-  foxact@0.2.39(react@18.3.1):
+  foxact@0.2.40(react@18.3.1):
     dependencies:
       client-only: 0.0.1
       server-only: 0.0.1
