@@ -65,7 +65,7 @@
     "tailwind-merge": "2.5.4",
     "unified": "11.0.5",
     "unist-util-visit": "5.0.0",
-    "vaul": "0.9.9"
+    "vaul": "1.1.1"
   },
   "devDependencies": {
     "@iconify-json/mingcute": "1.1.20",
