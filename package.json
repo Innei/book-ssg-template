@@ -50,7 +50,7 @@
     "katex": "0.16.11",
     "markdown-to-jsx": "npm:@innei/markdown-to-jsx@7.2.1-beta.6",
     "medium-zoom": "1.1.0",
-    "mermaid": "10.9.3",
+    "mermaid": "11.4.0",
     "next": "14.2.16",
     "next-seo": "6.5.0",
     "next-themes": "0.3.0",
