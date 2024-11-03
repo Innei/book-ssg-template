@@ -1,5 +1,5 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-import React, { Fragment } from 'react'
+import * as React from 'react'
+import { Fragment } from 'react'
 import { clsx } from 'clsx'
 import MarkdownJSX, { sanitizeUrl } from 'markdown-to-jsx'
 import Script from 'next/script'
@@ -43,7 +43,7 @@ export interface MdProps {
   value?: string
 
   style?: React.CSSProperties
-  readonly renderers?: { [key: string]: Partial<MarkdownToJSX.Rule> }
+  readonly renderers?: Record<string, Partial<MarkdownToJSX.Rule>>
   wrapperProps?: React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLDivElement>,
     HTMLDivElement
@@ -151,12 +151,12 @@ const options: MarkdownToJSX.Options = {
             const thisUrl = new URL(footnote?.footnote?.replace(': ', ''))
             const isCurrentHost = thisUrl.hostname === window.location.hostname
             if (!isCurrentHost && !isDev) {
-              return undefined
+              return
             }
-            const pathname = thisUrl.pathname
+            const { pathname } = thisUrl
             return pathname.slice(1)
           } catch {
-            return undefined
+            return
           }
         })()
 
@@ -185,7 +185,7 @@ const options: MarkdownToJSX.Options = {
               )}
               type="tooltip"
             >
-              {footnote?.footnote?.substring(1)}
+              {footnote?.footnote?.slice(1)}
             </FloatPopover>
             {linkCardId && (
               <LinkCard id={linkCardId} source={LinkCardSource.MixSpace} />

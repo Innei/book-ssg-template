@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Fragment } from 'react'
 import clsx from 'clsx'
 import Link from 'next/link'

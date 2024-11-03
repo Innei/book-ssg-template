@@ -1,6 +1,6 @@
-import { exec, execSync } from 'child_process'
-import path from 'path'
-import { promisify } from 'util'
+import { exec, execSync } from 'node:child_process'
+import path from 'node:path'
+import { promisify } from 'node:util'
 
 export const getFileGitHistory = async (filePath: string) => {
   const execAsync = promisify(exec)

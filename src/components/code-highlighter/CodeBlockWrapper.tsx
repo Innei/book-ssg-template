@@ -61,7 +61,7 @@ export const CodeBlockWrapper: FC<CodeBlockProps> = (props) => {
 
       const $hightlighted = $el.querySelector('.highlighted, .diff')
       if ($hightlighted) {
-        const lineHeight = parseInt(
+        const lineHeight = Number.parseInt(
           getComputedStyle($hightlighted).height || '0',
           10,
         )

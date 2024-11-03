@@ -1,11 +1,15 @@
 import { bootstarp } from './plugins/json-watcher.mjs'
 
-bootstarp()
+if (process.env.NODE_ENV === 'development') {
+  bootstarp()
+}
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: process.env.NODE_ENV === 'production' ? 'export' : 'standalone',
-
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.plugins.push(
       new webpack.optimize.MinChunkSizePlugin({

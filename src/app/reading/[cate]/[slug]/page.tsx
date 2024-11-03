@@ -1,4 +1,4 @@
-import type { Metadata, ResolvingMetadata } from 'next'
+import type { Metadata } from 'next'
 
 import { CONFIG } from '~/app.config'
 import { Divider } from '~/components/divider'
@@ -20,17 +20,14 @@ export function generateStaticParams() {
   })
 }
 
-export async function generateMetadata(
-  props: {
-    params: {
-      cate: string
-      slug: string
-    }
-  },
-  parent: ResolvingMetadata,
-): Promise<Metadata> {
-  const { title } = await getServerProps(props.params)
-  const { cate, slug } = props.params
+export async function generateMetadata(props: {
+  params: Promise<{
+    cate: string
+    slug: string
+  }>
+}): Promise<Metadata> {
+  const { title } = await getServerProps(await props.params)
+  const { cate, slug } = await props.params
   return {
     title,
     openGraph: {
@@ -40,13 +37,13 @@ export async function generateMetadata(
 }
 
 export default async (props: {
-  params: {
+  params: Promise<{
     cate: string
     slug: string
-  }
+  }>
 }) => {
   const { text, count, readingTime, title, updatedAt, history } =
-    await getServerProps(props.params)
+    await getServerProps(await props.params)
 
   return (
     <div className="prose min-h-[calc(100vh-25rem)]">

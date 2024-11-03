@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useCallback, useMemo, useState } from 'react'
+import * as React from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import camelcaseKeys from 'camelcase-keys'
 import clsx from 'clsx'
@@ -88,7 +89,7 @@ const LinkCardImpl: FC<LinkCardProps> = (props) => {
     setLoading(true)
 
     await fetchFn(id, setCardInfo, setFullUrl).catch((err) => {
-      console.log('fetch card info error: ', err)
+      console.log('fetch card info error:', err)
       setIsError(true)
     })
     setLoading(false)
@@ -113,7 +114,7 @@ const LinkCardImpl: FC<LinkCardProps> = (props) => {
       const bounds = currentTarget.getBoundingClientRect()
       mouseX.set(clientX - bounds.left)
       mouseY.set(clientY - bounds.top)
-      radius.set(Math.sqrt(bounds.width ** 2 + bounds.height ** 2) * 1.3)
+      radius.set(Math.hypot(bounds.width, bounds.height) * 1.3)
     },
     [mouseX, mouseY, radius],
   )

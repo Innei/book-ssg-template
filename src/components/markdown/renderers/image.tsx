@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useEffect, useRef, useState } from 'react'
+import * as React from 'react'
+import { useEffect, useRef, useState } from 'react'
 import mediumZoom from 'medium-zoom'
 import type { Zoom } from 'medium-zoom'
 

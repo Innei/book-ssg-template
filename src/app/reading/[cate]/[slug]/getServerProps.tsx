@@ -1,4 +1,4 @@
-import { join } from 'path'
+import { join } from 'node:path'
 import { cache } from 'react'
 import { notFound } from 'next/navigation'
 import type { TGitHistory } from '~/lib/git'

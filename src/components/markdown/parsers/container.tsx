@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { Priority } from 'markdown-to-jsx'
 import type { MarkdownToJSX } from 'markdown-to-jsx'
 
@@ -23,13 +23,13 @@ const shouldCatchContainerName = [
 export const ContainerRule: MarkdownToJSX.Rule = {
   match: (source: string) => {
     const result =
-      /^\s*::: *(?<type>.*?) *(?:{(?<params>.*?)})? *\n(?<content>[\s\S]+?)\s*::: *(?:\n *)+\n?/.exec(
+      /^\s*::: *(?<type>.*?) *(?:\{(?<params>.*?)\} *)?\n(?<content>[\s\S]+?)\s*::: *(?:\n *)+/.exec(
         source,
       )
 
     if (!result) return null
 
-    const type = result.groups!.type
+    const { type } = result.groups!
     if (!type || !type.match(shouldCatchContainerName)) return null
     return result
   },

@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import type { FC, PropsWithChildren } from 'react'
 
 import { KeyboardReturnRounded } from '~/components/icons/return'
@@ -14,7 +14,7 @@ export const MFootNote: FC<PropsWithChildren> = (props) => {
       <Divider />
       {React.Children.map(props.children, (child) => {
         if (React.isValidElement(child)) {
-          const id = child.props.id
+          const { id } = child.props
           return (
             <div id={`${getFootNoteDomId(id)}`}>
               <div className="inline">

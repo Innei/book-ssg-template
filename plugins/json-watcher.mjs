@@ -1,14 +1,15 @@
-import { existsSync, writeFileSync } from 'fs'
-import { readFile } from 'fs/promises'
-import path from 'path'
-import { fileURLToPath } from 'url'
+/* eslint-disable unicorn/no-this-assignment */
+import { existsSync, writeFileSync } from 'node:fs'
+import { readFile } from 'node:fs/promises'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { watch } from 'chokidar'
 import { globbySync } from 'globby'
 
 const __dirname = path.resolve(fileURLToPath(import.meta.url), '..')
 const dataJsonPath = path.resolve(__dirname, '../markdown/index.json')
 const workdirPath = path.resolve(__dirname, '../markdown/sections')
-const pathGlob = workdirPath + '/**/*.md'
+const pathGlob = `${workdirPath}/**/*.md`
 
 const readFsDataJsonData = async () => {
   const hasFile = existsSync(dataJsonPath)
@@ -56,7 +57,7 @@ export async function bootstarp() {
     const fsJsonData = await readFsDataJsonData()
 
     const diffData = compareFsTreeWithExistJsonData(parseFsData(fsJsonData))
-    console.log('diff', diffData)
+
     writeFileSync(
       dataJsonPath,
       JSON.stringify(patchDataJson(diffData, fsJsonData), null, 2),
@@ -108,10 +109,8 @@ function patchDataJson(diffData, fsJsonData) {
     if (!slugifyJsonMap[slug]) continue
 
     paths.forEach((path) => {
-      const index = slugifyJsonMap[slug].paths.findIndex(
-        (_path) => path === _path,
-      )
-      if (index > -1) {
+      const index = slugifyJsonMap[slug].paths.indexOf(path)
+      if (index !== -1) {
         slugifyJsonMap[slug].paths.splice(index, 1)
       }
     })
@@ -225,7 +224,7 @@ function debounce(fn, wait) {
     let args = arguments
 
     clearTimeout(timerId)
-    timerId = setTimeout(function () {
+    timerId = setTimeout(() => {
       callback.apply(context, args)
     }, wait)
   }

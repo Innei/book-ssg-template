@@ -1,5 +1,4 @@
 import { HighLighter } from '../code-highlighter'
-import { ExcalidrawLazy } from '../excalidraw/ExcalidrawClient'
 
 export const CodeBlockRender = (props: {
   lang: string | undefined
@@ -9,10 +8,6 @@ export const CodeBlockRender = (props: {
   attrs?: string
 }) => {
   switch (props.lang) {
-    case 'excalidraw': {
-      return <ExcalidrawLazy data={props.content} />
-    }
-
     default: {
       return <HighLighter {...props} />
     }

@@ -28,12 +28,16 @@ export const springScrollTo = (y: number) => {
       }
       window.scrollTo(0, latest)
     },
+    onComplete() {
+      window.removeEventListener('wheel', stopSpringScrollHandler)
+      window.removeEventListener('touchmove', stopSpringScrollHandler)
+    },
+    onStop() {
+      window.removeEventListener('wheel', stopSpringScrollHandler)
+      window.removeEventListener('touchmove', stopSpringScrollHandler)
+    },
   })
 
-  animation.then(() => {
-    window.removeEventListener('wheel', stopSpringScrollHandler)
-    window.removeEventListener('touchmove', stopSpringScrollHandler)
-  })
   return animation
 }
 

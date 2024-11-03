@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import type { FC, PropsWithChildren, ReactNode } from 'react'
 
 import { GitHubBrandIcon } from '~/components/icons/platform/GitHubBrandIcon'

@@ -11,7 +11,7 @@ export const setConfig = (_config: Config): void => {
 }
 
 const getSymbols = (post: string): number => {
-  return post.replace(/\s/g, '').length
+  return post.replaceAll(/\s/g, '').length
 }
 
 const getFormatTime = (minutes: number, suffix: string): string => {

@@ -24,7 +24,7 @@ export function extractFirstHeadingText(markdown: string): string | null {
   return headingText
 }
 // 定义函数以同步解析 Markdown 文件顶部的 YAML Front Matter
-const yamlFrontMatterRegex = /^---\s*\n([\s\S]+?)\n?---\s*\n?/m
+const yamlFrontMatterRegex = /^---\s*\n([\s\S]+?)\n?---\s*/m
 export function parseYamlFrontMatterSync(
   markdown: string,
 ): Record<string, any> {
@@ -34,8 +34,8 @@ export function parseYamlFrontMatterSync(
   if (match) {
     // 尝试解析找到的 YAML 内容
     try {
-      const yamlContent = yaml.load(match[1].replace(/---/g, '')) as object
-      console.log('match', match[1].replace(/---/g, ''), yamlContent)
+      const yamlContent = yaml.load(match[1].replaceAll('---', '')) as object
+
       return yamlContent
     } catch (error) {
       console.error('YAML parsing error:', error, match)

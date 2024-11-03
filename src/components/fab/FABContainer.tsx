@@ -1,7 +1,7 @@
-/* eslint-disable tailwindcss/no-contradicting-classname */
 'use client'
 
-import React, { useEffect, useId, useRef } from 'react'
+import * as React from 'react'
+import { useEffect, useId, useRef } from 'react'
 import clsx from 'clsx'
 import { typescriptHappyForwardRef } from 'foxact/typescript-happy-forward-ref'
 import { AnimatePresence, m } from 'framer-motion'

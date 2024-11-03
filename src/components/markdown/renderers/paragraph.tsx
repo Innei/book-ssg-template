@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import clsx from 'clsx'
 import type { DetailedHTMLProps, FC, HTMLAttributes, ReactNode } from 'react'
 
@@ -37,21 +37,18 @@ export const MParagraph: FC<
 }
 
 const isImage = (child: any) => {
-  if (typeof child === 'object') {
-    if ((child as any)?.props?.src) {
-      return true
-    }
+  if (typeof child === 'object' && (child as any)?.props?.src) {
+    return true
   }
   return false
 }
 const isLink = (child: any) => {
-  if (typeof child === 'object') {
-    if (
-      (child as any)?.props?.href &&
-      (child as any)?.props?.children?.length === 1
-    ) {
-      return true
-    }
+  if (
+    typeof child === 'object' &&
+    (child as any)?.props?.href &&
+    (child as any)?.props?.children?.length === 1
+  ) {
+    return true
   }
   return false
 }

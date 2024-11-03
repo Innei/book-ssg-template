@@ -82,9 +82,9 @@ const useIsScrollUpAndPageIsOver = (threshold: number) => {
   )
 }
 export {
-  usePageScrollDirection,
-  usePageScrollLocation,
   useIsScrollUpAndPageIsOver,
-  usePageScrollLocationSelector,
+  usePageScrollDirection,
   usePageScrollDirectionSelector,
+  usePageScrollLocation,
+  usePageScrollLocationSelector,
 }

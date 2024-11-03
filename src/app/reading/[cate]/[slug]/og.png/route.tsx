@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unknown-property */
 import { ImageResponse } from 'next/og'
 import type { NextRequest } from 'next/server'
 
@@ -20,12 +19,11 @@ export function generateStaticParams() {
 
 export const GET = async (
   req: NextRequest,
-  {
-    params,
-  }: {
-    params: { cate: string; slug: string }
+  props: {
+    params: Promise<{ cate: string; slug: string }>
   },
 ) => {
+  const params = await props.params
   const bgAccent = '#95cb9d'
   const bgAccentLight = '#d9ecdc'
   const bgAccentUltraLight = '#eef7ef'
@@ -35,10 +33,9 @@ export const GET = async (
   let leftContainerWidth = 1200 - 128 * 2
 
   const { title } = await getServerProps(params)
-  for (let i = 0; i < title.length; i++) {
+  for (const char of title) {
     if (leftContainerWidth < 0) break
     //  cjk 字符算 64 px
-    const char = title[i]
     // char 不能是 emoji
     if ((char >= '\u4e00' && char <= '\u9fa5') || char === ' ') {
       leftContainerWidth -= 64

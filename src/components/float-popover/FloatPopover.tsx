@@ -7,7 +7,8 @@ import {
   shift,
   useFloating,
 } from '@floating-ui/react-dom'
-import React, {
+import * as React from 'react'
+import {
   createContext,
   createElement,
   useCallback,
@@ -146,24 +147,27 @@ export const FloatPopover = function FloatPopover<T extends {}>(
       // onBlur: doPopoverDisappear,
     }
     switch (trigger) {
-      case 'click':
+      case 'click': {
         return {
           ...baseListener,
           onClick: doPopoverShow,
         }
-      case 'hover':
+      }
+      case 'hover': {
         return {
           ...baseListener,
           onMouseOver: doPopoverShow,
           onMouseOut: doPopoverDisappear,
         }
-      case 'both':
+      }
+      case 'both': {
         return {
           ...baseListener,
           onClick: doPopoverShow,
           onMouseOver: doPopoverShow,
           onMouseOut: handleMouseOut,
         }
+      }
     }
   }, [doPopoverDisappear, doPopoverShow, handleMouseOut, trigger])
 

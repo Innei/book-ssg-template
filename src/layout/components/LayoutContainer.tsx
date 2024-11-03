@@ -1,6 +1,7 @@
 'use client'
 
-import React, { createContext, useContext } from 'react'
+import * as React from 'react'
+import { createContext, useContext } from 'react'
 import clsx from 'clsx'
 import type { FC, PropsWithChildren } from 'react'
 

@@ -1,6 +1,7 @@
 'use client'
 
-import React, {
+import * as React from 'react'
+import {
   memo,
   startTransition,
   useCallback,
@@ -82,7 +83,7 @@ export const TocTree: Component<
 
       return {
         depth,
-        index: isNaN(index) ? -1 : index,
+        index: Number.isNaN(index) ? -1 : index,
         title,
         anchorId: el.id,
         $heading: el,
@@ -154,7 +155,7 @@ export const TocTree: Component<
       </ul>
       {accessoryElement && (
         <li className="shrink-0">
-          {!!toc.length && <Divider />}
+          {toc.length > 0 && <Divider />}
           {accessoryElement}
         </li>
       )}

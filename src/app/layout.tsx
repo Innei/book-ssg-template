@@ -26,11 +26,6 @@ export default async (props: PropsWithChildren) => {
           href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
           rel="stylesheet"
         />
-        <script
-          async
-          src="https://analyze.innei.ren/script.js"
-          data-website-id="f27f49ae-7796-4b5d-adc6-860298a54d35"
-        />
         <AccentColorStyleInjector />
       </head>
 

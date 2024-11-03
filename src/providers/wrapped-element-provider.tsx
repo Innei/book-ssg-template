@@ -1,6 +1,7 @@
 'use client'
 
-import React, { memo, useEffect, useRef } from 'react'
+import * as React from 'react'
+import { memo, useEffect, useRef } from 'react'
 import { createContextState } from 'foxact/create-context-state'
 import { useIsomorphicLayoutEffect } from 'foxact/use-isomorphic-layout-effect'
 
@@ -124,10 +125,8 @@ const EOADetector: Component = () => {
       (entries) => {
         const entry = entries[0]
 
-        if (!entry.isIntersecting) {
-          if (getDir.current === 'down') {
-            return
-          }
+        if (!entry.isIntersecting && getDir.current === 'down') {
+          return
         }
 
         setter(entry.isIntersecting)
@@ -148,9 +147,9 @@ const EOADetector: Component = () => {
 }
 
 export {
+  useIsEoFWrappedElement,
   useSetWrappedElement,
   useWrappedElement,
-  useIsEoFWrappedElement,
-  useWrappedElementSize,
   useWrappedElementPosition,
+  useWrappedElementSize,
 }

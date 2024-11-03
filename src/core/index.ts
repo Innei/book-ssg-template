@@ -1,4 +1,4 @@
-import { join } from 'path'
+import { join } from 'node:path'
 
 import _jsonData from '~/../markdown/index.json'
 import { symbolsCount, symbolsTime } from '~/lib/count'
@@ -63,8 +63,8 @@ export const buildSectionData = () => {
   const path2SectionMap = {} as Record<string, Section['items'][number]>
 
   const dfs = (tree: Tree, depth = 1, parentPath?: string) => {
-    const paths = tree.paths
-    const slug = tree.slug
+    const { paths } = tree
+    const { slug } = tree
     const section: Section = {
       items: [],
       title: tree.title,
@@ -72,7 +72,7 @@ export const buildSectionData = () => {
     for (const path of paths) {
       const nextPath = `./sections/${slug}/${Array.isArray(path) ? path[0] : path}`
 
-      const pageMeta = Array.isArray(path) ? path[1] ?? {} : ({} as PageMeta)
+      const pageMeta = Array.isArray(path) ? (path[1] ?? {}) : ({} as PageMeta)
 
       if (pageMeta.hide) continue
       const file = importMarkdownFile(nextPath)

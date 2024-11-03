@@ -1,4 +1,7 @@
-import { bundledLanguages, getHighlighter } from 'shiki/bundle-full.mjs'
+import {
+  bundledLanguages,
+  getSingletonHighlighter,
+} from 'shiki/bundle-full.mjs'
 import type { FC } from 'react'
 
 import {
@@ -46,16 +49,15 @@ const languageToIconMap = {
 }
 
 export const HighLighter: FC<Props> = async (props) => {
-  const highlighter = await getHighlighter({
+  const { lang: language, content: value, attrs } = props
+
+  const highlighter = await getSingletonHighlighter({
     themes: [
       import('shiki/themes/github-light.mjs'),
       import('shiki/themes/github-dark.mjs'),
     ],
     langs: Object.keys(bundledLanguages),
   })
-
-  const { lang: language, content: value, attrs } = props
-
   return (
     <CodeBlockWrapper
       {...props}

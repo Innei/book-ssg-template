@@ -1,11 +1,11 @@
 'use client'
 
-import { type PropsWithChildren } from 'react'
 import { domAnimation, LazyMotion, m } from 'framer-motion'
 import { Provider } from 'jotai'
 import { ThemeProvider } from 'next-themes'
 import { ModalStackContainer } from 'rc-modal-sheet'
 import { MobileDetector } from 'rc-modal-sheet/mobile-detector'
+import type { PropsWithChildren } from 'react'
 
 import { BackToTopFAB, FABContainer } from '~/components/fab'
 import { HydrationEndDetector } from '~/components/shared/HydrationEndDetector'
