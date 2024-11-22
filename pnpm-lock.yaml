@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@codesandbox/sandpack-react':
-        specifier: 2.19.9
-        version: 2.19.9(@lezer/common@1.2.3)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)
+        specifier: 2.19.10
+        version: 2.19.10(@lezer/common@1.2.3)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)
       '@floating-ui/react-dom':
         specifier: 2.1.2
         version: 2.1.2(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)
@@ -51,8 +51,8 @@ importers:
         specifier: 10.1.1
         version: 10.1.1
       jotai:
-        specifier: 2.10.2
-        version: 2.10.2(@types/react@18.3.12)(react@19.0.0-rc-fb9a90fa48-20240614)
+        specifier: 2.10.3
+        version: 2.10.3(@types/react@18.3.12)(react@19.0.0-rc-fb9a90fa48-20240614)
       js-yaml:
         specifier: 4.1.0
         version: 4.1.0
@@ -370,8 +370,8 @@ packages:
   '@codesandbox/sandpack-client@2.19.8':
     resolution: {integrity: sha512-CMV4nr1zgKzVpx4I3FYvGRM5YT0VaQhALMW9vy4wZRhEyWAtJITQIqZzrTGWqB1JvV7V72dVEUCUPLfYz5hgJQ==}
 
-  '@codesandbox/sandpack-react@2.19.9':
-    resolution: {integrity: sha512-a5uXWYdg5Wtz6VHwXIegdS7C63foCofFa/eHO9crtPp1Yf5/npKimds0S3kKJL7jpOmMAascEvAOqOy5S9e6qQ==}
+  '@codesandbox/sandpack-react@2.19.10':
+    resolution: {integrity: sha512-X/7NzhR7R5pp5qYS+Gc31OzJvy+EzGz++H1YN9bJlDE+VzxTBsMN9dv3adzeo5wtxUhqexVOJS7mGr//e7KP2A==}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18
       react-dom: ^16.8.0 || ^17 || ^18
@@ -2892,8 +2892,8 @@ packages:
     resolution: {integrity: sha512-pmfRbVRs/7khFrSAYnSiJ8C0D5GvzkE4Ey2pAvUcJsw1ly/p+7ut27jbJrjY79BpAJQJ4gXYFtK6d1Aub+9baQ==}
     hasBin: true
 
-  jotai@2.10.2:
-    resolution: {integrity: sha512-DqsBTlRglIBviuJLfK6JxZzpd6vKfbuJ4IqRCz70RFEDeZf46Fcteb/FXxNr1UnoxR5oUy3oq7IE8BrEq0G5DQ==}
+  jotai@2.10.3:
+    resolution: {integrity: sha512-Nnf4IwrLhNfuz2JOQLI0V/AgwcpxvVy8Ec8PidIIDeRi4KCFpwTFIpHAAcU+yCgnw/oASYElq9UY0YdUUegsSA==}
     engines: {node: '>=12.20.0'}
     peerDependencies:
       '@types/react': '>=17.0.0'
@@ -4674,7 +4674,7 @@ snapshots:
       outvariant: 1.4.0
       static-browser-server: 1.0.3
 
-  '@codesandbox/sandpack-react@2.19.9(@lezer/common@1.2.3)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)':
+  '@codesandbox/sandpack-react@2.19.10(@lezer/common@1.2.3)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)':
     dependencies:
       '@codemirror/autocomplete': 6.18.2(@codemirror/language@6.10.3)(@codemirror/state@6.4.1)(@codemirror/view@6.34.1)(@lezer/common@1.2.3)
       '@codemirror/commands': 6.7.1
@@ -7417,7 +7417,7 @@ snapshots:
 
   jiti@2.0.0-beta.3: {}
 
-  jotai@2.10.2(@types/react@18.3.12)(react@19.0.0-rc-fb9a90fa48-20240614):
+  jotai@2.10.3(@types/react@18.3.12)(react@19.0.0-rc-fb9a90fa48-20240614):
     optionalDependencies:
       '@types/react': 18.3.12
       react: 19.0.0-rc-fb9a90fa48-20240614
