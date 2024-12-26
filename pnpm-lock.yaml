@@ -148,8 +148,8 @@ importers:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)
       daisyui:
-        specifier: 4.12.22
-        version: 4.12.22(postcss@8.4.47)
+        specifier: 4.12.23
+        version: 4.12.23(postcss@8.4.47)
       eslint:
         specifier: 9.14.0
         version: 9.14.0(jiti@1.21.6)
@@ -2165,8 +2165,8 @@ packages:
   dagre-d3-es@7.0.11:
     resolution: {integrity: sha512-tvlJLyQf834SylNKax8Wkzco/1ias1OPw8DcUMDE7oUIoSEW25riQVuiu/0OWEFqT0cxHT3Pa9/D82Jr47IONw==}
 
-  daisyui@4.12.22:
-    resolution: {integrity: sha512-HDLWbmTnXxhE1MrMgSWjVgdRt+bVYHvfNbW3GTsyIokRSqTHonUTrxV3RhpPDjGIWaHt+ELtDCTYCtUFgL2/Nw==}
+  daisyui@4.12.23:
+    resolution: {integrity: sha512-EM38duvxutJ5PD65lO/AFMpcw+9qEy6XAZrTpzp7WyaPeO/l+F/Qiq0ECHHmFNcFXh5aVoALY4MGrrxtCiaQCQ==}
     engines: {node: '>=16.9.0'}
 
   dayjs@1.11.13:
@@ -6542,7 +6542,7 @@ snapshots:
       d3: 7.9.0
       lodash-es: 4.17.21
 
-  daisyui@4.12.22(postcss@8.4.47):
+  daisyui@4.12.23(postcss@8.4.47):
     dependencies:
       css-selector-tokenizer: 0.8.0
       culori: 3.3.0
