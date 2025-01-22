@@ -17,7 +17,7 @@
   "dependencies": {
     "@codesandbox/sandpack-react": "2.19.10",
     "@floating-ui/react-dom": "2.1.2",
-    "@radix-ui/react-dialog": "1.1.4",
+    "@radix-ui/react-dialog": "1.1.5",
     "@radix-ui/react-tabs": "1.1.2",
     "@types/katex": "0.16.7",
     "camelcase-keys": "9.1.3",
