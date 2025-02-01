@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@codesandbox/sandpack-react':
-        specifier: 2.19.10
-        version: 2.19.10(@lezer/common@1.2.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: 2.19.11
+        version: 2.19.11(@lezer/common@1.2.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@floating-ui/react-dom':
         specifier: 2.1.2
         version: 2.1.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -369,11 +369,11 @@ packages:
   '@codesandbox/sandpack-client@2.19.8':
     resolution: {integrity: sha512-CMV4nr1zgKzVpx4I3FYvGRM5YT0VaQhALMW9vy4wZRhEyWAtJITQIqZzrTGWqB1JvV7V72dVEUCUPLfYz5hgJQ==}
 
-  '@codesandbox/sandpack-react@2.19.10':
-    resolution: {integrity: sha512-X/7NzhR7R5pp5qYS+Gc31OzJvy+EzGz++H1YN9bJlDE+VzxTBsMN9dv3adzeo5wtxUhqexVOJS7mGr//e7KP2A==}
+  '@codesandbox/sandpack-react@2.19.11':
+    resolution: {integrity: sha512-TX4byqc13Kd1pTd93tblS413KhD8PFWPhaJnSfGkl9VWgCEkLdfCSTxd/NMtnC0wcvMYR4w58w+PzBFyqURJZg==}
     peerDependencies:
-      react: ^16.8.0 || ^17 || ^18
-      react-dom: ^16.8.0 || ^17 || ^18
+      react: ^16.8.0 || ^17 || ^18 || ^19
+      react-dom: ^16.8.0 || ^17 || ^18 || ^19
 
   '@csstools/cascade-layer-name-parser@2.0.4':
     resolution: {integrity: sha512-7DFHlPuIxviKYZrOiwVU/PiHLm3lLUR23OMuEEtfEOQTOp9hzQ2JjdY6X5H18RVuUPJqSCI+qNnD5iOLMVE0bA==}
@@ -4668,7 +4668,7 @@ snapshots:
       outvariant: 1.4.0
       static-browser-server: 1.0.3
 
-  '@codesandbox/sandpack-react@2.19.10(@lezer/common@1.2.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@codesandbox/sandpack-react@2.19.11(@lezer/common@1.2.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@codemirror/autocomplete': 6.18.2(@codemirror/language@6.10.3)(@codemirror/state@6.4.1)(@codemirror/view@6.34.1)(@lezer/common@1.2.3)
       '@codemirror/commands': 6.7.1
