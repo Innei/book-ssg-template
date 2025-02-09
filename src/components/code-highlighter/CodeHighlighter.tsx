@@ -5,12 +5,13 @@ import {
 import type { FC } from 'react'
 
 import {
-  MdiLanguageCss3,
-  MdiLanguageHtml5,
-  MdiLanguageJavascript,
-  MdiLanguageTypescript,
-  RiMarkdownFill,
-  UilReact,
+  SimpleIconsCss,
+  SimpleIconsHtml5,
+  SimpleIconsJavascript,
+  SimpleIconsMarkdown,
+  SimpleIconsReact,
+  SimpleIconsSwift,
+  SimpleIconsTypescript,
 } from '../icons/platform/Language'
 import { FluentShieldError20Regular } from '../icons/status'
 import { CodeBlockWrapper } from './CodeBlockWrapper'
@@ -29,22 +30,23 @@ interface Props {
   attrs?: string
 }
 
-const languageToIconMap = {
-  jsx: <UilReact />,
-  tsx: <UilReact />,
-  js: <MdiLanguageJavascript />,
-  ts: <MdiLanguageTypescript />,
-  javascript: <MdiLanguageJavascript />,
-  typescript: <MdiLanguageTypescript />,
-  javascriptreact: <UilReact />,
-  typescriptreact: <UilReact />,
-  html: <MdiLanguageHtml5 />,
-  css: <MdiLanguageCss3 />,
-  markdown: <RiMarkdownFill />,
-  md: <RiMarkdownFill />,
+export const languageToIconMap = {
+  jsx: <SimpleIconsReact />,
+  tsx: <SimpleIconsReact />,
+  js: <SimpleIconsJavascript />,
+  ts: <SimpleIconsTypescript />,
+  javascript: <SimpleIconsJavascript />,
+  typescript: <SimpleIconsTypescript />,
+  javascriptreact: <SimpleIconsReact />,
+  typescriptreact: <SimpleIconsReact />,
+  html: <SimpleIconsHtml5 />,
+  css: <SimpleIconsCss />,
+  markdown: <SimpleIconsMarkdown />,
+  md: <SimpleIconsMarkdown />,
   bash: <FluentShieldError20Regular />,
   sh: <FluentShieldError20Regular />,
   shell: <FluentShieldError20Regular />,
+  swift: <SimpleIconsSwift />,
   zsh: <FluentShieldError20Regular />,
 }
 
