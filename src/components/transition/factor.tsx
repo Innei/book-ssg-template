@@ -1,6 +1,6 @@
 'use client'
 
-import { forwardRef, memo, useMemo } from 'react'
+import { memo, useMemo } from 'react'
 import { m } from 'framer-motion'
 import type {
   HTMLMotionProps,
@@ -29,10 +29,12 @@ interface TransitionViewParams {
 export const createTransitionView = (params: TransitionViewParams) => {
   const { from, to, initial, preset } = params
 
-  const TransitionView = forwardRef<
-    HTMLElement,
-    PropsWithChildren<BaseTransitionProps>
-  >((props, ref) => {
+  const TransitionView = ({
+    ref,
+    ...props
+  }: PropsWithChildren<BaseTransitionProps> & {
+    ref?: React.RefObject<HTMLElement | null>
+  }) => {
     const {
       timeout = {},
       duration = 0.5,
@@ -87,7 +89,7 @@ export const createTransitionView = (params: TransitionViewParams) => {
         {props.children}
       </MotionComponent>
     )
-  })
+  }
   TransitionView.displayName = `forwardRef(TransitionView)`
   const MemoedTransitionView = memo(TransitionView)
   MemoedTransitionView.displayName = `MemoedTransitionView`

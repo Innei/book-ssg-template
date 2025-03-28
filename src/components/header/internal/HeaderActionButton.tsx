@@ -1,11 +1,14 @@
-import { forwardRef } from 'react'
 import clsx from 'clsx'
 import type { MotionProps } from 'framer-motion'
 
-export const HeaderActionButton = forwardRef<
-  any,
-  MotionProps & React.JSX.IntrinsicElements['button']
->(({ children, ...rest }, ref) => {
+export const HeaderActionButton = ({
+  ref,
+  children,
+  ...rest
+}: MotionProps &
+  React.JSX.IntrinsicElements['button'] & {
+    ref?: React.RefObject<any | null>
+  }) => {
   return (
     <button
       className={clsx(
@@ -21,6 +24,6 @@ export const HeaderActionButton = forwardRef<
       {children}
     </button>
   )
-})
+}
 
 HeaderActionButton.displayName = 'HeaderActionButton'

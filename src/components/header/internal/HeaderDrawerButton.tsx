@@ -1,6 +1,6 @@
 'use client'
 
-import { useContext } from 'react'
+import { use } from 'react'
 import { PresentSheet } from 'rc-modal-sheet'
 
 import { useIsClient } from '~/hooks/common/use-is-client'
@@ -15,7 +15,7 @@ export const HeaderDrawerButton = () => {
       <i className="icon-[mingcute--menu-line]" />
     </HeaderActionButton>
   )
-  const headerDrawerCtx = useContext(HeaderDrawerContentContext)
+  const headerDrawerCtx = use(HeaderDrawerContentContext)
   if (!headerDrawerCtx) return null
   if (!isClient) return ButtonElement
 
