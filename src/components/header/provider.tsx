@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext } from 'react'
+import { createContext, useMemo } from 'react'
 import type { FC, PropsWithChildren, ReactNode } from 'react'
 
 export const HeaderDrawerContentContext = createContext({
@@ -13,8 +13,8 @@ export const HeaderDrawerContentProvider: FC<
   } & PropsWithChildren
 > = ({ children, element }) => {
   return (
-    <HeaderDrawerContentContext.Provider value={{ element }}>
+    <HeaderDrawerContentContext value={useMemo(() => ({ element }), [element])}>
       {children}
-    </HeaderDrawerContentContext.Provider>
+    </HeaderDrawerContentContext>
   )
 }

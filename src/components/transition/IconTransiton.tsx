@@ -8,8 +8,8 @@ import type { FC } from 'react'
 import { FadeInOutTransitionView } from './FadeInOutTransitionView'
 
 interface IconTransitionProps {
-  solidIcon: JSX.Element
-  regularIcon: JSX.Element
+  solidIcon: React.JSX.Element
+  regularIcon: React.JSX.Element
   currentState: 'solid' | 'regular'
 }
 export const IconTransition: FC<IconTransitionProps> = (props) => {

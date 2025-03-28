@@ -14,13 +14,16 @@ export const MFootNote: FC<PropsWithChildren> = (props) => {
       <Divider />
       {React.Children.map(props.children, (child) => {
         if (React.isValidElement(child)) {
-          const { id } = child.props
+          const { id } = child.props as any
           return (
             <div id={`${getFootNoteDomId(id)}`}>
               <div className="inline">
-                {React.cloneElement(child as React.ReactElement, {
-                  className: 'inline',
-                })}
+                {React.cloneElement(
+                  child as React.ReactElement,
+                  {
+                    className: 'inline',
+                  } as any,
+                )}
                 <a
                   href={`#${getFootNoteRefDomId(id)}`}
                   onClick={(e) => {

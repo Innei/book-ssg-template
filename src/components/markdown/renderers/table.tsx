@@ -3,7 +3,7 @@ import type { FC } from 'react'
 
 import { clsxm } from '~/lib/helper'
 
-export const MTable: FC<JSX.IntrinsicElements['table']> = (props) => {
+export const MTable: FC<React.JSX.IntrinsicElements['table']> = (props) => {
   const { className, ...rest } = props
   return (
     <table
@@ -13,7 +13,7 @@ export const MTable: FC<JSX.IntrinsicElements['table']> = (props) => {
   )
 }
 
-export const MTableHead: FC<JSX.IntrinsicElements['thead']> = (props) => {
+export const MTableHead: FC<React.JSX.IntrinsicElements['thead']> = (props) => {
   const { children, className, ...rest } = props
   return (
     <thead className={className} {...rest}>
@@ -22,12 +22,12 @@ export const MTableHead: FC<JSX.IntrinsicElements['thead']> = (props) => {
   )
 }
 
-export const MTableRow: FC<JSX.IntrinsicElements['tr']> = (props) => {
+export const MTableRow: FC<React.JSX.IntrinsicElements['tr']> = (props) => {
   const { children, ...rest } = props
   return <tr {...rest}>{children}</tr>
 }
 
-export const MTableBody: FC<JSX.IntrinsicElements['tbody']> = (props) => {
+export const MTableBody: FC<React.JSX.IntrinsicElements['tbody']> = (props) => {
   const { children, ...rest } = props
   return <tbody {...rest}>{children}</tbody>
 }

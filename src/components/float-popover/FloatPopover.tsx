@@ -11,8 +11,8 @@ import * as React from 'react'
 import {
   createContext,
   createElement,
+  use,
   useCallback,
-  useContext,
   useEffect,
   useMemo,
   useRef,
@@ -70,7 +70,7 @@ const PopoverActionContext = createContext<{
   close: () => void
 }>(null!)
 
-export const usePopoverAction = () => useContext(PopoverActionContext)
+export const usePopoverAction = () => use(PopoverActionContext)
 
 export const FloatPopover = function FloatPopover<T extends {}>(
   props: FloatPopoverProps<T>,
@@ -267,9 +267,9 @@ export const FloatPopover = function FloatPopover<T extends {}>(
                   visibility: isPositioned && x !== null ? 'visible' : 'hidden',
                 }}
               >
-                <PopoverActionContext.Provider value={actionCtxValue}>
+                <PopoverActionContext value={actionCtxValue}>
                   {props.children}
-                </PopoverActionContext.Provider>
+                </PopoverActionContext>
               </m.div>
             </m.div>
           </RootPortal>

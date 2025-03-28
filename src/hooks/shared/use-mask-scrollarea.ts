@@ -11,7 +11,7 @@ export const useMaskScrollArea = <T extends HTMLElement = HTMLElement>({
   size = 'base',
   selector,
 }: {
-  ref?: React.RefObject<HTMLElement>
+  ref?: React.RefObject<HTMLElement | null>
   size?: 'base' | 'lg'
   selector?: string
 } = {}) => {

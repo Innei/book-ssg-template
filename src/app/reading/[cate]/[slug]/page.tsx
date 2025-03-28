@@ -3,7 +3,9 @@ import type { Metadata } from 'next'
 import { CONFIG } from '~/app.config'
 import { Divider } from '~/components/divider'
 import { MainMarkdown } from '~/components/markdown'
+import { FocusFade } from '~/layout/components/FocusFade'
 
+import { FocusWrapper } from './components/focus-wrapper'
 import { GitHistory } from './components/git-history'
 import { cache_buildSectionData, getServerProps } from './getServerProps'
 import { Hooks } from './hooks'
@@ -48,21 +50,25 @@ export default async (props: {
   return (
     <div className="prose min-h-[calc(100vh-25rem)]">
       <Hooks {...{ count, readingTime, title }} />
-      <MainMarkdown>{text}</MainMarkdown>
+      <FocusWrapper>
+        <MainMarkdown>{text}</MainMarkdown>
+      </FocusWrapper>
 
       {updatedAt && (
-        <>
+        <FocusFade>
           <Divider className="ml-auto mt-6 w-1/4" />
 
           <p className="text-right opacity-80">
             最后更新于{' '}
-            {updatedAt
-              ? new Date(updatedAt).toLocaleString('zh-CN', {
-                  timeZone: 'Asia/Shanghai',
-                })
-              : 'N/A'}
+            <span>
+              {updatedAt
+                ? new Date(updatedAt).toLocaleString('zh-CN', {
+                    timeZone: 'Asia/Shanghai',
+                  })
+                : 'N/A'}
+            </span>
           </p>
-        </>
+        </FocusFade>
       )}
 
       <GitHistory history={history} />

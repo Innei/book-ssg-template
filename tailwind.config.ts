@@ -1,5 +1,4 @@
 import daisyui from 'daisyui'
-import { withTV } from 'tailwind-variants/transformer'
 import type { Config } from 'tailwindcss'
 import type { CSSRuleObject, PluginAPI } from 'tailwindcss/types/config'
 
@@ -332,4 +331,4 @@ function addShortcutPlugin({ addUtilities }: PluginAPI) {
   addUtilities(styles)
 }
 
-export default withTV(twConfig)
+export default twConfig

@@ -39,9 +39,9 @@ export function codeHighlighter(
     ...codeOptions,
     transformers: [
       ...(codeOptions.transformers || []),
-      transformerNotationDiff(),
-      transformerNotationHighlight(),
-      transformerNotationWordHighlight(),
+      transformerNotationDiff({ matchAlgorithm: 'v3' }),
+      transformerNotationHighlight({ matchAlgorithm: 'v3' }),
+      transformerNotationWordHighlight({ matchAlgorithm: 'v3' }),
       transformerMetaHighlight(),
     ],
   })

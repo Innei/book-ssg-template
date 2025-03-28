@@ -13,7 +13,7 @@ export const metadata: Metadata = SEO
 
 export default async (props: PropsWithChildren) => {
   return (
-    <html>
+    <html suppressHydrationWarning>
       <head>
         <meta charSet="UTF-8" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,7 +29,10 @@ export default async (props: PropsWithChildren) => {
         <AccentColorStyleInjector />
       </head>
 
-      <body className="m-0 flex h-full grow flex-col p-0 font-sans">
+      <body
+        className="m-0 flex h-full grow flex-col p-0 font-sans"
+        suppressHydrationWarning
+      >
         <Providers>
           {props.children}
           <Analyze />

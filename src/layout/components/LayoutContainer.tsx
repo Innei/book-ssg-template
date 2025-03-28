@@ -1,12 +1,12 @@
 'use client'
 
 import * as React from 'react'
-import { createContext, useContext } from 'react'
+import { createContext, use } from 'react'
 import clsx from 'clsx'
 import type { FC, PropsWithChildren } from 'react'
 
 const LayoutContainerRefContext = createContext<
-  React.RefObject<HTMLDivElement>
+  React.RefObject<HTMLDivElement | null>
 >(null!)
 export const LayoutContainer: FC<PropsWithChildren> = (props) => {
   const layoutRef = React.useRef<HTMLDivElement>(null)
@@ -21,11 +21,11 @@ export const LayoutContainer: FC<PropsWithChildren> = (props) => {
       )}
       ref={layoutRef}
     >
-      <LayoutContainerRefContext.Provider value={layoutRef}>
+      <LayoutContainerRefContext value={layoutRef}>
         {props.children}
-      </LayoutContainerRefContext.Provider>
+      </LayoutContainerRefContext>
     </div>
   )
 }
 
-export const useLayoutContainerRef = () => useContext(LayoutContainerRefContext)
+export const useLayoutContainerRef = () => use(LayoutContainerRefContext)

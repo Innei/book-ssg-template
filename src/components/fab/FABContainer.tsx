@@ -20,7 +20,7 @@ const fabContainerElementAtom = atom(null as HTMLDivElement | null)
 
 export interface FABConfig {
   id: string
-  icon: JSX.Element
+  icon: React.JSX.Element
   onClick: () => void
 }
 
@@ -30,7 +30,7 @@ export const FABBase = typescriptHappyForwardRef(
       {
         id: string
         show?: boolean
-        children: JSX.Element
+        children: React.JSX.Element
       } & HTMLMotionProps<'button'>
     >,
     ref: React.ForwardedRef<HTMLButtonElement>,

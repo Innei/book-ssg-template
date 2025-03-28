@@ -2,13 +2,17 @@ import { SEO } from '~/app.config'
 import { Divider } from '~/components/divider'
 import { buildSectionData } from '~/core'
 
+import { FocusFade } from './FocusFade'
 import { LeftAsideLink } from './LeftAsideLink'
 
 export const LeftAside = async ({ asWeight }: { asWeight?: boolean }) => {
   const { sections } = buildSectionData()
 
   return (
-    <aside className={asWeight ? '' : 'sticky top-16 mt-16 min-h-[300px]'}>
+    <FocusFade
+      as="aside"
+      className={asWeight ? '' : 'sticky top-16 mt-16 min-h-[300px]'}
+    >
       <h1 className="text-center text-lg font-bold lg:text-left">
         {SEO.title.absolute}
       </h1>
@@ -28,6 +32,7 @@ export const LeftAside = async ({ asWeight }: { asWeight?: boolean }) => {
                   return (
                     <LeftAsideLink
                       fullPath={fullPath}
+                      isNew={item.meta.new as boolean}
                       depth={item.depth}
                       path={item.path}
                       title={item.title}
@@ -40,6 +45,6 @@ export const LeftAside = async ({ asWeight }: { asWeight?: boolean }) => {
           )
         })}
       </ul>
-    </aside>
+    </FocusFade>
   )
 }

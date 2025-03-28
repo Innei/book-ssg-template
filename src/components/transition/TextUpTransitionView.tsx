@@ -15,7 +15,7 @@ export const TextUpTransitionView: FC<
 
     eachDelay?: number
     initialDelay?: number
-  } & JSX.IntrinsicElements['div']
+  } & React.JSX.IntrinsicElements['div']
 > = (props) => {
   const {
     appear = true,
