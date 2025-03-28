@@ -1,18 +1,16 @@
-import * as React from 'react'
-import katex from 'katex'
-import { blockRegex, Priority, simpleInlineRegex } from 'markdown-to-jsx'
-import type { MarkdownToJSX } from 'markdown-to-jsx'
-import type { FC } from 'react'
+import katex from "katex"
+import type { MarkdownToJSX } from "markdown-to-jsx"
+import { blockRegex, Priority, simpleInlineRegex } from "markdown-to-jsx"
+import type { FC } from "react"
+import * as React from "react"
 
 //  $ c = \pm\sqrt{a^2 + b^2} $
 export const KateXRule: MarkdownToJSX.Rule = {
-  match: simpleInlineRegex(
-    /^\$\s*((?:\[.*?\]|<.*?>(?:.*?<.*?>)?|`.*?`|.)*?)\s*\$/,
-  ),
+  match: simpleInlineRegex(/^\$\s*((?:\[.*?\]|<.*?>(?:.*?<.*?>)?|`.*?`|.)*?)\s*\$/),
   order: Priority.MED,
   parse(capture) {
     return {
-      type: 'kateX',
+      type: "kateX",
       katex: capture[1],
     }
   },
@@ -28,7 +26,7 @@ type LateXProps = {
 
 const LateX: FC<LateXProps> = (props) => {
   const { children, mode } = props
-  const displayMode = mode === 'display'
+  const displayMode = mode === "display"
   const throwOnError = false // render unsupported commands as text instead of throwing a `ParseError`
 
   return (
@@ -44,14 +42,12 @@ const LateX: FC<LateXProps> = (props) => {
 }
 
 export const KateXBlockRule: MarkdownToJSX.Rule = {
-  match: blockRegex(
-    new RegExp(`^\\s*\\$\\$ *(?<content>[\\s\\S]+?)\\s*\\$\\$ *(?:\n *)+\n?`),
-  ),
+  match: blockRegex(new RegExp(`^\\s*\\$\\$ *(?<content>[\\s\\S]+?)\\s*\\$\\$ *(?:\n *)+\n?`)),
 
   order: Priority.LOW,
   parse(capture) {
     return {
-      type: 'kateXBlock',
+      type: "kateXBlock",
       groups: capture.groups,
     }
   },

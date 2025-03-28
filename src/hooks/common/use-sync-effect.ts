@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from "react"
 
 type CleanupFn = () => void | undefined
 const noop = () => {}

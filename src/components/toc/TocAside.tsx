@@ -1,21 +1,14 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import {
-  startTransition,
-  useEffect,
-  useImperativeHandle,
-  useMemo,
-  useRef,
-  useState,
-} from 'react'
+import * as React from "react"
+import { startTransition, useEffect, useImperativeHandle, useMemo, useRef, useState } from "react"
 
-import { DOMCustomEvents } from '~/constants/event'
-import { clsxm } from '~/lib/helper'
-import { throttle } from '~/lib/lodash'
-import { useWrappedElement } from '~/providers/wrapped-element-provider'
+import { DOMCustomEvents } from "~/constants/event"
+import { clsxm } from "~/lib/helper"
+import { throttle } from "~/lib/lodash"
+import { useWrappedElement } from "~/providers/wrapped-element-provider"
 
-import { TocTree } from './TocTree'
+import { TocTree } from "./TocTree"
 
 export type TocAsideProps = {
   treeClassName?: string
@@ -35,7 +28,7 @@ export const TocAside = ({
   children,
   treeClassName,
   accessory,
-  as: As = 'aside',
+  as: As = "aside",
 }: TocAsideProps &
   TocSharedProps &
   ComponentType & { ref?: React.RefObject<TocAsideRef | null> }) => {
@@ -49,7 +42,7 @@ export const TocAside = ({
       startTransition(() => {
         forceUpdate((v) => ++v)
 
-        console.log('refresh toc')
+        console.log("refresh toc")
       })
     }
     document.addEventListener(DOMCustomEvents.RefreshToc, handler)
@@ -63,17 +56,16 @@ export const TocAside = ({
   }))
 
   if ($article === undefined) {
-    throw new TypeError('<Toc /> must be used in <WrappedElementProvider />')
+    throw new TypeError("<Toc /> must be used in <WrappedElementProvider />")
   }
 
   const $headings = useMemo(() => {
     if (!$article) {
       return []
     }
-    return [...$article.querySelectorAll('h1,h2,h3,h4,h5,h6')]
+    return [...$article.querySelectorAll("h1,h2,h3,h4,h5,h6")]
       .filter(($heading) => {
-        if (($heading as HTMLElement).dataset['markdownHeading'] === 'true')
-          return true
+        if (($heading as HTMLElement).dataset["markdownHeading"] === "true") return true
         return false
       })
       .slice(1) as HTMLHeadingElement[]
@@ -83,30 +75,28 @@ export const TocAside = ({
     const setMaxWidth = throttle(() => {
       if (containerRef.current) {
         containerRef.current.style.maxWidth = `${
-          window.innerWidth -
-          containerRef.current.getBoundingClientRect().x -
-          30
+          window.innerWidth - containerRef.current.getBoundingClientRect().x - 30
         }px`
       }
     }, 14)
     setMaxWidth()
 
-    window.addEventListener('resize', setMaxWidth)
+    window.addEventListener("resize", setMaxWidth)
     return () => {
-      window.removeEventListener('resize', setMaxWidth)
+      window.removeEventListener("resize", setMaxWidth)
     }
   }, [])
 
   return (
-    <As className={clsxm('st-toc z-[3]', 'relative font-sans', className)}>
+    <As className={clsxm("st-toc z-[3]", "relative font-sans", className)}>
       <TocTree
         $headings={$headings}
         containerRef={containerRef}
-        className={clsxm('absolute max-h-[75vh]', treeClassName)}
+        className={clsxm("absolute max-h-[75vh]", treeClassName)}
         accessory={accessory}
       />
       {children}
     </As>
   )
 }
-TocAside.displayName = 'TocAside'
+TocAside.displayName = "TocAside"

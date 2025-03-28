@@ -1,6 +1,6 @@
-'use client'
+"use client"
 
-import { createTransitionView } from './factor'
+import { createTransitionView } from "./factor"
 
 export const ScaleTransitionView = createTransitionView({
   from: {

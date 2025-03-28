@@ -1,21 +1,21 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import { useCallback, useMemo, useState } from 'react'
-import { useInView } from 'react-intersection-observer'
-import camelcaseKeys from 'camelcase-keys'
-import clsx from 'clsx'
-import { m, useMotionTemplate, useMotionValue } from 'framer-motion'
-import Link from 'next/link'
-import type { FC, ReactNode } from 'react'
+import camelcaseKeys from "camelcase-keys"
+import clsx from "clsx"
+import { m, useMotionTemplate, useMotionValue } from "framer-motion"
+import Link from "next/link"
+import type { FC, ReactNode } from "react"
+import * as React from "react"
+import { useCallback, useMemo, useState } from "react"
+import { useInView } from "react-intersection-observer"
 
-import { useIsClientTransition } from '~/hooks/common/use-is-client'
-import { fetchGitHubApi } from '~/lib/github'
-import { clsxm } from '~/lib/helper'
+import { useIsClientTransition } from "~/hooks/common/use-is-client"
+import { fetchGitHubApi } from "~/lib/github"
+import { clsxm } from "~/lib/helper"
 
-import { LazyLoad } from '../shared/Lazyload'
-import { LinkCardSource } from './enums'
-import styles from './LinkCard.module.css'
+import { LazyLoad } from "../shared/Lazyload"
+import { LinkCardSource } from "./enums"
+import styles from "./LinkCard.module.css"
 
 export interface LinkCardProps {
   id: string
@@ -54,33 +54,27 @@ const LinkCardImpl: FC<LinkCardProps> = (props) => {
 
   const [loading, setLoading] = useState(true)
   const [isError, setIsError] = useState(false)
-  const [fullUrl, setFullUrl] = useState(fallbackUrl || 'javascript:;')
+  const [fullUrl, setFullUrl] = useState(fallbackUrl || "javascript:;")
 
   const [cardInfo, setCardInfo] = useState<CardState>()
 
-  const validTypeAndFetchFunction = useCallback(
-    (source: LinkCardSource, id: string) => {
-      const fetchDataFunctions = {
-        [LinkCardSource.GHRepo]: fetchGitHubRepoData,
-        [LinkCardSource.GHCommit]: fetchGitHubCommitData,
-        [LinkCardSource.GHPr]: fetchGitHubPRData,
-      } as Record<LinkCardSource, FetchObject>
+  const validTypeAndFetchFunction = useCallback((source: LinkCardSource, id: string) => {
+    const fetchDataFunctions = {
+      [LinkCardSource.GHRepo]: fetchGitHubRepoData,
+      [LinkCardSource.GHCommit]: fetchGitHubCommitData,
+      [LinkCardSource.GHPr]: fetchGitHubPRData,
+    } as Record<LinkCardSource, FetchObject>
 
-      const fetchFunction = fetchDataFunctions[source]
-      if (!fetchFunction) {
-        return { isValid: false, fetchFn: null }
-      }
+    const fetchFunction = fetchDataFunctions[source]
+    if (!fetchFunction) {
+      return { isValid: false, fetchFn: null }
+    }
 
-      const isValid = fetchFunction.isValid(id)
-      return { isValid, fetchFn: isValid ? fetchFunction.fetch : null }
-    },
-    [],
-  )
+    const isValid = fetchFunction.isValid(id)
+    return { isValid, fetchFn: isValid ? fetchFunction.fetch : null }
+  }, [])
 
-  const { isValid, fetchFn } = useMemo(
-    () => validTypeAndFetchFunction(source, id),
-    [source, id],
-  )
+  const { isValid, fetchFn } = useMemo(() => validTypeAndFetchFunction(source, id), [source, id])
 
   const fetchInfo = useCallback(async () => {
     if (!fetchFn) {
@@ -89,7 +83,7 @@ const LinkCardImpl: FC<LinkCardProps> = (props) => {
     setLoading(true)
 
     await fetchFn(id, setCardInfo, setFullUrl).catch((err) => {
-      console.log('fetch card info error:', err)
+      console.log("fetch card info error:", err)
       setIsError(true)
     })
     setLoading(false)
@@ -125,25 +119,25 @@ const LinkCardImpl: FC<LinkCardProps> = (props) => {
     return null
   }
 
-  const LinkComponent = source === 'self' ? Link : 'a'
+  const LinkComponent = source === "self" ? Link : "a"
 
   const classNames = cardInfo?.classNames || {}
   return (
     <LinkComponent
       href={fullUrl}
-      target={source !== 'self' ? '_blank' : '_self'}
+      target={source !== "self" ? "_blank" : "_self"}
       ref={ref}
       className={clsxm(
-        styles['card-grid'],
-        (loading || isError) && styles['skeleton'],
-        isError && styles['error'],
-        'group',
+        styles["card-grid"],
+        (loading || isError) && styles["skeleton"],
+        isError && styles["error"],
+        "group",
 
         className,
         classNames.cardRoot,
       )}
       style={{
-        borderColor: cardInfo?.color ? `${cardInfo.color}30` : '',
+        borderColor: cardInfo?.color ? `${cardInfo.color}30` : "",
       }}
       onMouseMove={handleMouseMove}
     >
@@ -161,25 +155,23 @@ const LinkCardImpl: FC<LinkCardProps> = (props) => {
             className="absolute inset-0 z-0 opacity-0 duration-500 group-hover:opacity-100"
             style={
               {
-                '--spotlight-color': `${cardInfo?.color}50`,
+                "--spotlight-color": `${cardInfo?.color}50`,
                 background,
               } as any
             }
           />
         </>
       )}
-      <span className={styles['contents']}>
-        <span className={styles['title']}>{cardInfo?.title}</span>
-        <span className={styles['desc']}>{cardInfo?.desc}</span>
+      <span className={styles["contents"]}>
+        <span className={styles["title"]}>{cardInfo?.title}</span>
+        <span className={styles["desc"]}>{cardInfo?.desc}</span>
       </span>
       {(loading || cardInfo?.image) && (
         <span
-          className={clsxm(styles['image'], classNames.image)}
-          data-image={cardInfo?.image || ''}
+          className={clsxm(styles["image"], classNames.image)}
+          data-image={cardInfo?.image || ""}
           style={{
-            backgroundImage: cardInfo?.image
-              ? `url(${cardInfo.image})`
-              : undefined,
+            backgroundImage: cardInfo?.image ? `url(${cardInfo.image})` : undefined,
           }}
         />
       )}
@@ -189,12 +181,12 @@ const LinkCardImpl: FC<LinkCardProps> = (props) => {
 
 const LinkCardSkeleton = () => {
   return (
-    <span className={clsx(styles['card-grid'], styles['skeleton'])}>
-      <span className={styles['contents']}>
-        <span className={styles['title']} />
-        <span className={styles['desc']} />
+    <span className={clsx(styles["card-grid"], styles["skeleton"])}>
+      <span className={styles["contents"]}>
+        <span className={styles["title"]} />
+        <span className={styles["desc"]} />
       </span>
-      <span className={styles['image']} />
+      <span className={styles["image"]} />
     </span>
   )
 }
@@ -213,15 +205,13 @@ type FetchObject = {
 const fetchGitHubRepoData: FetchObject = {
   isValid: (id) => {
     // owner/repo
-    const parts = id.split('/')
+    const parts = id.split("/")
     return parts.length === 2 && parts[0].length > 0 && parts[1].length > 0
   },
   fetch: async (id, setCardInfo, setFullUrl) => {
-    const [owner, repo] = id.split('/')
+    const [owner, repo] = id.split("/")
     try {
-      const response = await fetchGitHubApi(
-        `https://api.github.com/repos/${owner}/${repo}`,
-      )
+      const response = await fetchGitHubApi(`https://api.github.com/repos/${owner}/${repo}`)
       const data = camelcaseKeys(response as any, { deep: true })
 
       setCardInfo({
@@ -232,9 +222,7 @@ const fetchGitHubRepoData: FetchObject = {
               {data.stargazersCount > 0 && (
                 <span className="inline-flex shrink-0 items-center gap-1 self-center text-sm text-orange-400 dark:text-yellow-500">
                   <i className="icon-[mingcute--star-line]" />
-                  <span className="font-sans font-medium">
-                    {data.stargazersCount}
-                  </span>
+                  <span className="font-sans font-medium">{data.stargazersCount}</span>
                 </span>
               )}
             </span>
@@ -246,7 +234,7 @@ const fetchGitHubRepoData: FetchObject = {
 
       setFullUrl(data.htmlUrl)
     } catch (err) {
-      console.error('Error fetching GitHub data:', err)
+      console.error("Error fetching GitHub data:", err)
       throw err
     }
   },
@@ -255,15 +243,11 @@ const fetchGitHubRepoData: FetchObject = {
 const fetchGitHubCommitData: FetchObject = {
   isValid: (id) => {
     // 假设 'gh-commit' 类型的 id 应该是 'username/repo/commit/commitId' 的形式
-    const parts = id.split('/')
-    return (
-      parts.length === 4 &&
-      parts.every((part) => part.length > 0) &&
-      parts[2] === 'commit'
-    )
+    const parts = id.split("/")
+    return parts.length === 4 && parts.every((part) => part.length > 0) && parts[2] === "commit"
   },
   fetch: async (id, setCardInfo, setFullUrl) => {
-    const [owner, repo, , commitId] = id.split('/')
+    const [owner, repo, , commitId] = id.split("/")
     try {
       const response = await fetchGitHubApi(
         `https://api.github.com/repos/${owner}/${repo}/commits/${commitId}`,
@@ -272,9 +256,7 @@ const fetchGitHubCommitData: FetchObject = {
 
       setCardInfo({
         title: (
-          <span className="font-normal">
-            {data.commit.message.replace(/Signed-off-by:.+/, '')}
-          </span>
+          <span className="font-normal">{data.commit.message.replace(/Signed-off-by:.+/, "")}</span>
         ),
         desc: (
           <span className="flex items-center space-x-5 font-mono">
@@ -293,7 +275,7 @@ const fetchGitHubCommitData: FetchObject = {
 
       setFullUrl(`https://github.com/${owner}/${repo}/commit/${commitId}`)
     } catch (err) {
-      console.error('Error fetching GitHub commit data:', err)
+      console.error("Error fetching GitHub commit data:", err)
       throw err
     }
   },
@@ -302,11 +284,11 @@ const fetchGitHubCommitData: FetchObject = {
 const fetchGitHubPRData: FetchObject = {
   isValid: (id) => {
     // ${owner}/${repo}/${pr}
-    const parts = id.split('/')
+    const parts = id.split("/")
     return parts.length === 3 && parts.every((part) => part.length > 0)
   },
   fetch: async (id, setCardInfo, setFullUrl) => {
-    const [owner, repo, , prNumber] = id.split('/')
+    const [owner, repo, , prNumber] = id.split("/")
     try {
       const response = await fetchGitHubApi(
         `https://api.github.com/repos/${owner}/${repo}/pulls/${prNumber}`,
@@ -329,7 +311,7 @@ const fetchGitHubPRData: FetchObject = {
 
       setFullUrl(data.htmlUrl)
     } catch (err) {
-      console.error('Error fetching GitHub PR data:', err)
+      console.error("Error fetching GitHub PR data:", err)
       throw err
     }
   },

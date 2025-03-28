@@ -43,40 +43,40 @@
 ## 高亮
 
 ```tsx {1}
-const Hi = 'Hi'
+const Hi = "Hi"
 ```
 
 ```tsx
-const Hi = 'Hi' // [!code highlight]
+const Hi = "Hi" // [!code highlight]
 ```
 
 上面的两种用法为：
 
 ````md
 ```tsx {1}
-const Hi = 'Hi'
+const Hi = "Hi"
 ```
 
 ```tsx
-const Hi = 'Hi' // [!code highlight]
+const Hi = "Hi" // [!code highlight]
 ```
 ````
 
 ## Diff
 
 ```tsx
-const Hi = 'Hi' // [!code ++]
+const Hi = "Hi" // [!code ++]
 
-const Foo = 'bar' // [!code --]
+const Foo = "bar" // [!code --]
 ```
 
 上面的用法为：
 
 ````md
 ```tsx
-const Hi = 'Hi' // [!code ++]
+const Hi = "Hi" // [!code ++]
 
-const Foo = 'bar' // [!code --]
+const Foo = "bar" // [!code --]
 ```
 ````
 

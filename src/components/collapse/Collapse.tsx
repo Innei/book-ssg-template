@@ -1,13 +1,13 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import clsx from 'clsx'
-import { AnimatePresence, m } from 'framer-motion'
-import type { Variants } from 'framer-motion'
+import clsx from "clsx"
+import type { Variants } from "framer-motion"
+import { AnimatePresence, m } from "framer-motion"
+import * as React from "react"
 
-import { IonIosArrowDown } from '~/components/icons/arrow'
-import { microReboundPreset } from '~/constants/spring'
-import { clsxm } from '~/lib/helper'
+import { IonIosArrowDown } from "~/components/icons/arrow"
+import { microReboundPreset } from "~/constants/spring"
+import { clsxm } from "~/lib/helper"
 
 export const Collapse: Component<{
   title: React.ReactNode
@@ -20,9 +20,7 @@ export const Collapse: Component<{
         onClick={() => setIsOpened((v) => !v)}
       >
         <span className="w-0 shrink grow truncate">{props.title}</span>
-        <div
-          className={clsx('shrink-0 text-gray-400', isOpened && 'rotate-180')}
-        >
+        <div className={clsx("shrink-0 text-gray-400", isOpened && "rotate-180")}>
           <IonIosArrowDown />
         </div>
       </div>
@@ -45,13 +43,13 @@ export const CollapseContent: Component<{
     const v = {
       open: {
         opacity: 1,
-        height: 'auto',
+        height: "auto",
         transition: microReboundPreset,
       },
       collapsed: {
         opacity: 0,
         height: 0,
-        overflow: 'hidden',
+        overflow: "hidden",
       },
     } satisfies Variants
 
@@ -73,7 +71,7 @@ export const CollapseContent: Component<{
           animate="open"
           exit="collapsed"
           variants={variants}
-          className={clsxm(withBackground && 'rounded-lg', className)}
+          className={clsxm(withBackground && "rounded-lg", className)}
         >
           {withBackground ? <div className="p-4">{children}</div> : children}
         </m.div>

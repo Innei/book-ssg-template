@@ -1,29 +1,22 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import {
-  memo,
-  startTransition,
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-} from 'react'
-import clsx from 'clsx'
-import { m } from 'framer-motion'
-import { atom, useAtom } from 'jotai'
-import type { FC } from 'react'
-import type { TocSharedProps } from './TocAside'
-import type { ITocItem } from './TocItem'
+import clsx from "clsx"
+import { m } from "framer-motion"
+import { atom, useAtom } from "jotai"
+import type { FC } from "react"
+import * as React from "react"
+import { memo, startTransition, useCallback, useEffect, useMemo, useRef } from "react"
 
-import { useStateToRef } from '~/hooks/common/use-state-ref'
-import { useMaskScrollArea } from '~/hooks/shared/use-mask-scrollarea'
-import { clsxm } from '~/lib/helper'
-import { springScrollToElement } from '~/lib/scroller'
+import { useStateToRef } from "~/hooks/common/use-state-ref"
+import { useMaskScrollArea } from "~/hooks/shared/use-mask-scrollarea"
+import { clsxm } from "~/lib/helper"
+import { springScrollToElement } from "~/lib/scroller"
 
-import { Divider } from '../divider'
-import { RightToLeftTransitionView } from '../transition/RightToLeftTransitionView'
-import { TocItem } from './TocItem'
+import { Divider } from "../divider"
+import { RightToLeftTransitionView } from "../transition/RightToLeftTransitionView"
+import type { TocSharedProps } from "./TocAside"
+import type { ITocItem } from "./TocItem"
+import { TocItem } from "./TocItem"
 
 const tocActiveIdAtom = atom<string | null>(null)
 
@@ -64,20 +57,13 @@ export const TocTree: Component<
 
     onItemClick?: (item: ITocItem) => void
   } & TocSharedProps
-> = ({
-  $headings,
-  containerRef,
-  className,
-  accessory,
-  scrollInNextTick,
-  onItemClick,
-}) => {
+> = ({ $headings, containerRef, className, accessory, scrollInNextTick, onItemClick }) => {
   const [activeId, setActiveId] = useActiveId($headings)
 
   const toc: ITocItem[] = useMemo(() => {
     return Array.from($headings).map((el, idx) => {
       const depth = +el.tagName.slice(1)
-      const title = el.textContent || ''
+      const title = el.textContent || ""
 
       const index = idx
 
@@ -103,42 +89,33 @@ export const TocTree: Component<
   )
 
   const tocRef = useStateToRef(toc)
-  const handleScrollTo = useCallback(
-    (i: number, $el: HTMLElement | null, anchorId: string) => {
-      onItemClick?.(tocRef.current[i])
+  const handleScrollTo = useCallback((i: number, $el: HTMLElement | null, anchorId: string) => {
+    onItemClick?.(tocRef.current[i])
 
-      if ($el) {
-        const handle = () => {
-          springScrollToElement($el, -100).then(() => {
-            setActiveId?.(anchorId)
-          })
-        }
-        if (scrollInNextTick) {
-          requestAnimationFrame(() => {
-            handle()
-          })
-        } else handle()
+    if ($el) {
+      const handle = () => {
+        springScrollToElement($el, -100).then(() => {
+          setActiveId?.(anchorId)
+        })
       }
-    },
-    [],
-  )
+      if (scrollInNextTick) {
+        requestAnimationFrame(() => {
+          handle()
+        })
+      } else handle()
+    }
+  }, [])
   const accessoryElement = useMemo(() => {
     if (!accessory) return null
-    return React.isValidElement(accessory)
-      ? accessory
-      : React.createElement(accessory as FC)
+    return React.isValidElement(accessory) ? accessory : React.createElement(accessory as FC)
   }, [accessory])
 
-  const [scrollContainerRef, scrollClassname] =
-    useMaskScrollArea<HTMLUListElement>()
+  const [scrollContainerRef, scrollClassname] = useMaskScrollArea<HTMLUListElement>()
 
   return (
-    <ul
-      className={clsxm('flex grow flex-col px-2 scrollbar-none', className)}
-      ref={containerRef}
-    >
+    <ul className={clsxm("flex grow flex-col px-2 scrollbar-none", className)} ref={containerRef}>
       <ul
-        className={clsx('overflow-auto scrollbar-none', scrollClassname)}
+        className={clsx("overflow-auto scrollbar-none", scrollClassname)}
         ref={scrollContainerRef}
       >
         {toc?.map((heading) => {
@@ -228,4 +205,4 @@ const MemoedItem = memo<{
     </RightToLeftTransitionView>
   )
 })
-MemoedItem.displayName = 'MemoedItem'
+MemoedItem.displayName = "MemoedItem"

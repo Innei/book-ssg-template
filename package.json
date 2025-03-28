@@ -11,6 +11,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev -p 9988",
+    "format": "prettier --write .",
     "lint": "eslint --fix",
     "prepare": "pnpm exec simple-git-hooks",
     "start": "next start"
@@ -73,6 +74,7 @@
     "postcss-preset-env": "10.1.5",
     "postcss-prune-var": "1.1.2",
     "prettier": "3.5.3",
+    "prettier-plugin-tailwindcss": "0.6.11",
     "rimraf": "6.0.1",
     "simple-git-hooks": "2.12.1",
     "tailwind-scrollbar": "4.0.1",

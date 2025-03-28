@@ -1,12 +1,12 @@
-'use client'
+"use client"
 
-import { useState } from 'react'
-import clsx from 'clsx'
-import type * as Git from '~/lib/git'
+import clsx from "clsx"
+import { useState } from "react"
 
-import PKG from '~/../package.json'
-import { CollapseContent } from '~/components/collapse'
-import { IonIosArrowDown } from '~/components/icons/arrow'
+import PKG from "~/../package.json"
+import { CollapseContent } from "~/components/collapse"
+import { IonIosArrowDown } from "~/components/icons/arrow"
+import type * as Git from "~/lib/git"
 
 export const GitHistory = ({ history }: { history: Git.TGitHistory[] }) => {
   const [isOpened, setIsOpened] = useState(false)
@@ -24,9 +24,7 @@ export const GitHistory = ({ history }: { history: Git.TGitHistory[] }) => {
           <span>更新历史</span>
         </div>
 
-        <div
-          className={clsx('shrink-0 text-gray-400', isOpened && 'rotate-180')}
-        >
+        <div className={clsx("shrink-0 text-gray-400", isOpened && "rotate-180")}>
           <IonIosArrowDown />
         </div>
       </div>

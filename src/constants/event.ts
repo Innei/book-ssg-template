@@ -1,3 +1,3 @@
 export const enum DOMCustomEvents {
-  RefreshToc = 'refresh-toc',
+  RefreshToc = "refresh-toc",
 }

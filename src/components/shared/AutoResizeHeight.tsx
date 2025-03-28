@@ -1,11 +1,11 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import { useEffect, useRef, useState } from 'react'
-import { m } from 'framer-motion'
+import { m } from "framer-motion"
+import * as React from "react"
+import { useEffect, useRef, useState } from "react"
 
-import { softSpringPreset } from '~/constants/spring'
-import { clsxm } from '~/lib/helper'
+import { softSpringPreset } from "~/constants/spring"
+import { clsxm } from "~/lib/helper"
 
 interface AnimateChangeInHeightProps {
   children: React.ReactNode
@@ -22,7 +22,7 @@ export const AutoResizeHeight: React.FC<AnimateChangeInHeightProps> = ({
   spring = false,
 }) => {
   const containerRef = useRef<HTMLDivElement | null>(null)
-  const [height, setHeight] = useState<number | 'auto'>('auto')
+  const [height, setHeight] = useState<number | "auto">("auto")
 
   useEffect(() => {
     if (containerRef.current) {
@@ -43,7 +43,7 @@ export const AutoResizeHeight: React.FC<AnimateChangeInHeightProps> = ({
 
   return (
     <m.div
-      className={clsxm('overflow-hidden', className)}
+      className={clsxm("overflow-hidden", className)}
       style={{ height }}
       initial={false}
       animate={{ height }}

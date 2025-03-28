@@ -1,53 +1,44 @@
-import * as React from 'react'
-import { Fragment } from 'react'
-import { clsx } from 'clsx'
-import MarkdownJSX, { sanitizeUrl } from 'markdown-to-jsx'
-import Script from 'next/script'
-import type { MarkdownToJSX } from 'markdown-to-jsx'
-import type { FC } from 'react'
+import { clsx } from "clsx"
+import type { MarkdownToJSX } from "markdown-to-jsx"
+import MarkdownJSX, { sanitizeUrl } from "markdown-to-jsx"
+import Script from "next/script"
+import type { FC } from "react"
+import * as React from "react"
+import { Fragment } from "react"
 
-import { FloatPopover } from '~/components/float-popover'
-import { MAIN_MARKDOWN_ID } from '~/constants/dom-id'
-import { isDev } from '~/lib/env'
-import { noopObj } from '~/lib/noop'
-import { springScrollToElement } from '~/lib/scroller'
-import { markdownComponents } from '~/markdown-components'
+import { FloatPopover } from "~/components/float-popover"
+import { MAIN_MARKDOWN_ID } from "~/constants/dom-id"
+import { isDev } from "~/lib/env"
+import { noopObj } from "~/lib/noop"
+import { springScrollToElement } from "~/lib/scroller"
+import { markdownComponents } from "~/markdown-components"
 
-import { LinkCard, LinkCardSource } from '../link-card'
-import { MLink } from '../link/MLink'
-import { CodeBlockRender } from '../shared/CodeBlock'
-import { Tab, Tabs } from '../tabs'
-import styles from './markdown.module.css'
-import { AlertsRule } from './parsers/alert'
-import { ContainerRule } from './parsers/container'
-import { InsertRule } from './parsers/ins'
-import { KateXBlockRule, KateXRule } from './parsers/katex'
-import { MarkRule } from './parsers/mark'
-import { MentionRule } from './parsers/mention'
-import { SpoilerRule } from './parsers/spoiler'
-import {
-  MParagraph,
-  MTable,
-  MTableBody,
-  MTableHead,
-  MTableRow,
-} from './renderers'
-import { MDetails } from './renderers/collapse'
-import { MFootNote } from './renderers/footnotes'
-import { MHeader } from './renderers/heading'
-import { MarkdownImage } from './renderers/image'
-import { getFootNoteDomId, getFootNoteRefDomId } from './utils/get-id'
-import { redHighlight } from './utils/redHighlight'
+import { MLink } from "../link/MLink"
+import { LinkCard, LinkCardSource } from "../link-card"
+import { CodeBlockRender } from "../shared/CodeBlock"
+import { Tab, Tabs } from "../tabs"
+import styles from "./markdown.module.css"
+import { AlertsRule } from "./parsers/alert"
+import { ContainerRule } from "./parsers/container"
+import { InsertRule } from "./parsers/ins"
+import { KateXBlockRule, KateXRule } from "./parsers/katex"
+import { MarkRule } from "./parsers/mark"
+import { MentionRule } from "./parsers/mention"
+import { SpoilerRule } from "./parsers/spoiler"
+import { MParagraph, MTable, MTableBody, MTableHead, MTableRow } from "./renderers"
+import { MDetails } from "./renderers/collapse"
+import { MFootNote } from "./renderers/footnotes"
+import { MHeader } from "./renderers/heading"
+import { MarkdownImage } from "./renderers/image"
+import { getFootNoteDomId, getFootNoteRefDomId } from "./utils/get-id"
+import { redHighlight } from "./utils/redHighlight"
 
 export interface MdProps {
   value?: string
 
   style?: React.CSSProperties
   readonly renderers?: Record<string, Partial<MarkdownToJSX.Rule>>
-  wrapperProps?: React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement
-  >
+  wrapperProps?: React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
   codeBlockFully?: boolean
   className?: string
   as?: React.ElementType
@@ -106,14 +97,7 @@ const options: MarkdownToJSX.Options = {
     },
     gfmTask: {
       react(node, _, state) {
-        return (
-          <input
-            type="checkbox"
-            key={state?.key}
-            checked={node.completed}
-            readOnly
-          />
-        )
+        return <input type="checkbox" key={state?.key} checked={node.completed} readOnly />
       },
     },
 
@@ -121,21 +105,16 @@ const options: MarkdownToJSX.Options = {
       react(node, output, state) {
         const { target, title } = node
 
-        let realText = ''
+        let realText = ""
 
         for (const child of node.content) {
-          if (child.type === 'text') {
+          if (child.type === "text") {
             realText += child.content
           }
         }
 
         return (
-          <MLink
-            href={sanitizeUrl(target)!}
-            title={title}
-            key={state?.key}
-            text={realText}
-          >
+          <MLink href={sanitizeUrl(target)!} title={title} key={state?.key} text={realText}>
             {output(node.content, state!)}
           </MLink>
         )
@@ -148,7 +127,7 @@ const options: MarkdownToJSX.Options = {
         const footnote = footnoteMap.get(content)
         const linkCardId = (() => {
           try {
-            const thisUrl = new URL(footnote?.footnote?.replace(': ', ''))
+            const thisUrl = new URL(footnote?.footnote?.replace(": ", ""))
             const isCurrentHost = thisUrl.hostname === window.location.hostname
             if (!isCurrentHost && !isDev) {
               return
@@ -171,25 +150,18 @@ const options: MarkdownToJSX.Options = {
                   onClick={(e) => {
                     e.preventDefault()
                     const id = getFootNoteDomId(content)
-                    springScrollToElement(
-                      document.getElementById(id)!,
-                      -window.innerHeight / 2,
-                    )
+                    springScrollToElement(document.getElementById(id)!, -window.innerHeight / 2)
                     redHighlight(id)
                   }}
                 >
-                  <sup
-                    id={`${getFootNoteRefDomId(content)}`}
-                  >{`[^${content}]`}</sup>
+                  <sup id={`${getFootNoteRefDomId(content)}`}>{`[^${content}]`}</sup>
                 </a>
               )}
               type="tooltip"
             >
               {footnote?.footnote?.slice(1)}
             </FloatPopover>
-            {linkCardId && (
-              <LinkCard id={linkCardId} source={LinkCardSource.MixSpace} />
-            )}
+            {linkCardId && <LinkCard id={linkCardId} source={LinkCardSource.MixSpace} />}
           </Fragment>
         )
       },
@@ -199,7 +171,7 @@ const options: MarkdownToJSX.Options = {
         return {
           content: capture[4],
           lang: capture[2] || undefined,
-          type: 'codeBlock',
+          type: "codeBlock",
 
           attrs: capture[3],
 
@@ -235,14 +207,14 @@ const options: MarkdownToJSX.Options = {
 
     list: {
       react(node, output, state) {
-        const Tag = node.ordered ? 'ol' : 'ul'
+        const Tag = node.ordered ? "ol" : "ul"
 
         return (
           <Tag key={state?.key} start={node.start}>
             {node.items.map((item: any, i: number) => {
-              let className = ''
-              if (item[0]?.type == 'gfmTask') {
-                className = 'list-none flex items-center'
+              let className = ""
+              if (item[0]?.type == "gfmTask") {
+                className = "list-none flex items-center"
               }
 
               return (
@@ -281,15 +253,13 @@ export const Markdown: FC<
     codeBlockFully = false,
     className,
 
-    as: As = 'div',
+    as: As = "div",
 
     removeWrapper = false,
     children,
   } = props
 
-  const node = (
-    <MarkdownJSX options={options}>{value || children || ''}</MarkdownJSX>
-  )
+  const node = <MarkdownJSX options={options}>{value || children || ""}</MarkdownJSX>
 
   if (removeWrapper) return node
 
@@ -297,17 +267,13 @@ export const Markdown: FC<
     <As
       style={style}
       {...wrapperProps}
-      className={clsx(
-        styles['md'],
-        codeBlockFully ? styles['code-fully'] : undefined,
-        className,
-      )}
+      className={clsx(styles["md"], codeBlockFully ? styles["code-fully"] : undefined, className)}
     >
       {node}
     </As>
   )
 }
-Markdown.displayName = 'Markdown'
+Markdown.displayName = "Markdown"
 
 export const MainMarkdown: FC<
   MdProps &

@@ -41,11 +41,11 @@
   }
 
   details summary::before {
-    content: '+ ';
+    content: "+ ";
   }
 
   details[open] summary::before {
-    content: '- ';
+    content: "- ";
   }
 
   details[open] summary::before,
@@ -79,21 +79,21 @@
   }
 
   :global(a.is-link) {
-    @apply break-all border-b-[0.5px] border-current text-inherit no-underline duration-200  hover:text-accent;
+    @apply break-all border-b-[0.5px] border-current text-inherit no-underline duration-200 hover:text-accent;
   }
 
   hr {
     @apply mx-auto w-[60px];
   }
 
-  input[type='checkbox'] {
+  input[type="checkbox"] {
     @apply checkbox checkbox-xs my-0 mr-2 align-text-bottom;
 
     vertical-align: inherit;
   }
 
-  input[type='checkbox']:disabled,
-  input[type='checkbox']:read-only {
+  input[type="checkbox"]:disabled,
+  input[type="checkbox"]:read-only {
     @apply cursor-not-allowed;
   }
 
@@ -119,17 +119,13 @@
     }
   }
 
-  [data-theme='dark'] mark {
+  [data-theme="dark"] mark {
     --lightness: 0.35;
   }
 
   mark span {
-    background: linear-gradient(
-        120deg,
-        var(--highlight, lightblue) 50%,
-        transparent 50%
-      )
-      110% 0 / 200% 100% no-repeat;
+    background: linear-gradient(120deg, var(--highlight, lightblue) 50%, transparent 50%) 110% 0 /
+      200% 100% no-repeat;
     background-position: calc((1 - var(--highlighted)) * 110%) 0;
     transition: background-position 1s;
   }

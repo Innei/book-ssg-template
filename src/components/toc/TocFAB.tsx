@@ -1,13 +1,13 @@
-'use client'
+"use client"
 
-import { useCallback, useMemo } from 'react'
-import { useParams, usePathname } from 'next/navigation'
-import { useModalStack } from 'rc-modal-sheet'
+import { useParams, usePathname } from "next/navigation"
+import { useModalStack } from "rc-modal-sheet"
+import { useCallback, useMemo } from "react"
 
-import { MAIN_MARKDOWN_ID } from '~/constants/dom-id'
+import { MAIN_MARKDOWN_ID } from "~/constants/dom-id"
 
-import { FABPortable } from '../fab'
-import { TocTree } from './TocTree'
+import { FABPortable } from "../fab"
+import { TocTree } from "./TocTree"
 
 export const TocFAB = () => {
   const { present } = useModalStack()
@@ -19,19 +19,19 @@ export const TocFAB = () => {
     if (!$mainMarkdownRender) return
 
     const $headings = [
-      ...$mainMarkdownRender.querySelectorAll('h1,h2,h3,h4,h5,h6'),
+      ...$mainMarkdownRender.querySelectorAll("h1,h2,h3,h4,h5,h6"),
     ] as HTMLHeadingElement[]
 
     return $headings
       .filter(($heading) => {
-        if ($heading.dataset['markdownHeading'] === 'true') return true
+        if ($heading.dataset["markdownHeading"] === "true") return true
         return false
       })
       .slice(1)
   }, [])
   const presentToc = useCallback(() => {
     const dispose = present({
-      title: 'Table of Content',
+      title: "Table of Content",
 
       content: () => (
         <TocTree

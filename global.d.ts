@@ -1,4 +1,4 @@
-import type { FC, PropsWithChildren } from 'react'
+import type { FC, PropsWithChildren } from "react"
 
 declare global {
   export type NextErrorProps = {
@@ -31,17 +31,17 @@ declare global {
   }
 }
 
-declare module 'react' {
+declare module "react" {
   export interface AriaAttributes {
-    'data-hide-print'?: boolean
-    'data-event'?: string
-    'data-testid'?: string
+    "data-hide-print"?: boolean
+    "data-event"?: string
+    "data-testid"?: string
   }
 }
 
 export {}
 
-declare module '@mx-space/api-client' {
+declare module "@mx-space/api-client" {
   export interface PostMeta {
     style?: string
     cover?: string

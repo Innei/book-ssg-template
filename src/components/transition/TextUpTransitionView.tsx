@@ -1,10 +1,10 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import { m } from 'framer-motion'
-import type { FC } from 'react'
+import { m } from "framer-motion"
+import type { FC } from "react"
+import * as React from "react"
 
-import { microReboundPreset } from '~/constants/spring'
+import { microReboundPreset } from "~/constants/spring"
 
 export const TextUpTransitionView: FC<
   {
@@ -15,16 +15,9 @@ export const TextUpTransitionView: FC<
 
     eachDelay?: number
     initialDelay?: number
-  } & React.JSX.IntrinsicElements['div']
+  } & React.JSX.IntrinsicElements["div"]
 > = (props) => {
-  const {
-    appear = true,
-    eachDelay = 0.1,
-    initialDelay = 0,
-    children,
-    text,
-    ...rest
-  } = props
+  const { appear = true, eachDelay = 0.1, initialDelay = 0, children, text, ...rest } = props
 
   if (!appear) {
     // @ts-ignore
@@ -37,9 +30,9 @@ export const TextUpTransitionView: FC<
         <m.span
           key={i}
           className="inline-block whitespace-pre"
-          initial={{ transform: 'translateY(10px)', opacity: 0.001 }}
+          initial={{ transform: "translateY(10px)", opacity: 0.001 }}
           animate={{
-            transform: 'translateY(0px)',
+            transform: "translateY(0px)",
 
             opacity: 1,
             transition: {

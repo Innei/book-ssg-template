@@ -1,30 +1,23 @@
-import * as React from 'react'
+import * as React from "react"
 
-import { clsxm } from '~/lib/helper'
+import { clsxm } from "~/lib/helper"
 
 export type LoadingProps = {
   loadingText?: string
   useDefaultLoadingText?: boolean
 }
 
-const defaultLoadingText = '别着急，坐和放宽'
+const defaultLoadingText = "别着急，坐和放宽"
 export const Loading: Component<LoadingProps> = ({
   loadingText,
   className,
   useDefaultLoadingText = false,
 }) => {
-  const nextLoadingText = useDefaultLoadingText
-    ? defaultLoadingText
-    : loadingText
+  const nextLoadingText = useDefaultLoadingText ? defaultLoadingText : loadingText
   return (
-    <div
-      data-hide-print
-      className={clsxm('my-20 flex flex-col center', className)}
-    >
+    <div data-hide-print className={clsxm("my-20 flex flex-col center", className)}>
       <span className="loading loading-ball loading-lg" />
-      {!!nextLoadingText && (
-        <span className="mt-6 block">{nextLoadingText}</span>
-      )}
+      {!!nextLoadingText && <span className="mt-6 block">{nextLoadingText}</span>}
     </div>
   )
 }

@@ -1,8 +1,8 @@
-import * as React from 'react'
-import type { FC, PropsWithChildren, ReactNode } from 'react'
+import type { FC, PropsWithChildren, ReactNode } from "react"
+import * as React from "react"
 
-import { GitHubBrandIcon } from '~/components/icons/platform/GitHubBrandIcon'
-import { EmbedGithubFile } from '~/components/shared/EmbedGithubFile'
+import { GitHubBrandIcon } from "~/components/icons/platform/GitHubBrandIcon"
+import { EmbedGithubFile } from "~/components/shared/EmbedGithubFile"
 import {
   isCodesandboxDevBoxUrl,
   isCodesandboxUrl,
@@ -16,10 +16,10 @@ import {
   parseGithubGistUrl,
   parseGithubPrUrl,
   parseGithubTypedUrl,
-} from '~/lib/link-parser'
+} from "~/lib/link-parser"
 
-import { LinkCard, LinkCardSource } from '../../link-card'
-import { MLink } from '../../link/MLink'
+import { MLink } from "../../link/MLink"
+import { LinkCard, LinkCardSource } from "../../link-card"
 
 /**
  * 单行链接的渲染
@@ -48,17 +48,11 @@ export const BlockLinkRenderer = async ({
 
   switch (true) {
     case isGithubUrl(url): {
-      return (
-        <GithubUrlRenderL
-          url={url}
-          href={href}
-          fallbackElement={fallbackElement}
-        />
-      )
+      return <GithubUrlRenderL url={url} href={href} fallbackElement={fallbackElement} />
     }
 
     case isYoutubeUrl(url): {
-      const id = url.searchParams.get('v')!
+      const id = url.searchParams.get("v")!
       return (
         <FixedRatioContainer>
           <iframe
@@ -150,12 +144,7 @@ const GithubUrlRenderL: FC<{
             className="h-[300px] w-full overflow-auto border-0"
           />
 
-          <a
-            className="mt-2 flex space-x-2 center"
-            href={href}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a className="mt-2 flex space-x-2 center" href={href} target="_blank" rel="noreferrer">
             <GitHubBrandIcon />
             <span>{href}</span>
           </a>
@@ -190,17 +179,12 @@ const GithubUrlRenderL: FC<{
     }
     case isGithubFilePreviewUrl(url): {
       const { owner, repo, afterTypeString } = parseGithubTypedUrl(url)
-      const splitString = afterTypeString.split('/')
+      const splitString = afterTypeString.split("/")
       const ref = splitString[0]
-      const path = ref ? splitString.slice(1).join('/') : afterTypeString
+      const path = ref ? splitString.slice(1).join("/") : afterTypeString
       return (
         <div className="flex w-full flex-col items-center">
-          <EmbedGithubFile
-            owner={owner}
-            repo={repo}
-            path={path}
-            refType={ref}
-          />
+          <EmbedGithubFile owner={owner} repo={repo} path={path} refType={ref} />
           <div className="mt-4">
             <MLink href={href}>{href}</MLink>
           </div>

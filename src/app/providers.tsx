@@ -1,18 +1,18 @@
-'use client'
+"use client"
 
-import { domAnimation, LazyMotion, m } from 'framer-motion'
-import { Provider } from 'jotai'
-import { ThemeProvider } from 'next-themes'
-import { ModalStackContainer } from 'rc-modal-sheet'
-import { MobileDetector } from 'rc-modal-sheet/mobile-detector'
-import type { PropsWithChildren } from 'react'
+import { domAnimation, LazyMotion, m } from "framer-motion"
+import { Provider } from "jotai"
+import { ThemeProvider } from "next-themes"
+import { ModalStackContainer } from "rc-modal-sheet"
+import { MobileDetector } from "rc-modal-sheet/mobile-detector"
+import type { PropsWithChildren } from "react"
 
-import { BackToTopFAB, FABContainer } from '~/components/fab'
-import { HydrationEndDetector } from '~/components/shared/HydrationEndDetector'
-import { OnlyDesktop } from '~/components/viewport'
-import { jotaiStore } from '~/lib/store'
-import { EventProvider } from '~/providers/event-provider'
-import { PageScrollInfoProvider } from '~/providers/page-scroll-info-provider'
+import { BackToTopFAB, FABContainer } from "~/components/fab"
+import { HydrationEndDetector } from "~/components/shared/HydrationEndDetector"
+import { OnlyDesktop } from "~/components/viewport"
+import { jotaiStore } from "~/lib/store"
+import { EventProvider } from "~/providers/event-provider"
+import { PageScrollInfoProvider } from "~/providers/page-scroll-info-provider"
 
 export const Providers = (props: PropsWithChildren) => {
   return (

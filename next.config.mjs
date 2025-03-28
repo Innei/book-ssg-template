@@ -1,12 +1,12 @@
-import { bootstarp } from './plugins/json-watcher.mjs'
+import { bootstarp } from "./plugins/json-watcher.mjs"
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === "development") {
   bootstarp()
 }
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: process.env.NODE_ENV === 'production' ? 'export' : 'standalone',
+  output: process.env.NODE_ENV === "production" ? "export" : "standalone",
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -20,7 +20,7 @@ const nextConfig = {
     config.module.rules.push({
       test: /\.md$/i,
       // use: 'raw-loader',
-      type: 'asset/source',
+      type: "asset/source",
     })
     return config
   },

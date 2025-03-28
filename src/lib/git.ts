@@ -1,6 +1,6 @@
-import { exec, execSync } from 'node:child_process'
-import path from 'node:path'
-import { promisify } from 'node:util'
+import { exec, execSync } from "node:child_process"
+import path from "node:path"
+import { promisify } from "node:util"
 
 export const getFileGitHistory = async (filePath: string) => {
   const execAsync = promisify(exec)
@@ -14,7 +14,7 @@ export const getFileGitHistory = async (filePath: string) => {
     return stdout
   } catch (e) {
     console.error(e)
-    return ''
+    return ""
   }
 }
 
@@ -43,7 +43,7 @@ export function getLastGitUpdateTime(filePath: string): Date | null {
     return new Date(stdout)
   } catch (error) {
     // 如果执行命令时出错（例如，文件未被跟踪或路径无效），返回 null
-    console.error('Error fetching git commit time:', error)
+    console.error("Error fetching git commit time:", error)
     return null
   }
 }

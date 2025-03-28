@@ -1,6 +1,6 @@
-import { clsxm } from '~/lib/helper'
+import { clsxm } from "~/lib/helper"
 
-import { MotionButtonBase } from './MotionButton'
+import { MotionButtonBase } from "./MotionButton"
 
 export const RoundedIconButton: typeof MotionButtonBase = ({
   ref,
@@ -12,7 +12,7 @@ export const RoundedIconButton: typeof MotionButtonBase = ({
     <MotionButtonBase
       ref={ref}
       className={clsxm(
-        'inline-flex rounded-full bg-accent p-2 text-center leading-none center hover:opacity-90',
+        "inline-flex rounded-full bg-accent p-2 text-center leading-none center hover:opacity-90",
         className,
       )}
       {...rest}
@@ -22,4 +22,4 @@ export const RoundedIconButton: typeof MotionButtonBase = ({
   )
 }
 
-RoundedIconButton.displayName = 'RoundedIconButton'
+RoundedIconButton.displayName = "RoundedIconButton"

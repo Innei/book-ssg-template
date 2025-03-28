@@ -1,10 +1,10 @@
-'use client'
+"use client"
 
-import { createElement, useId } from 'react'
-import type { DOMAttributes } from 'react'
+import type { DOMAttributes } from "react"
+import { createElement, useId } from "react"
 
-import { useIsClient } from '~/hooks/common/use-is-client'
-import { springScrollToElement } from '~/lib/scroller'
+import { useIsClient } from "~/hooks/common/use-is-client"
+import { springScrollToElement } from "~/lib/scroller"
 
 interface HeadingProps {
   id: string
@@ -25,9 +25,9 @@ export const MHeader = (props: HeadingProps) => {
     `h${level}`,
     {
       id: nextId,
-      className: 'group flex items-center',
+      className: "group flex items-center",
 
-      'data-markdown-heading': true,
+      "data-markdown-heading": true,
     } as any,
     null,
     <>
@@ -40,7 +40,7 @@ export const MHeader = (props: HeadingProps) => {
           aria-hidden
           onClick={() => {
             const { state } = history
-            history.replaceState(state, '', `#${nextId}`)
+            history.replaceState(state, "", `#${nextId}`)
             springScrollToElement(document.getElementById(nextId)!, -100)
           }}
         >

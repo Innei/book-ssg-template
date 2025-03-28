@@ -1,16 +1,10 @@
-import type {
-  BundledLanguage,
-  BundledTheme,
-  CodeToHastOptions,
-  HighlighterCore,
-} from 'shiki'
-
 import {
   transformerMetaHighlight,
   transformerNotationDiff,
   transformerNotationHighlight,
   transformerNotationWordHighlight,
-} from '@shikijs/transformers'
+} from "@shikijs/transformers"
+import type { BundledLanguage, BundledTheme, CodeToHastOptions, HighlighterCore } from "shiki"
 
 export function codeHighlighter(
   highlighter: HighlighterCore,
@@ -30,8 +24,8 @@ export function codeHighlighter(
       __raw: attrs,
     },
     themes: {
-      light: 'github-light',
-      dark: 'github-dark',
+      light: "github-light",
+      dark: "github-dark",
     },
   }
 
@@ -39,9 +33,9 @@ export function codeHighlighter(
     ...codeOptions,
     transformers: [
       ...(codeOptions.transformers || []),
-      transformerNotationDiff({ matchAlgorithm: 'v3' }),
-      transformerNotationHighlight({ matchAlgorithm: 'v3' }),
-      transformerNotationWordHighlight({ matchAlgorithm: 'v3' }),
+      transformerNotationDiff({ matchAlgorithm: "v3" }),
+      transformerNotationHighlight({ matchAlgorithm: "v3" }),
+      transformerNotationWordHighlight({ matchAlgorithm: "v3" }),
       transformerMetaHighlight(),
     ],
   })

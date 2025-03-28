@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react"
 
-import { useGetState } from './use-get-state'
+import { useGetState } from "./use-get-state"
 
 export const usePreventComposition = (el: HTMLElement) => {
   const [isComposing, setIsComposing] = useState(false)
@@ -8,22 +8,22 @@ export const usePreventComposition = (el: HTMLElement) => {
   useEffect(() => {
     if (!el) return
     const compositionHandler = (e: CompositionEvent) => {
-      setIsComposing(e.type === 'compositionstart')
+      setIsComposing(e.type === "compositionstart")
     }
 
     const keyDownHandler = (e: KeyboardEvent) => {
       const isComposing = getIsComposing()
 
-      if (isComposing && e.key === 'Escape') e.stopPropagation()
+      if (isComposing && e.key === "Escape") e.stopPropagation()
     }
 
-    el.addEventListener('keydown', keyDownHandler)
-    el.addEventListener('compositionstart', compositionHandler)
-    el.addEventListener('compositionend', compositionHandler)
+    el.addEventListener("keydown", keyDownHandler)
+    el.addEventListener("compositionstart", compositionHandler)
+    el.addEventListener("compositionend", compositionHandler)
     return () => {
-      el.removeEventListener('compositionstart', compositionHandler)
-      el.removeEventListener('compositionend', compositionHandler)
-      el.removeEventListener('keydown', keyDownHandler)
+      el.removeEventListener("compositionstart", compositionHandler)
+      el.removeEventListener("compositionend", compositionHandler)
+      el.removeEventListener("keydown", keyDownHandler)
     }
   }, [getIsComposing, el])
 }

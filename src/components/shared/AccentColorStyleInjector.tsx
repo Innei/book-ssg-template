@@ -1,4 +1,4 @@
-import Color from 'colorjs.io'
+import Color from "colorjs.io"
 
 const hexToOklchString = (hex: string) => {
   return new Color(hex).oklch
@@ -6,21 +6,21 @@ const hexToOklchString = (hex: string) => {
 
 const accentColorLight = [
   // 浅葱
-  '#33A6B8',
+  "#33A6B8",
 
-  '#FF6666',
-  '#26A69A',
-  '#fb7287',
-  '#69a6cc',
+  "#FF6666",
+  "#26A69A",
+  "#fb7287",
+  "#69a6cc",
 ]
 const accentColorDark = [
   // 桃
-  '#F596AA',
+  "#F596AA",
 
-  '#A0A7D4',
-  '#ff7b7b',
-  '#99D8CF',
-  '#838BC6',
+  "#A0A7D4",
+  "#ff7b7b",
+  "#99D8CF",
+  "#838BC6",
 ]
 const defaultAccentColor = { light: accentColorLight, dark: accentColorDark }
 export function AccentColorStyleInjector() {

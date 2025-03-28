@@ -1,15 +1,15 @@
 /* eslint-disable unicorn/no-this-assignment */
-import { existsSync, writeFileSync } from 'node:fs'
-import { readFile } from 'node:fs/promises'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { existsSync, writeFileSync } from "node:fs"
+import { readFile } from "node:fs/promises"
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 
-import { watch } from 'chokidar'
-import { globbySync } from 'globby'
+import { watch } from "chokidar"
+import { globbySync } from "globby"
 
-const __dirname = path.resolve(fileURLToPath(import.meta.url), '..')
-const dataJsonPath = path.resolve(__dirname, '../markdown/index.json')
-const workdirPath = path.resolve(__dirname, '../markdown/sections')
+const __dirname = path.resolve(fileURLToPath(import.meta.url), "..")
+const dataJsonPath = path.resolve(__dirname, "../markdown/index.json")
+const workdirPath = path.resolve(__dirname, "../markdown/sections")
 const pathGlob = `${workdirPath}/**/*.md`
 
 const readFsDataJsonData = async () => {
@@ -19,12 +19,12 @@ const readFsDataJsonData = async () => {
     createDefaultDataJson()
     return readFsDataJsonData()
   }
-  const data = await readFile(dataJsonPath, 'utf8')
+  const data = await readFile(dataJsonPath, "utf8")
 
   try {
     return JSON.parse(data)
   } catch {
-    console.error('JSON parser error.')
+    console.error("JSON parser error.")
     return []
   }
 }
@@ -35,7 +35,7 @@ const readFsDataJsonData = async () => {
  * @returns {Record<string, import('./interface').SingleDocumentTree & {pathSet: Set<string>}}
  */
 const parseFsData = (data) => {
-  if (!Array.isArray(data)) throw new TypeError('exist data json is broken.')
+  if (!Array.isArray(data)) throw new TypeError("exist data json is broken.")
 
   const parsedMap = {}
 
@@ -62,16 +62,16 @@ export async function bootstarp() {
     writeFileSync(
       dataJsonPath,
       JSON.stringify(patchDataJson(diffData, fsJsonData), null, 2),
-      'utf8',
+      "utf8",
     )
   }, 800)
   await patch()
   const watcher = watch(pathGlob)
 
-  watcher.on('add', (path) => {
+  watcher.on("add", (path) => {
     patch()
   })
-  watcher.on('unlink', (path) => {
+  watcher.on("unlink", (path) => {
     patch()
   })
 }
@@ -131,14 +131,14 @@ function compareFsTreeWithExistJsonData(data) {
 
   const slugSetMap = {}
   paths.forEach((fullPath) => {
-    const pathArr = fullPath.replace(workdirPath, '').split('/').filter(Boolean)
+    const pathArr = fullPath.replace(workdirPath, "").split("/").filter(Boolean)
 
     if (pathArr.length < 2) return
     const slug = pathArr.shift()
     if (!slug) return
     slugSetMap[slug] ||= new Set()
 
-    slugSetMap[slug].add(`${pathArr.join('/')}`)
+    slugSetMap[slug].add(`${pathArr.join("/")}`)
   })
 
   Object.keys(slugSetMap).map((slug) => {
@@ -186,7 +186,7 @@ function createDefaultDataJson() {
   const slugToListMap = {}
 
   globbySync(pathGlob, { onlyFiles: true }).map((fullPath) => {
-    const pathArr = fullPath.replace(workdirPath, '').split('/').filter(Boolean)
+    const pathArr = fullPath.replace(workdirPath, "").split("/").filter(Boolean)
 
     if (pathArr.length < 2) return
     const slug = pathArr.shift()
@@ -203,7 +203,7 @@ function createDefaultDataJson() {
       documentTree = slugToListMap[slug]
     }
 
-    documentTree.paths.push(`${pathArr.join('/')}`)
+    documentTree.paths.push(`${pathArr.join("/")}`)
 
     return pathArr
   })
@@ -212,7 +212,7 @@ function createDefaultDataJson() {
     jsonData.push(value)
   })
 
-  writeFileSync(dataJsonPath, JSON.stringify(jsonData, null, 2), 'utf8')
+  writeFileSync(dataJsonPath, JSON.stringify(jsonData, null, 2), "utf8")
 }
 
 function debounce(fn, wait) {

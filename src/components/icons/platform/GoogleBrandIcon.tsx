@@ -1,12 +1,6 @@
 export function GoogleBrandIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg
-      width="1em"
-      height="1em"
-      viewBox="0 0 15 15"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <svg width="1em" height="1em" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" {...props}>
       <path
         d="M14.3392 7.95965C14.3392 7.49715 14.3017 7.03215 14.2217 6.57715H7.8042V9.19715H11.4792C11.3267 10.0421 10.8367 10.7896 10.1192 11.2646V12.9646H12.3117C13.5992 11.7796 14.3392 10.0296 14.3392 7.95965Z"
         fill="#4285F4"

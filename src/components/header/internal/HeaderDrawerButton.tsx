@@ -1,12 +1,12 @@
-'use client'
+"use client"
 
-import { use } from 'react'
-import { PresentSheet } from 'rc-modal-sheet'
+import { PresentSheet } from "rc-modal-sheet"
+import { use } from "react"
 
-import { useIsClient } from '~/hooks/common/use-is-client'
+import { useIsClient } from "~/hooks/common/use-is-client"
 
-import { HeaderDrawerContentContext } from '../provider'
-import { HeaderActionButton } from './HeaderActionButton'
+import { HeaderDrawerContentContext } from "../provider"
+import { HeaderActionButton } from "./HeaderActionButton"
 
 export const HeaderDrawerButton = () => {
   const isClient = useIsClient()
@@ -19,9 +19,5 @@ export const HeaderDrawerButton = () => {
   if (!headerDrawerCtx) return null
   if (!isClient) return ButtonElement
 
-  return (
-    <PresentSheet content={headerDrawerCtx.element}>
-      {ButtonElement}
-    </PresentSheet>
-  )
+  return <PresentSheet content={headerDrawerCtx.element}>{ButtonElement}</PresentSheet>
 }

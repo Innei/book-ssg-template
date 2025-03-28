@@ -1,13 +1,13 @@
-import '../styles/index.css'
+import "../styles/index.css"
 
-import type { Metadata } from 'next'
-import type { PropsWithChildren } from 'react'
+import type { Metadata } from "next"
+import type { PropsWithChildren } from "react"
 
-import { SEO } from '~/app.config'
-import { AccentColorStyleInjector } from '~/components/shared/AccentColorStyleInjector'
-import { Analyze } from '~/components/shared/Tracker'
+import { SEO } from "~/app.config"
+import { AccentColorStyleInjector } from "~/components/shared/AccentColorStyleInjector"
+import { Analyze } from "~/components/shared/Tracker"
 
-import { Providers } from './providers'
+import { Providers } from "./providers"
 
 export const metadata: Metadata = SEO
 
@@ -17,11 +17,7 @@ export default async (props: PropsWithChildren) => {
       <head>
         <meta charSet="UTF-8" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
           href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
           rel="stylesheet"
@@ -29,10 +25,7 @@ export default async (props: PropsWithChildren) => {
         <AccentColorStyleInjector />
       </head>
 
-      <body
-        className="m-0 flex h-full grow flex-col p-0 font-sans"
-        suppressHydrationWarning
-      >
+      <body className="m-0 flex h-full grow flex-col p-0 font-sans" suppressHydrationWarning>
         <Providers>
           {props.children}
           <Analyze />

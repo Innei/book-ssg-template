@@ -1,2 +1,2 @@
-export * from './Favicon'
-export * from './SocialSourceLink'
+export * from "./Favicon"
+export * from "./SocialSourceLink"

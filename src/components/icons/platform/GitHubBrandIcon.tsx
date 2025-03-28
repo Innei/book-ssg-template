@@ -1,12 +1,6 @@
 export function GitHubBrandIcon(props: React.SVGAttributes<SVGElement>) {
   return (
-    <svg
-      width="1em"
-      height="1em"
-      viewBox="0 0 15 15"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <svg width="1em" height="1em" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"

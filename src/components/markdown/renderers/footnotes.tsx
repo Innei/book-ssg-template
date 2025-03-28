@@ -1,12 +1,12 @@
-import * as React from 'react'
-import type { FC, PropsWithChildren } from 'react'
+import type { FC, PropsWithChildren } from "react"
+import * as React from "react"
 
-import { KeyboardReturnRounded } from '~/components/icons/return'
-import { springScrollToElement } from '~/lib/scroller'
+import { KeyboardReturnRounded } from "~/components/icons/return"
+import { springScrollToElement } from "~/lib/scroller"
 
-import { Divider } from '../../divider'
-import { getFootNoteDomId, getFootNoteRefDomId } from '../utils/get-id'
-import { redHighlight } from '../utils/redHighlight'
+import { Divider } from "../../divider"
+import { getFootNoteDomId, getFootNoteRefDomId } from "../utils/get-id"
+import { redHighlight } from "../utils/redHighlight"
 
 export const MFootNote: FC<PropsWithChildren> = (props) => {
   return (
@@ -21,7 +21,7 @@ export const MFootNote: FC<PropsWithChildren> = (props) => {
                 {React.cloneElement(
                   child as React.ReactElement,
                   {
-                    className: 'inline',
+                    className: "inline",
                   } as any,
                 )}
                 <a

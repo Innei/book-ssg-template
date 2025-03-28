@@ -1,10 +1,10 @@
-'use client'
+"use client"
 
-import { memo, useCallback } from 'react'
-import type { FC, ReactNode } from 'react'
+import type { FC, ReactNode } from "react"
+import { memo, useCallback } from "react"
 
-import { FloatPopover } from '../float-popover'
-import { Favicon } from '../rich-link/Favicon'
+import { FloatPopover } from "../float-popover"
+import { Favicon } from "../rich-link/Favicon"
 
 export const MLink: FC<{
   href: string
@@ -43,4 +43,4 @@ export const MLink: FC<{
     </FloatPopover>
   )
 })
-MLink.displayName = 'MLink'
+MLink.displayName = "MLink"

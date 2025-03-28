@@ -1,14 +1,14 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import { m } from 'framer-motion'
-import type { HTMLMotionProps } from 'framer-motion'
+import type { HTMLMotionProps } from "framer-motion"
+import { m } from "framer-motion"
+import * as React from "react"
 
 export const MotionButtonBase = ({
   ref,
   children,
   ...rest
-}: HTMLMotionProps<'button'> & { ref?: React.RefObject<any | null> }) => {
+}: HTMLMotionProps<"button"> & { ref?: React.RefObject<any | null> }) => {
   return (
     <m.button
       initial={true}

@@ -1,8 +1,8 @@
-'use client'
+"use client"
 
-import { animateValue } from 'framer-motion'
+import { animateValue } from "framer-motion"
 
-import { microDampingPreset } from '~/constants/spring'
+import { microDampingPreset } from "~/constants/spring"
 
 // TODO scroller lock
 export const springScrollTo = (y: number) => {
@@ -18,8 +18,8 @@ export const springScrollTo = (y: number) => {
     autoplay: true,
     ...microDampingPreset,
     onPlay() {
-      window.addEventListener('wheel', stopSpringScrollHandler)
-      window.addEventListener('touchmove', stopSpringScrollHandler)
+      window.addEventListener("wheel", stopSpringScrollHandler)
+      window.addEventListener("touchmove", stopSpringScrollHandler)
     },
 
     onUpdate(latest) {
@@ -29,12 +29,12 @@ export const springScrollTo = (y: number) => {
       window.scrollTo(0, latest)
     },
     onComplete() {
-      window.removeEventListener('wheel', stopSpringScrollHandler)
-      window.removeEventListener('touchmove', stopSpringScrollHandler)
+      window.removeEventListener("wheel", stopSpringScrollHandler)
+      window.removeEventListener("touchmove", stopSpringScrollHandler)
     },
     onStop() {
-      window.removeEventListener('wheel', stopSpringScrollHandler)
-      window.removeEventListener('touchmove', stopSpringScrollHandler)
+      window.removeEventListener("wheel", stopSpringScrollHandler)
+      window.removeEventListener("touchmove", stopSpringScrollHandler)
     },
   })
 

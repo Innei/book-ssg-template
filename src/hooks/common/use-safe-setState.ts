@@ -1,4 +1,4 @@
-import type { Dispatch, MutableRefObject, SetStateAction } from 'react'
+import type { Dispatch, MutableRefObject, SetStateAction } from "react"
 
 export const useSafeSetState = <S>(
   setState: Dispatch<SetStateAction<S>>,

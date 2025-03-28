@@ -1,14 +1,14 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import { useEffect, useRef, useState } from 'react'
-import mediumZoom from 'medium-zoom'
-import type { Zoom } from 'medium-zoom'
+import type { Zoom } from "medium-zoom"
+import mediumZoom from "medium-zoom"
+import * as React from "react"
+import { useEffect, useRef, useState } from "react"
 
-import { isServerSide } from '~/lib/env'
-import { isVideoExt } from '~/lib/mine-type'
+import { isServerSide } from "~/lib/env"
+import { isVideoExt } from "~/lib/mine-type"
 
-import { Divider } from '../../divider/Divider'
+import { Divider } from "../../divider/Divider"
 
 let zoomer: Zoom
 export const MarkdownImage = (props: {
@@ -21,13 +21,13 @@ export const MarkdownImage = (props: {
   const nextProps = {
     ...props,
   }
-  nextProps.alt = alt?.replace(/^[¡!]/, '')
+  nextProps.alt = alt?.replace(/^[¡!]/, "")
   const [zoom] = useState(() => {
     if (isServerSide) return null
     if (zoomer) {
       return zoomer
     }
-    zoomer = mediumZoom('img')
+    zoomer = mediumZoom("img")
     return zoomer
   })
 
@@ -44,19 +44,12 @@ export const MarkdownImage = (props: {
     }
   }, [src, zoom])
 
-  const ext = src.split('.').pop()
+  const ext = src.split(".").pop()
   if (ext && isVideoExt(ext)) {
-    const figcaption = alt?.replace(/^[¡!]/, '')
+    const figcaption = alt?.replace(/^[¡!]/, "")
     return (
       <div className="flex flex-col items-center">
-        <video
-          className="w-full"
-          src={src}
-          controls
-          playsInline
-          muted
-          autoPlay={false}
-        />
+        <video className="w-full" src={src} controls playsInline muted autoPlay={false} />
         {figcaption && (
           <p className="mt-1 flex flex-col items-center justify-center text-sm">
             <Divider className="w-[80px] opacity-80" />

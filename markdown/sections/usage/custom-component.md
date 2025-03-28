@@ -7,16 +7,13 @@
 你可以在 `src/markdown-components/index.tsx` 添加任何你的组件，例如
 
 ```tsx filename="src/markdown-components/index.tsx"
-import type { MarkdownToJSX } from 'markdown-to-jsx'
+import type { MarkdownToJSX } from "markdown-to-jsx"
 
-import { Divider } from '~/components/divider'
+import { Divider } from "~/components/divider"
 
 export const markdownComponents: MarkdownToJSX.Overrides = {
-  Demo: () => (
-    <div className="rounded-md bg-cyan-400 p-2">This is a demo component</div>
-  ),
+  Demo: () => <div className="rounded-md bg-cyan-400 p-2">This is a demo component</div>,
 }
-
 ```
 
 使用这个组件。
@@ -45,6 +42,7 @@ export const markdownComponents: MarkdownToJSX.Overrides = {
       )
     }
     ```
+
   </Tab>
   <Tab label="action.tsx">
     ```tsx filename="app/server-action/action.tsx"
@@ -56,39 +54,41 @@ export const markdownComponents: MarkdownToJSX.Overrides = {
       revalidatePath('/server-action')
     }
     ```
+
   </Tab>
 </Tabs>
 
 代码为：
 
 ````mdx
-```md
-
+````md
 <Tabs>
 <Tab label="layout.tsx">
   ```tsx filename="app/server-action/layout.tsx"
   import type { PropsWithChildren } from 'react'
 
-  export default async ({ children }: PropsWithChildren) => {
-    return (
-      <div className="m-auto mt-12 max-w-[800px]">
-        <div>Layout Render At: {Date.now()}</div>
-        {children}
-      </div>
-    )
-  }
-  ```
+export default async ({ children }: PropsWithChildren) => {
+return (
+<div className="m-auto mt-12 max-w-[800px]">
+<div>Layout Render At: {Date.now()}</div>
+{children}
+</div>
+)
+}
+````
+
 </Tab>
 <Tab label="action.tsx">
   ```tsx filename="app/server-action/action.tsx"
   'use server'
 
-  import { revalidatePath } from 'next/cache'
+import { revalidatePath } from 'next/cache'
 
-  export const actionRevalidate = async () => {
-    revalidatePath('/server-action')
-  }
-  ```
+export const actionRevalidate = async () => {
+revalidatePath('/server-action')
+}
+
+```
 </Tab>
 </Tabs>
 

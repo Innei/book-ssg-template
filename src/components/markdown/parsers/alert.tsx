@@ -1,25 +1,25 @@
-import clsx from 'clsx'
-import { blockRegex, Priority } from 'markdown-to-jsx'
-import type { MarkdownToJSX } from 'markdown-to-jsx'
+import clsx from "clsx"
+import type { MarkdownToJSX } from "markdown-to-jsx"
+import { blockRegex, Priority } from "markdown-to-jsx"
 
 import {
   FluentShieldError20Regular,
   FluentWarning28Regular,
   IonInformation,
-} from '~/components/icons/status'
+} from "~/components/icons/status"
 
-import { Markdown } from '../Markdown'
+import { Markdown } from "../Markdown"
 
 const textColorMap = {
-  NOTE: 'text-blue-500 dark:text-blue-400',
-  IMPORTANT: 'text-accent',
-  WARNING: 'text-amber-500 dark:text-amber-400',
+  NOTE: "text-blue-500 dark:text-blue-400",
+  IMPORTANT: "text-accent",
+  WARNING: "text-amber-500 dark:text-amber-400",
 } as any
 
 const borderColorMap = {
-  NOTE: 'border-blue-500 dark:border-blue-400',
-  IMPORTANT: 'border-accent',
-  WARNING: 'border-amber-500 dark:border-amber-400',
+  NOTE: "border-blue-500 dark:border-blue-400",
+  IMPORTANT: "border-accent",
+  WARNING: "border-amber-500 dark:border-amber-400",
 } as any
 
 const typedIconMap = {
@@ -49,22 +49,14 @@ export const AlertsRule: MarkdownToJSX.Rule = {
   },
   react(node, output, state) {
     const { type, body } = node.parsed
-    const bodyClean = body.replaceAll(/^> */gm, '')
+    const bodyClean = body.replaceAll(/^> */gm, "")
 
     const typePrefix = type[0] + type.toLowerCase().slice(1)
 
     const Icon = typedIconMap[type] || typedIconMap.info
     return (
-      <blockquote
-        className={clsx(borderColorMap[type], 'not-italic')}
-        key={state.key}
-      >
-        <span
-          className={clsx(
-            'text-semibold mb-1 inline-flex items-center',
-            textColorMap[type],
-          )}
-        >
+      <blockquote className={clsx(borderColorMap[type], "not-italic")} key={state.key}>
+        <span className={clsx("text-semibold mb-1 inline-flex items-center", textColorMap[type])}>
           <Icon
             className={clsx(
               `shrink-0 text-3xl md:mr-2 md:self-start md:text-left`,

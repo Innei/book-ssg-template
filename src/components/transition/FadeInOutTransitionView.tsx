@@ -1,17 +1,16 @@
-'use client'
+"use client"
 
-import type { FC, PropsWithChildren } from 'react'
-import type { BaseTransitionProps } from './typings'
+import type { FC, PropsWithChildren } from "react"
 
-import { createTransitionView } from './factor'
+import { createTransitionView } from "./factor"
+import type { BaseTransitionProps } from "./typings"
 
-export const FadeInOutTransitionView: FC<
-  PropsWithChildren<BaseTransitionProps>
-> = createTransitionView({
-  from: {
-    opacity: 0.001,
-  },
-  to: {
-    opacity: 1,
-  },
-})
+export const FadeInOutTransitionView: FC<PropsWithChildren<BaseTransitionProps>> =
+  createTransitionView({
+    from: {
+      opacity: 0.001,
+    },
+    to: {
+      opacity: 1,
+    },
+  })

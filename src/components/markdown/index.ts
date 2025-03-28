@@ -1,2 +1,2 @@
-export * from './Markdown'
-export * from 'markdown-to-jsx'
+export * from "./Markdown"
+export * from "markdown-to-jsx"

@@ -1,4 +1,4 @@
-import { HighLighter } from '../code-highlighter'
+import { HighLighter } from "../code-highlighter"
 
 export const CodeBlockRender = (props: {
   lang: string | undefined

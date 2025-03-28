@@ -1,23 +1,14 @@
-'use client'
+"use client"
 
-import { memo, useMemo } from 'react'
-import { m } from 'framer-motion'
-import type {
-  HTMLMotionProps,
-  Spring,
-  Target,
-  TargetAndTransition,
-} from 'framer-motion'
-import type {
-  ForwardRefExoticComponent,
-  PropsWithChildren,
-  RefAttributes,
-} from 'react'
-import type { BaseTransitionProps } from './typings'
+import type { HTMLMotionProps, Spring, Target, TargetAndTransition } from "framer-motion"
+import { m } from "framer-motion"
+import type { ForwardRefExoticComponent, PropsWithChildren, RefAttributes } from "react"
+import { memo, useMemo } from "react"
 
-import { microReboundPreset } from '~/constants/spring'
+import { microReboundPreset } from "~/constants/spring"
 
-import { isHydrationEnded } from '../shared/HydrationEndDetector'
+import { isHydrationEnded } from "../shared/HydrationEndDetector"
+import type { BaseTransitionProps } from "./typings"
 
 interface TransitionViewParams {
   from: Target
@@ -40,7 +31,7 @@ export const createTransitionView = (params: TransitionViewParams) => {
       duration = 0.5,
 
       animation = {},
-      as = 'div',
+      as = "div",
       delay = 0,
       lcpOptimization = false,
       ...rest
@@ -55,12 +46,7 @@ export const createTransitionView = (params: TransitionViewParams) => {
     return (
       <MotionComponent
         initial={useMemo(
-          () =>
-            lcpOptimization
-              ? isHydrationEnded()
-                ? initial || from
-                : true
-              : initial || from,
+          () => (lcpOptimization ? (isHydrationEnded() ? initial || from : true) : initial || from),
           [],
         )}
         ref={ref}
@@ -79,7 +65,7 @@ export const createTransitionView = (params: TransitionViewParams) => {
             duration,
             ...animation.exit,
             delay: exit / 1000,
-          } as TargetAndTransition['transition'],
+          } as TargetAndTransition["transition"],
         }}
         transition={{
           duration,

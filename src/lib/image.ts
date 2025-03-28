@@ -7,7 +7,7 @@ export const calculateDimensions = ({
   height: number
   max: { width: number; height: number }
 }) => {
-  if (width === 0 || height === 0) throw new Error('Invalid image size')
+  if (width === 0 || height === 0) throw new Error("Invalid image size")
 
   const { width: maxW, height: maxH } = max
 
@@ -23,8 +23,8 @@ export const calculateDimensions = ({
 }
 
 export function getDominantColor(imageObject: HTMLImageElement) {
-  const canvas = document.createElement('canvas'),
-    ctx = canvas.getContext('2d')!
+  const canvas = document.createElement("canvas"),
+    ctx = canvas.getContext("2d")!
 
   canvas.width = 1
   canvas.height = 1
@@ -35,7 +35,5 @@ export function getDominantColor(imageObject: HTMLImageElement) {
   // get pixel color
   const i = ctx.getImageData(0, 0, 1, 1).data
 
-  return `#${((1 << 24) + (i[0] << 16) + (i[1] << 8) + i[2])
-    .toString(16)
-    .slice(1)}`
+  return `#${((1 << 24) + (i[0] << 16) + (i[1] << 8) + i[2]).toString(16).slice(1)}`
 }

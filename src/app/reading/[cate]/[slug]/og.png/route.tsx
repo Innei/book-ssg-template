@@ -1,15 +1,15 @@
-import { ImageResponse } from 'next/og'
-import type { NextRequest } from 'next/server'
+import { ImageResponse } from "next/og"
+import type { NextRequest } from "next/server"
 
-import { SEO } from '~/app.config'
+import { SEO } from "~/app.config"
 
-import { cache_buildSectionData, getServerProps } from '../getServerProps'
+import { cache_buildSectionData, getServerProps } from "../getServerProps"
 
 export function generateStaticParams() {
   const { flatPaths } = cache_buildSectionData()
 
   return flatPaths.map(({ path }) => {
-    const [cate, slug] = path.split('/')
+    const [cate, slug] = path.split("/")
     return {
       cate,
       slug,
@@ -24,11 +24,11 @@ export const GET = async (
   },
 ) => {
   const params = await props.params
-  const bgAccent = '#95cb9d'
-  const bgAccentLight = '#d9ecdc'
-  const bgAccentUltraLight = '#eef7ef'
+  const bgAccent = "#95cb9d"
+  const bgAccentLight = "#d9ecdc"
+  const bgAccentUltraLight = "#eef7ef"
 
-  let canShownTitle = ''
+  let canShownTitle = ""
 
   let leftContainerWidth = 1200 - 128 * 2
 
@@ -37,10 +37,10 @@ export const GET = async (
     if (leftContainerWidth < 0) break
     //  cjk 字符算 64 px
     // char 不能是 emoji
-    if ((char >= '\u4e00' && char <= '\u9fa5') || char === ' ') {
+    if ((char >= "\u4e00" && char <= "\u9fa5") || char === " ") {
       leftContainerWidth -= 64
       canShownTitle += char
-    } else if (char >= '\u0000' && char <= '\u00ff') {
+    } else if (char >= "\u0000" && char <= "\u00ff") {
       // latin 字符算 40px
       leftContainerWidth -= 40
       canShownTitle += char
@@ -54,29 +54,29 @@ export const GET = async (
     (
       <div
         style={{
-          display: 'flex',
-          height: '100%',
-          width: '100%',
+          display: "flex",
+          height: "100%",
+          width: "100%",
           background: `linear-gradient(37deg, ${bgAccent} 27.82%, ${bgAccentLight} 79.68%, ${bgAccentUltraLight} 100%)`,
-          alignItems: 'center',
-          justifyContent: 'center',
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <div
           tw="absolute left-8 right-8 top-1/2 flex text-center"
           style={{
-            transform: 'translateY(-50%)',
-            justifyContent: 'center',
+            transform: "translateY(-50%)",
+            justifyContent: "center",
           }}
         >
           <h1
             style={{
               fontSize: `${(canShownTitle.length / title.length) * 64}px`,
-              whiteSpace: 'nowrap',
-              textOverflow: 'ellipsis',
+              whiteSpace: "nowrap",
+              textOverflow: "ellipsis",
               WebkitLineClamp: 1,
               lineClamp: 1,
-              textAlign: 'center',
+              textAlign: "center",
             }}
           >
             {title}

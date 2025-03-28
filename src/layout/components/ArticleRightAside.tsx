@@ -1,15 +1,15 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import clsx from 'clsx'
-import type { FC } from 'react'
+import clsx from "clsx"
+import type { FC } from "react"
+import * as React from "react"
 
-import { RootPortal } from '~/components/portal'
-import { ReadIndicator } from '~/components/shared/ReadIndicator'
-import { TocAside } from '~/components/toc'
-import { useIsClient } from '~/hooks/common/use-is-client'
+import { RootPortal } from "~/components/portal"
+import { ReadIndicator } from "~/components/shared/ReadIndicator"
+import { TocAside } from "~/components/toc"
+import { useIsClient } from "~/hooks/common/use-is-client"
 
-import { useLayoutContainerRef } from './LayoutContainer'
+import { useLayoutContainerRef } from "./LayoutContainer"
 
 export const ArticleRightAside: FC<{
   children?: React.ReactNode
@@ -24,13 +24,13 @@ export const ArticleRightAside: FC<{
           <TocAside
             as="div"
             className="static ml-4"
-            treeClassName={clsx('absolute flex h-full min-h-[120px] flex-col')}
+            treeClassName={clsx("absolute flex h-full min-h-[120px] flex-col")}
             accessory={ReadIndicator}
           />
         </div>
         {!!children &&
           React.cloneElement(children as any, {
-            className: 'translate-y-[calc(100%+24px)]',
+            className: "translate-y-[calc(100%+24px)]",
           })}
       </aside>
     </RootPortal>

@@ -1,7 +1,6 @@
-import type { ReactEventHandler } from 'react'
+import type { ReactEventHandler } from "react"
 
-export const stopPropagation: ReactEventHandler<any> = (e) =>
-  e.stopPropagation()
+export const stopPropagation: ReactEventHandler<any> = (e) => e.stopPropagation()
 
 export const preventDefault: ReactEventHandler<any> = (e) => e.preventDefault()
 
@@ -18,5 +17,5 @@ export const transitionViewIfSupported = (updateCb: () => any) => {
 }
 
 export function escapeSelector(selector: string) {
-  return selector.replaceAll(/[!"#$%&'()*+,./:;<=>?@[\\\]^`{|}~]/g, '\\$&')
+  return selector.replaceAll(/[!"#$%&'()*+,./:;<=>?@[\\\]^`{|}~]/g, "\\$&")
 }

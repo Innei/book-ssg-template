@@ -1,1 +1,1 @@
-export const MAIN_MARKDOWN_ID = 'main-markdown-render'
+export const MAIN_MARKDOWN_ID = "main-markdown-render"

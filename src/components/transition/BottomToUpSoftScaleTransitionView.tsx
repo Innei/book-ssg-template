@@ -1,8 +1,8 @@
-'use client'
+"use client"
 
-import { softSpringPreset } from '~/constants/spring'
+import { softSpringPreset } from "~/constants/spring"
 
-import { createTransitionView } from './factor'
+import { createTransitionView } from "./factor"
 
 export const BottomToUpSoftScaleTransitionView = createTransitionView({
   from: { opacity: 0.00001, scale: 0.96, y: 10 },

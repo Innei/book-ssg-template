@@ -1,11 +1,11 @@
-'use client'
+"use client"
 
-import { memo } from 'react'
-import Link from 'next/link'
-import { useParams } from 'next/navigation'
+import Link from "next/link"
+import { useParams } from "next/navigation"
+import { memo } from "react"
 
-import { EllipsisHorizontalTextWithTooltip } from '~/components/typography'
-import { clsxm } from '~/lib/helper'
+import { EllipsisHorizontalTextWithTooltip } from "~/components/typography"
+import { clsxm } from "~/lib/helper"
 
 export const LeftAsideLink = memo(
   ({
@@ -29,10 +29,9 @@ export const LeftAsideLink = memo(
     return (
       <li
         className={clsxm(
-          'text-base font-medium opacity-60 duration-200 hover:opacity-90',
-          'relative',
-          fullPath.replace('/reading/', '') === readingPath &&
-            'text-accent opacity-100',
+          "text-base font-medium opacity-60 duration-200 hover:opacity-90",
+          "relative",
+          fullPath.replace("/reading/", "") === readingPath && "text-accent opacity-100",
         )}
         key={path}
         style={{
@@ -55,4 +54,4 @@ export const LeftAsideLink = memo(
   },
 )
 
-LeftAsideLink.displayName = 'LeftAsideLink'
+LeftAsideLink.displayName = "LeftAsideLink"

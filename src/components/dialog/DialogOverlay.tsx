@@ -1,13 +1,7 @@
-import * as Dialog from '@radix-ui/react-dialog'
-import { m } from 'framer-motion'
+import * as Dialog from "@radix-ui/react-dialog"
+import { m } from "framer-motion"
 
-export const DialogOverlay = ({
-  onClick,
-  zIndex,
-}: {
-  onClick?: () => void
-  zIndex?: number
-}) => {
+export const DialogOverlay = ({ onClick, zIndex }: { onClick?: () => void; zIndex?: number }) => {
   return (
     <Dialog.Overlay asChild>
       <m.div

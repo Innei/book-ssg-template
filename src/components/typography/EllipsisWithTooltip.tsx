@@ -1,16 +1,13 @@
-import { useEffect, useState } from 'react'
-import type { Placement } from '@floating-ui/react-dom'
-import type { PropsWithChildren } from 'react'
+import type { Placement } from "@floating-ui/react-dom"
+import type { PropsWithChildren } from "react"
+import { useEffect, useState } from "react"
 
-import { clsxm } from '~/lib/helper'
+import { clsxm } from "~/lib/helper"
 
-import { FloatPopover } from '../float-popover'
+import { FloatPopover } from "../float-popover"
 
 const isTextOverflowed = (element: HTMLElement) => {
-  return (
-    element.offsetWidth < element.scrollWidth ||
-    element.offsetHeight < element.scrollHeight
-  )
+  return element.offsetWidth < element.scrollWidth || element.offsetHeight < element.scrollHeight
 }
 type EllipsisProps = PropsWithChildren<{
   width?: string
@@ -52,7 +49,7 @@ export const EllipsisTextWithTooltip = (props: EllipsisProps) => {
   return (
     <FloatPopover
       type="tooltip"
-      wrapperClassName={clsxm('w-full min-w-0 truncate', wrapperClassName)}
+      wrapperClassName={clsxm("w-full min-w-0 truncate", wrapperClassName)}
       placement={props.placement}
       isDisabled={!isOverflowed || disabled}
       triggerElement={
@@ -86,10 +83,5 @@ export const EllipsisTextWithTooltip = (props: EllipsisProps) => {
  */
 export const EllipsisHorizontalTextWithTooltip = (props: EllipsisProps) => {
   const { className, ...rest } = props
-  return (
-    <EllipsisTextWithTooltip
-      className={clsxm('block truncate', className)}
-      {...rest}
-    />
-  )
+  return <EllipsisTextWithTooltip className={clsxm("block truncate", className)} {...rest} />
 }

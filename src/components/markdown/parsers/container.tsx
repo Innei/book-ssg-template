@@ -1,24 +1,24 @@
-import * as React from 'react'
-import { Priority } from 'markdown-to-jsx'
-import type { MarkdownToJSX } from 'markdown-to-jsx'
+import type { MarkdownToJSX } from "markdown-to-jsx"
+import { Priority } from "markdown-to-jsx"
+import * as React from "react"
 
-import { Banner } from '../../banner/Banner'
-import { Markdown } from '../Markdown'
+import { Banner } from "../../banner/Banner"
+import { Markdown } from "../Markdown"
 
 const shouldCatchContainerName = [
-  'banner',
-  'carousel',
+  "banner",
+  "carousel",
 
-  'warn',
-  'error',
-  'danger',
-  'info',
-  'success',
-  'warning',
-  'note',
+  "warn",
+  "error",
+  "danger",
+  "info",
+  "success",
+  "warning",
+  "note",
 
-  'grid',
-].join('|')
+  "grid",
+].join("|")
 
 export const ContainerRule: MarkdownToJSX.Rule = {
   match: (source: string) => {
@@ -45,44 +45,32 @@ export const ContainerRule: MarkdownToJSX.Rule = {
     const { type, params, content } = node.node
 
     switch (type) {
-      case 'warn':
-      case 'error':
-      case 'danger':
-      case 'info':
-      case 'note':
-      case 'success':
-      case 'warning': {
+      case "warn":
+      case "error":
+      case "danger":
+      case "info":
+      case "note":
+      case "success":
+      case "warning": {
         const transformMap = {
-          warning: 'warn',
-          danger: 'error',
-          note: 'info',
+          warning: "warn",
+          danger: "error",
+          note: "info",
         }
         return (
-          <Banner
-            type={(transformMap as any)[type] || type}
-            className="my-4"
-            key={state?.key}
-          >
-            <Markdown
-              value={content}
-              allowsScript
-              className="w-full [&>p:first-child]:mt-0"
-            />
+          <Banner type={(transformMap as any)[type] || type} className="my-4" key={state?.key}>
+            <Markdown value={content} allowsScript className="w-full [&>p:first-child]:mt-0" />
           </Banner>
         )
       }
-      case 'banner': {
+      case "banner": {
         if (!params) {
           break
         }
 
         return (
           <Banner type={params} className="my-4" key={state?.key}>
-            <Markdown
-              value={content}
-              allowsScript
-              className="w-full [&>p:first-child]:mt-0"
-            />
+            <Markdown value={content} allowsScript className="w-full [&>p:first-child]:mt-0" />
           </Banner>
         )
       }

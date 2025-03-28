@@ -1,9 +1,9 @@
-'use client'
+"use client"
 
-import { useSetAtom } from 'jotai'
-import type { PropsWithChildren } from 'react'
+import { useSetAtom } from "jotai"
+import type { PropsWithChildren } from "react"
 
-import { focusAtom } from '~/atoms/focus'
+import { focusAtom } from "~/atoms/focus"
 
 export const FocusWrapper = ({ children }: PropsWithChildren) => {
   const setAtom = useSetAtom(focusAtom)

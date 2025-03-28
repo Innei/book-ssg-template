@@ -1,13 +1,13 @@
-import { join } from 'node:path'
+import { join } from "node:path"
 
-import _jsonData from '~/../markdown/index.json'
-import { symbolsCount, symbolsTime } from '~/lib/count'
-import { getLastGitUpdateTime } from '~/lib/git'
+import _jsonData from "~/../markdown/index.json"
+import { symbolsCount, symbolsTime } from "~/lib/count"
+import { getLastGitUpdateTime } from "~/lib/git"
 import {
   extractFirstHeadingText,
   parseYamlFrontMatterSync,
   removeYamlFrontMatter,
-} from '~/lib/remark'
+} from "~/lib/remark"
 
 interface PageMeta {
   hide?: boolean
@@ -47,11 +47,7 @@ export type Section = {
 
 function importMarkdownFile(path: string) {
   // 使用 require.context 定义一个上下文，其中包括所有 markdown 文件
-  const markdownContext = (require as any).context(
-    '../../markdown/',
-    true,
-    /\.md$/,
-  )
+  const markdownContext = (require as any).context("../../markdown/", true, /\.md$/)
 
   // 使用动态路径来 require 文件
   return markdownContext(path)
@@ -60,7 +56,7 @@ function importMarkdownFile(path: string) {
 export const buildSectionData = () => {
   const sections = [] as Section[]
 
-  const path2SectionMap = {} as Record<string, Section['items'][number]>
+  const path2SectionMap = {} as Record<string, Section["items"][number]>
 
   const dfs = (tree: Tree, depth = 1, parentPath?: string) => {
     const { paths } = tree
@@ -77,10 +73,10 @@ export const buildSectionData = () => {
       if (pageMeta.hide) continue
       const file = importMarkdownFile(nextPath)
 
-      const appPath = nextPath.replace('.md', '').replace('./sections/', '')
+      const appPath = nextPath.replace(".md", "").replace("./sections/", "")
 
       const meta = Object.assign({}, parseYamlFrontMatterSync(file), pageMeta)
-      const fileOriginPath = join('markdown/', nextPath)
+      const fileOriginPath = join("markdown/", nextPath)
       const gitUpdateTime = getLastGitUpdateTime(fileOriginPath)
 
       const item: PostItem = {
@@ -94,7 +90,7 @@ export const buildSectionData = () => {
         depth,
         parent: parentPath || null,
 
-        title: meta?.title || extractFirstHeadingText(file) || '',
+        title: meta?.title || extractFirstHeadingText(file) || "",
         rawFilePath: nextPath,
 
         meta,
@@ -131,6 +127,6 @@ export const buildSectionData = () => {
 
 export type FlattenPathObject = {
   path: string
-  item: Section['items'][0]
+  item: Section["items"][0]
   section: Section
 }

@@ -1,45 +1,33 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import { memo, useEffect, useRef } from 'react'
-import { createContextState } from 'foxact/create-context-state'
-import { useIsomorphicLayoutEffect } from 'foxact/use-isomorphic-layout-effect'
+import { createContextState } from "foxact/create-context-state"
+import { useIsomorphicLayoutEffect } from "foxact/use-isomorphic-layout-effect"
+import * as React from "react"
+import { memo, useEffect, useRef } from "react"
 
-import { ProviderComposer } from '~/components/shared/ProviderComposer'
-import { useStateToRef } from '~/hooks/common/use-state-ref'
-import { clsxm } from '~/lib/helper'
+import { ProviderComposer } from "~/components/shared/ProviderComposer"
+import { useStateToRef } from "~/hooks/common/use-state-ref"
+import { clsxm } from "~/lib/helper"
 
-import { usePageScrollDirection } from './page-scroll-info-provider'
+import { usePageScrollDirection } from "./page-scroll-info-provider"
 
-const [
-  WrappedElementProviderInternal,
-  useWrappedElement,
-  useSetWrappedElement,
-] = createContextState<HTMLDivElement | null>(undefined as any)
+const [WrappedElementProviderInternal, useWrappedElement, useSetWrappedElement] =
+  createContextState<HTMLDivElement | null>(undefined as any)
 
-const [
-  ElementSizeProviderInternal,
-  useWrappedElementSize,
-  useSetWrappedElementSize,
-] = createContextState({
-  h: 0,
-  w: 0,
-})
+const [ElementSizeProviderInternal, useWrappedElementSize, useSetWrappedElementSize] =
+  createContextState({
+    h: 0,
+    w: 0,
+  })
 
-const [
-  ElementPositionProviderInternal,
-  useWrappedElementPosition,
-  useSetElementPosition,
-] = createContextState({
-  x: 0,
-  y: 0,
-})
+const [ElementPositionProviderInternal, useWrappedElementPosition, useSetElementPosition] =
+  createContextState({
+    x: 0,
+    y: 0,
+  })
 
-const [
-  IsEOArticleElementProviderInternal,
-  useIsEoFWrappedElement,
-  useSetIsEOArticleElement,
-] = createContextState<boolean>(false)
+const [IsEOArticleElementProviderInternal, useIsEoFWrappedElement, useSetIsEOArticleElement] =
+  createContextState<boolean>(false)
 
 const Providers = [
   <WrappedElementProviderInternal key="ArticleElementProviderInternal" />,
@@ -94,16 +82,12 @@ const ArticleElementResizeObserver = () => {
 }
 
 const Content: Component<WrappedElementProviderProps> = memo(
-  ({ children, className, eoaDetect, as = 'div' }) => {
+  ({ children, className, eoaDetect, as = "div" }) => {
     const setElement = useSetWrappedElement()
 
     const As = as as any
     return (
-      <As
-        className={clsxm('relative', className)}
-        ref={setElement}
-        data-wrapped-element
-      >
+      <As className={clsxm("relative", className)} ref={setElement} data-wrapped-element>
         {children}
         {eoaDetect && <EOADetector />}
       </As>
@@ -111,7 +95,7 @@ const Content: Component<WrappedElementProviderProps> = memo(
   },
 )
 
-Content.displayName = 'ArticleElementProviderContent'
+Content.displayName = "ArticleElementProviderContent"
 
 const EOADetector: Component = () => {
   const dir = usePageScrollDirection()
@@ -125,14 +109,14 @@ const EOADetector: Component = () => {
       (entries) => {
         const entry = entries[0]
 
-        if (!entry.isIntersecting && getDir.current === 'down') {
+        if (!entry.isIntersecting && getDir.current === "down") {
           return
         }
 
         setter(entry.isIntersecting)
       },
       {
-        rootMargin: '0px 0px 0px 0px',
+        rootMargin: "0px 0px 0px 0px",
       },
     )
 

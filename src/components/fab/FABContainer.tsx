@@ -1,20 +1,20 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import { useEffect, useId, useRef } from 'react'
-import clsx from 'clsx'
-import { typescriptHappyForwardRef } from 'foxact/typescript-happy-forward-ref'
-import { AnimatePresence, m } from 'framer-motion'
-import { atom, useAtomValue } from 'jotai'
-import type { HTMLMotionProps } from 'framer-motion'
-import type { PropsWithChildren, ReactNode } from 'react'
+import clsx from "clsx"
+import { typescriptHappyForwardRef } from "foxact/typescript-happy-forward-ref"
+import type { HTMLMotionProps } from "framer-motion"
+import { AnimatePresence, m } from "framer-motion"
+import { atom, useAtomValue } from "jotai"
+import type { PropsWithChildren, ReactNode } from "react"
+import * as React from "react"
+import { useEffect, useId, useRef } from "react"
 
-import { useIsMobile } from '~/atoms/hooks'
-import { clsxm } from '~/lib/helper'
-import { jotaiStore } from '~/lib/store'
-import { usePageScrollDirectionSelector } from '~/providers/page-scroll-info-provider'
+import { useIsMobile } from "~/atoms/hooks"
+import { clsxm } from "~/lib/helper"
+import { jotaiStore } from "~/lib/store"
+import { usePageScrollDirectionSelector } from "~/providers/page-scroll-info-provider"
 
-import { RootPortal } from '../portal'
+import { RootPortal } from "../portal"
 
 const fabContainerElementAtom = atom(null as HTMLDivElement | null)
 
@@ -31,7 +31,7 @@ export const FABBase = typescriptHappyForwardRef(
         id: string
         show?: boolean
         children: React.JSX.Element
-      } & HTMLMotionProps<'button'>
+      } & HTMLMotionProps<"button">
     >,
     ref: React.ForwardedRef<HTMLButtonElement>,
   ) => {
@@ -48,12 +48,12 @@ export const FABBase = typescriptHappyForwardRef(
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0.3, scale: 0.8 }}
             className={clsxm(
-              'mt-2 flex items-center justify-center',
-              'size-12 text-lg md:size-10 md:text-base',
-              'border border-accent outline-accent hover:opacity-100 focus:opacity-100 focus:outline-none',
-              'rounded-xl border border-zinc-400/20 shadow-lg backdrop-blur-lg dark:border-zinc-500/30 dark:bg-zinc-800/80 dark:text-zinc-200',
-              'bg-zinc-50/80 shadow-lg dark:bg-neutral-900/80',
-              'transition-all duration-500 ease-in-out',
+              "mt-2 flex items-center justify-center",
+              "size-12 text-lg md:size-10 md:text-base",
+              "border border-accent outline-accent hover:opacity-100 focus:opacity-100 focus:outline-none",
+              "rounded-xl border border-zinc-400/20 shadow-lg backdrop-blur-lg dark:border-zinc-500/30 dark:bg-zinc-800/80 dark:text-zinc-200",
+              "bg-zinc-50/80 shadow-lg dark:bg-neutral-900/80",
+              "transition-all duration-500 ease-in-out",
 
               className,
             )}
@@ -99,7 +99,7 @@ export const FABContainer = (props: { children?: ReactNode }) => {
 
   const shouldHide = usePageScrollDirectionSelector(
     (direction) => {
-      return isMobile && direction === 'down'
+      return isMobile && direction === "down"
     },
     [isMobile],
   )
@@ -116,9 +116,9 @@ export const FABContainer = (props: { children?: ReactNode }) => {
       data-testid="fab-container"
       data-hide-print
       className={clsx(
-        'font-lg fixed bottom-[calc(2rem+env(safe-area-inset-bottom))] left-[calc(100vw-3rem-1rem)] z-[9] flex flex-col',
-        shouldHide ? 'translate-x-[calc(100%+2rem)]' : '',
-        'transition-transform duration-300 ease-in-out',
+        "font-lg fixed bottom-[calc(2rem+env(safe-area-inset-bottom))] left-[calc(100vw-3rem-1rem)] z-[9] flex flex-col",
+        shouldHide ? "translate-x-[calc(100%+2rem)]" : "",
+        "transition-transform duration-300 ease-in-out",
       )}
     >
       {props.children}

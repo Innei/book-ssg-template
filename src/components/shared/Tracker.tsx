@@ -1,4 +1,4 @@
-import type { TrackerAction } from '~/constants/tracker'
+import type { TrackerAction } from "~/constants/tracker"
 
 declare global {
   interface Window {
@@ -14,7 +14,7 @@ export const Analyze = () => {
       dangerouslySetInnerHTML={{
         __html: `(${function () {
           document.addEventListener(
-            'click',
+            "click",
             async (e) => {
               const $ = e.target as HTMLElement
 
@@ -26,24 +26,24 @@ export const Analyze = () => {
               }
 
               if (event) {
-                console.log('dom track click event', event)
+                console.log("dom track click event", event)
                 window.umami?.track(event, {
-                  type: 'click',
+                  type: "click",
                 })
               }
             },
             true,
           )
 
-          document.addEventListener('impression', async (e: any) => {
+          document.addEventListener("impression", async (e: any) => {
             const detail = e.detail as {
               action: TrackerAction
               label: string
             }
 
-            console.log(detail, 'detail')
+            console.log(detail, "detail")
             window.umami?.track(detail.label, {
-              type: 'impression',
+              type: "impression",
             })
           })
         }.toString()})();`,

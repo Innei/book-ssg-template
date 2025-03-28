@@ -1,16 +1,14 @@
-import { memo, useState } from 'react'
-import { useInView } from 'react-intersection-observer'
+import { memo, useState } from "react"
+import { useInView } from "react-intersection-observer"
 
-import { TrackerAction } from '~/constants/tracker'
+import { TrackerAction } from "~/constants/tracker"
 
 type ImpressionProps = {
   trackerMessage?: string
   action?: TrackerAction
   onTrack?: () => any
 }
-export const ImpressionView: Component<
-  { shouldTrack?: boolean } & ImpressionProps
-> = (props) => {
+export const ImpressionView: Component<{ shouldTrack?: boolean } & ImpressionProps> = (props) => {
   const { shouldTrack = true, ...rest } = props
   if (!shouldTrack) {
     return <>{props.children}</>
@@ -29,7 +27,7 @@ const ImpressionViewImpl: Component<ImpressionProps> = memo((props) => {
         setImpression(true)
 
         document.dispatchEvent(
-          new CustomEvent('impression', {
+          new CustomEvent("impression", {
             detail: {
               action: props.action ?? TrackerAction.Impression,
               label: props.trackerMessage,
@@ -50,4 +48,4 @@ const ImpressionViewImpl: Component<ImpressionProps> = memo((props) => {
   )
 })
 
-ImpressionViewImpl.displayName = 'ImpressionView'
+ImpressionViewImpl.displayName = "ImpressionView"

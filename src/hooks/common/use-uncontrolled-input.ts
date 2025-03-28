@@ -1,8 +1,6 @@
-import { useCallback, useLayoutEffect, useRef } from 'react'
+import { useCallback, useLayoutEffect, useRef } from "react"
 
-export const useUncontrolledInput = <
-  T extends { value: string } = HTMLInputElement,
->(
+export const useUncontrolledInput = <T extends { value: string } = HTMLInputElement>(
   initialValue?: string,
 ) => {
   const ref = useRef<T>(null)
@@ -13,9 +11,5 @@ export const useUncontrolledInput = <
     }
   }, [])
 
-  return [
-    ref.current?.value,
-    useCallback(() => ref.current?.value, []),
-    ref,
-  ] as const
+  return [ref.current?.value, useCallback(() => ref.current?.value, []), ref] as const
 }

@@ -1,16 +1,16 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import { useEffect, useState } from 'react'
-import { useAnimationControls } from 'framer-motion'
-import type { FC } from 'react'
+import { useAnimationControls } from "framer-motion"
+import type { FC } from "react"
+import * as React from "react"
+import { useEffect, useState } from "react"
 
-import { FadeInOutTransitionView } from './FadeInOutTransitionView'
+import { FadeInOutTransitionView } from "./FadeInOutTransitionView"
 
 interface IconTransitionProps {
   solidIcon: React.JSX.Element
   regularIcon: React.JSX.Element
-  currentState: 'solid' | 'regular'
+  currentState: "solid" | "regular"
 }
 export const IconTransition: FC<IconTransitionProps> = (props) => {
   const { currentState, regularIcon, solidIcon } = props

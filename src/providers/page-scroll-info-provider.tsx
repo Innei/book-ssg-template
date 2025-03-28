@@ -1,15 +1,15 @@
-'use client'
+"use client"
 
-import { startTransition, useLayoutEffect, useMemo, useRef } from 'react'
-import { atom, useAtomValue, useSetAtom } from 'jotai'
-import type { FC, PropsWithChildren } from 'react'
+import { atom, useAtomValue, useSetAtom } from "jotai"
+import type { FC, PropsWithChildren } from "react"
+import { startTransition, useLayoutEffect, useMemo, useRef } from "react"
 
-import { setIsInteractive } from '~/atoms/is-interactive'
-import { createAtomSelector } from '~/lib/atom'
-import { throttle } from '~/lib/lodash'
+import { setIsInteractive } from "~/atoms/is-interactive"
+import { createAtomSelector } from "~/lib/atom"
+import { throttle } from "~/lib/lodash"
 
 const pageScrollLocationAtom = atom(0)
-const pageScrollDirectionAtom = atom<'up' | 'down' | null>(null)
+const pageScrollDirectionAtom = atom<"up" | "down" | null>(null)
 
 export const PageScrollInfoProvider: FC<PropsWithChildren> = ({ children }) => {
   return (
@@ -35,9 +35,7 @@ const ScrollDetector = () => {
         }
         const currentTop = document.documentElement.scrollTop
 
-        setPageScrollDirection(
-          prevScrollY.current - currentTop > 0 ? 'up' : 'down',
-        )
+        setPageScrollDirection(prevScrollY.current - currentTop > 0 ? "up" : "down")
         prevScrollY.current = currentTop
         startTransition(() => {
           setPageScrollLocation(prevScrollY.current)
@@ -48,12 +46,12 @@ const ScrollDetector = () => {
         leading: false,
       },
     )
-    window.addEventListener('scroll', scrollHandler)
+    window.addEventListener("scroll", scrollHandler)
 
     scrollHandler()
 
     return () => {
-      window.removeEventListener('scroll', scrollHandler)
+      window.removeEventListener("scroll", scrollHandler)
     }
   }, [])
 
@@ -64,9 +62,7 @@ const usePageScrollLocation = () => useAtomValue(pageScrollLocationAtom)
 const usePageScrollDirection = () => useAtomValue(pageScrollDirectionAtom)
 
 const usePageScrollLocationSelector = createAtomSelector(pageScrollLocationAtom)
-const usePageScrollDirectionSelector = createAtomSelector(
-  pageScrollDirectionAtom,
-)
+const usePageScrollDirectionSelector = createAtomSelector(pageScrollDirectionAtom)
 
 const useIsScrollUpAndPageIsOver = (threshold: number) => {
   return useAtomValue(
@@ -75,7 +71,7 @@ const useIsScrollUpAndPageIsOver = (threshold: number) => {
         atom((get) => {
           const scrollLocation = get(pageScrollLocationAtom)
           const scrollDirection = get(pageScrollDirectionAtom)
-          return scrollLocation > threshold && scrollDirection === 'up'
+          return scrollLocation > threshold && scrollDirection === "up"
         }),
       [threshold],
     ),

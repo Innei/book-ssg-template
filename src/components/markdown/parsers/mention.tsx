@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { Priority, simpleInlineRegex } from 'markdown-to-jsx'
-import type { MarkdownToJSX } from 'markdown-to-jsx'
+import type { MarkdownToJSX } from "markdown-to-jsx"
+import { Priority, simpleInlineRegex } from "markdown-to-jsx"
+import * as React from "react"
 
-import { SocialSourceLink } from '../../rich-link/SocialSourceLink'
+import { SocialSourceLink } from "../../rich-link/SocialSourceLink"
 
 // [Innei]{GH@Innei} {TW@Innei} {TG@Innei}
 export const MentionRule: MarkdownToJSX.Rule = {
@@ -18,7 +18,7 @@ export const MentionRule: MarkdownToJSX.Rule = {
     }
     return {
       content: { ...groups },
-      type: 'mention',
+      type: "mention",
     }
   },
   react(result, _, state) {
@@ -32,12 +32,6 @@ export const MentionRule: MarkdownToJSX.Rule = {
       return null as any
     }
 
-    return (
-      <SocialSourceLink
-        name={displayName || name}
-        source={prefix}
-        key={state?.key}
-      />
-    )
+    return <SocialSourceLink name={displayName || name} source={prefix} key={state?.key} />
   },
 }

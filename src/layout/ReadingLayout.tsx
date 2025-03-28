@@ -1,20 +1,20 @@
-import type { PropsWithChildren } from 'react'
+import type { PropsWithChildren } from "react"
 
-import { PageFooter } from '~/components/footer'
-import { MobileHeader } from '~/components/header'
-import { HeaderDrawerContentProvider } from '~/components/header/provider'
-import { ActionAsideContainer } from '~/components/shared/ActionAsideContainer'
-import { AsideDonateButton } from '~/components/shared/AsideDonateButton'
-import { BanCopyWrapper } from '~/components/shared/BanCopyWrapper'
-import { TocFAB } from '~/components/toc/TocFAB'
-import { OnlyDesktop } from '~/components/viewport'
-import { OnlyMobile } from '~/components/viewport/OnlyMobile'
-import { WrappedElementProvider } from '~/providers/wrapped-element-provider'
+import { PageFooter } from "~/components/footer"
+import { MobileHeader } from "~/components/header"
+import { HeaderDrawerContentProvider } from "~/components/header/provider"
+import { ActionAsideContainer } from "~/components/shared/ActionAsideContainer"
+import { AsideDonateButton } from "~/components/shared/AsideDonateButton"
+import { BanCopyWrapper } from "~/components/shared/BanCopyWrapper"
+import { TocFAB } from "~/components/toc/TocFAB"
+import { OnlyDesktop } from "~/components/viewport"
+import { OnlyMobile } from "~/components/viewport/OnlyMobile"
+import { WrappedElementProvider } from "~/providers/wrapped-element-provider"
 
-import { ArticleRightAside } from './components/ArticleRightAside'
-import { FontSettingFab } from './components/FontSettingPanel'
-import { LayoutContainer } from './components/LayoutContainer'
-import { LeftAside } from './components/LeftAside'
+import { ArticleRightAside } from "./components/ArticleRightAside"
+import { FontSettingFab } from "./components/FontSettingPanel"
+import { LayoutContainer } from "./components/LayoutContainer"
+import { LeftAside } from "./components/LeftAside"
 
 export const ReadingLayout = async ({ children }: PropsWithChildren) => {
   return (

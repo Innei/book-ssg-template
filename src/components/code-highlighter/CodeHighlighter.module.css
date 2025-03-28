@@ -29,7 +29,7 @@
 
       &::before {
         @apply absolute left-0 top-0 h-full w-[2px];
-        content: '';
+        content: "";
       }
     }
 
@@ -41,7 +41,7 @@
       }
 
       &::after {
-        content: '+';
+        content: "+";
         @apply absolute left-[4px] text-green-500;
       }
     }
@@ -54,7 +54,7 @@
       }
 
       &::after {
-        content: '-';
+        content: "-";
         @apply absolute left-[4px] text-red-500;
       }
     }

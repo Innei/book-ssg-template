@@ -1,8 +1,5 @@
-import {
-  bundledLanguages,
-  getSingletonHighlighter,
-} from 'shiki/bundle-full.mjs'
-import type { FC } from 'react'
+import type { FC } from "react"
+import { bundledLanguages, getSingletonHighlighter } from "shiki/bundle-full.mjs"
 
 import {
   SimpleIconsCss,
@@ -12,10 +9,10 @@ import {
   SimpleIconsReact,
   SimpleIconsSwift,
   SimpleIconsTypescript,
-} from '../icons/platform/Language'
-import { FluentShieldError20Regular } from '../icons/status'
-import { CodeBlockWrapper } from './CodeBlockWrapper'
-import { codeHighlighter } from './utils'
+} from "../icons/platform/Language"
+import { FluentShieldError20Regular } from "../icons/status"
+import { CodeBlockWrapper } from "./CodeBlockWrapper"
+import { codeHighlighter } from "./utils"
 
 declare global {
   interface Window {
@@ -54,25 +51,18 @@ export const HighLighter: FC<Props> = async (props) => {
   const { lang: language, content: value, attrs } = props
 
   const highlighter = await getSingletonHighlighter({
-    themes: [
-      import('shiki/themes/github-light.mjs'),
-      import('shiki/themes/github-dark.mjs'),
-    ],
+    themes: [import("shiki/themes/github-light.mjs"), import("shiki/themes/github-dark.mjs")],
     langs: Object.keys(bundledLanguages),
   })
   return (
     <CodeBlockWrapper
       {...props}
       renderedHtml={codeHighlighter(highlighter, {
-        attrs: attrs || '',
+        attrs: attrs || "",
         code: value,
-        lang: language || '',
+        lang: language || "",
       })}
-      langIcon={
-        languageToIconMap[
-          language?.toLowerCase() as keyof typeof languageToIconMap
-        ]
-      }
+      langIcon={languageToIconMap[language?.toLowerCase() as keyof typeof languageToIconMap]}
     />
   )
 }

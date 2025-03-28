@@ -1,11 +1,11 @@
-'use client'
+"use client"
 
-import { DialogContent, DialogPortal, Root } from '@radix-ui/react-dialog'
-import { createContext, use, useEffect, useRef, useState } from 'react'
-import { AnimatePresence, m } from 'framer-motion'
-import type { FC, PropsWithChildren } from 'react'
+import { DialogContent, DialogPortal, Root } from "@radix-ui/react-dialog"
+import { AnimatePresence, m } from "framer-motion"
+import type { FC, PropsWithChildren } from "react"
+import { createContext, use, useEffect, useRef, useState } from "react"
 
-import { DialogOverlay } from '../dialog'
+import { DialogOverlay } from "../dialog"
 
 const BanCopyContext = createContext(false)
 

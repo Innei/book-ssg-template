@@ -1,8 +1,8 @@
 html {
   --border-color: #eee;
-  --font-sans: theme('fontFamily.sans');
-  --theme-color: var(--auto-theme-color, theme('colors.accent'));
-  --hover-color: var(--auto-hover-color, theme('colors.accent/80'));
+  --font-sans: theme("fontFamily.sans");
+  --theme-color: var(--auto-theme-color, theme("colors.accent"));
+  --hover-color: var(--auto-hover-color, theme("colors.accent/80"));
   --header-height: auto;
   /* Accent color for form controls */
   accent-color: var(--theme-color);
@@ -22,7 +22,7 @@ details summary {
   --bg-opacity: rgba(255, 255, 255, 0.72);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --bg-opacity: rgba(29, 29, 31, 0.72);
 }
 
@@ -48,7 +48,7 @@ details summary {
   }
 }
 
-[data-theme='dark']::view-transition-new(root) {
+[data-theme="dark"]::view-transition-new(root) {
   animation: turnOn 800ms ease-in-out;
 }
 ::view-transition-old(root) {

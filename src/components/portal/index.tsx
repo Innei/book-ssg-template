@@ -1,11 +1,11 @@
-'use client'
+"use client"
 
-import { createPortal } from 'react-dom'
-import type { FC, PropsWithChildren } from 'react'
+import type { FC, PropsWithChildren } from "react"
+import { createPortal } from "react-dom"
 
-import { useIsClient } from '~/hooks/common/use-is-client'
+import { useIsClient } from "~/hooks/common/use-is-client"
 
-import { useRootPortal } from './provider'
+import { useRootPortal } from "./provider"
 
 export const RootPortal: FC<
   {

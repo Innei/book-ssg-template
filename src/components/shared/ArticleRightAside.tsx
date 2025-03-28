@@ -1,13 +1,13 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import clsx from 'clsx'
-import type { FC } from 'react'
+import clsx from "clsx"
+import type { FC } from "react"
+import * as React from "react"
 
-import { useIsMobile } from '~/atoms/hooks'
+import { useIsMobile } from "~/atoms/hooks"
 
-import { TocAside } from '../toc'
-import { ReadIndicator } from './ReadIndicator'
+import { TocAside } from "../toc"
+import { ReadIndicator } from "./ReadIndicator"
 
 export const ArticleRightAside: Component = ({ children }) => {
   const isMobile = useIsMobile()
@@ -25,13 +25,13 @@ const ArticleRightAsideImpl: FC<{
         <TocAside
           as="div"
           className="static ml-4"
-          treeClassName={clsx('absolute flex h-full min-h-[120px] flex-col')}
+          treeClassName={clsx("absolute flex h-full min-h-[120px] flex-col")}
           accessory={ReadIndicator}
         />
       </div>
       {!!children &&
         React.cloneElement(children as any, {
-          className: 'translate-y-[calc(100%+24px)]',
+          className: "translate-y-[calc(100%+24px)]",
         })}
     </aside>
   )

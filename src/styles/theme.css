@@ -2,10 +2,7 @@
   .shiro-link--underline,
   .shiro-timeline a {
     color: currentColor;
-    background-image: linear-gradient(
-      theme(colors.accent),
-      theme(colors.accent)
-    );
+    background-image: linear-gradient(theme(colors.accent), theme(colors.accent));
     background-size: 0% 1.5px;
     background-repeat: no-repeat;
     /* NOTE: this won't work with background images   */
@@ -35,7 +32,7 @@
     @apply min-w-0 flex-1 list-inside justify-between;
 
     & > li::before {
-      content: '';
+      content: "";
       position: absolute;
       left: -1.05rem;
       bottom: 0;
@@ -69,7 +66,7 @@
     }
 
     & > li::after {
-      content: '';
+      content: "";
       left: -1.28rem;
       top: 50%;
       transform: translateY(-50%);
@@ -160,31 +157,19 @@
 }
 
 .mask-b {
-  mask-image: linear-gradient(
-    rgb(255, 255, 255) calc(100% - 20px),
-    rgba(255, 255, 255, 0) 100%
-  );
+  mask-image: linear-gradient(rgb(255, 255, 255) calc(100% - 20px), rgba(255, 255, 255, 0) 100%);
 }
 
 .mask-b-lg {
-  mask-image: linear-gradient(
-    rgb(255, 255, 255) calc(100% - 50px),
-    rgba(255, 255, 255, 0) 100%
-  );
+  mask-image: linear-gradient(rgb(255, 255, 255) calc(100% - 50px), rgba(255, 255, 255, 0) 100%);
 }
 
 .mask-t {
-  mask-image: linear-gradient(
-    rgba(255, 255, 255, 0) 0%,
-    rgb(255, 255, 255) 20px
-  );
+  mask-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 20px);
 }
 
 .mask-t-lg {
-  mask-image: linear-gradient(
-    rgba(255, 255, 255, 0) 0%,
-    rgb(255, 255, 255) 50px
-  );
+  mask-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50px);
 }
 
 .cover-mask-b {
@@ -196,8 +181,8 @@
   overflow: auto !important;
   word-break: break-word !important;
 
-  pre[class*='language-'],
-  code[class*='language-'] {
+  pre[class*="language-"],
+  code[class*="language-"] {
     white-space: break-spaces !important;
     overflow: auto !important;
     word-break: break-word !important;
@@ -208,8 +193,8 @@
   @apply flex flex-grow flex-col;
 }
 
-html[data-theme='dark'] .shiki,
-html[data-theme='dark'] .shiki span {
+html[data-theme="dark"] .shiki,
+html[data-theme="dark"] .shiki span {
   color: var(--shiki-dark) !important;
   /* Optional, if you also want font styles */
   font-style: var(--shiki-dark-font-style) !important;

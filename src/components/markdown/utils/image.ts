@@ -7,12 +7,12 @@ export const pickImagesFromMarkdown = (md: string) => {
   const regexp =
     /^!\[((?:\[[^\]]*\]|[^[\]]|\](?=[^[]*\]))*)\]\(\s*<?((?:[^\s\\]|\\.)*?)>?(?:\s+['"]([\s\S]*?)['"])?\s*\)/
 
-  const lines = md.split('\n')
+  const lines = md.split("\n")
 
   const res: MImageType[] = []
 
   for (const line of lines) {
-    if (!line.startsWith('!') && isRawImageUrl(line)) {
+    if (!line.startsWith("!") && isRawImageUrl(line)) {
       res.push({ url: line, name: line })
       continue
     }

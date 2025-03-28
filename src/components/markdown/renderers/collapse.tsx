@@ -1,14 +1,14 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import { useCallback, useLayoutEffect, useState } from 'react'
-import clsx from 'clsx'
-import type { FC, ReactNode } from 'react'
+import clsx from "clsx"
+import type { FC, ReactNode } from "react"
+import * as React from "react"
+import { useCallback, useLayoutEffect, useState } from "react"
 
-import { useIsPrintMode } from '~/atoms'
-import { IcRoundKeyboardDoubleArrowRight } from '~/components/icons/arrow'
+import { useIsPrintMode } from "~/atoms"
+import { IcRoundKeyboardDoubleArrowRight } from "~/components/icons/arrow"
 
-import { CollapseContent } from '../../collapse'
+import { CollapseContent } from "../../collapse"
 
 export const MDetails: FC<{ children: ReactNode[] }> = (props) => {
   const [open, setOpen] = useState(false)
@@ -25,14 +25,11 @@ export const MDetails: FC<{ children: ReactNode[] }> = (props) => {
   }, [])
   return (
     <div className="my-2">
-      <button
-        className="mb-2 flex cursor-pointer items-center pl-2"
-        onClick={handleOpen}
-      >
+      <button className="mb-2 flex cursor-pointer items-center pl-2" onClick={handleOpen}>
         <i
           className={clsx(
-            'icon-[mingcute--align-arrow-down-line] mr-2 transition-transform duration-500',
-            !open && '-rotate-90',
+            "icon-[mingcute--align-arrow-down-line] mr-2 transition-transform duration-500",
+            !open && "-rotate-90",
           )}
         >
           <IcRoundKeyboardDoubleArrowRight />
@@ -41,10 +38,7 @@ export const MDetails: FC<{ children: ReactNode[] }> = (props) => {
       </button>
       <CollapseContent withBackground isOpened={open} className="my-2">
         <div
-          className={clsx(
-            open ? 'opacity-100' : 'opacity-0',
-            'transition-opacity duration-500',
-          )}
+          className={clsx(open ? "opacity-100" : "opacity-0", "transition-opacity duration-500")}
         >
           {props.children.slice(1)}
         </div>

@@ -2,11 +2,9 @@
 
 Markdown 语法在 GFM 中进行了其他扩展。
 
-
 ## Alert
 
 此语法是 GFM 的新增的。
-
 
 ```md
 > [!NOTE]
@@ -30,7 +28,6 @@ Markdown 语法在 GFM 中进行了其他扩展。
 
 ## Notice
 
-
 ```md
 ::: warning
 _here be dragons_
@@ -43,7 +40,6 @@ _here be dragons_
 ::: banner {note}
 _here be dragons_
 :::
-
 ```
 
 ::: warning
@@ -57,8 +53,6 @@ _here be dragons_
 ::: banner {note}
 _here be dragons_
 :::
-
-
 
 ## Rich Link
 
@@ -130,7 +124,6 @@ https://trpc.io/docs/client/react/useInfiniteQuery
 
 [TRPC](https://trpc.io/docs/client/react/useInfiniteQuery)
 
-
 ## Inline Link Parser
 
 对于内联链接，会根据内置解析增加 Favicon。
@@ -179,7 +172,6 @@ Hi, this is ||Spoiler||
 
 Hi, this is ||Spoiler||
 
-
 ## KateX
 
 ```
@@ -214,4 +206,3 @@ P\left(U,T\right)=100\left.\left(0.6\min\left(1,\frac{U-0.70}{0.90-0.70}\right)+
 
 
 $$
-

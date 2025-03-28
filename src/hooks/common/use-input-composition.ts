@@ -1,17 +1,14 @@
-import { useCallback, useRef } from 'react'
-import type { CompositionEventHandler } from 'react'
+import type { CompositionEventHandler } from "react"
+import { useCallback, useRef } from "react"
 
 export const useInputComposition = (
   props: Pick<
-    | React.DetailedHTMLProps<
-        React.InputHTMLAttributes<HTMLInputElement>,
-        HTMLInputElement
-      >
+    | React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
     | React.DetailedHTMLProps<
         React.TextareaHTMLAttributes<HTMLTextAreaElement>,
         HTMLTextAreaElement
       >,
-    'onKeyDown' | 'onCompositionEnd' | 'onCompositionStart'
+    "onKeyDown" | "onCompositionEnd" | "onCompositionStart"
   >,
 ) => {
   const { onKeyDown, onCompositionStart, onCompositionEnd } = props

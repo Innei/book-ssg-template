@@ -50,7 +50,7 @@ export const isUndefined = (val: any): val is undefined => val === undefined
 export const cloneDeep = <T>(val: T): T => {
   if (Array.isArray(val)) {
     return val.map(cloneDeep) as any
-  } else if (typeof val === 'object' && val !== null) {
+  } else if (typeof val === "object" && val !== null) {
     const result: any = {}
     for (const key in val) {
       result[key] = cloneDeep(val[key])
@@ -98,9 +98,7 @@ export const isShallowEqualArray = <T>(arr1: T[], arr2: T[]): boolean => {
   return true
 }
 
-export const merge = <T extends object, U extends object>(
-  ...objs: (T | U)[]
-): T & U => {
+export const merge = <T extends object, U extends object>(...objs: (T | U)[]): T & U => {
   const result: any = {}
 
   for (const obj of objs) {
@@ -125,7 +123,7 @@ export function uniqBy<T, K>(array: T[], iteratee: (item: T) => K): T[] {
 }
 
 export function get(target: object, path: string) {
-  const keys = path.split('.')
+  const keys = path.split(".")
   let result = target as any
   for (const key of keys) {
     result = result[key]

@@ -1,10 +1,10 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer'
-import type { FC, PropsWithChildren } from 'react'
-import type { IntersectionOptions } from 'react-intersection-observer'
+import type { FC, PropsWithChildren } from "react"
+import * as React from "react"
+import { useEffect } from "react"
+import type { IntersectionOptions } from "react-intersection-observer"
+import { useInView } from "react-intersection-observer"
 
 export type LazyLoadProps = {
   offset?: number
@@ -26,9 +26,7 @@ export const LazyLoad: FC<PropsWithChildren & LazyLoadProps> = (props) => {
 
   return (
     <>
-      {!isLoaded && (
-        <span data-hide-print data-testid="lazyload-indicator" ref={ref} />
-      )}
+      {!isLoaded && <span data-hide-print data-testid="lazyload-indicator" ref={ref} />}
       {!inView ? placeholder : props.children}
     </>
   )

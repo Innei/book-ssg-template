@@ -11,7 +11,7 @@ export const setConfig = (_config: Config): void => {
 }
 
 const getSymbols = (post: string): number => {
-  return post.replaceAll(/\s/g, '').length
+  return post.replaceAll(/\s/g, "").length
 }
 
 const getFormatTime = (minutes: number, suffix: string): string => {
@@ -28,7 +28,7 @@ const getFormatTime = (minutes: number, suffix: string): string => {
 export const symbolsCount = (post: string): string => {
   let symbolsResult = getSymbols(post) as string | number
 
-  if (typeof symbolsResult !== 'string') {
+  if (typeof symbolsResult !== "string") {
     if (symbolsResult > 9999) {
       symbolsResult = `${Math.round(symbolsResult / 1000)}k` // > 9999 => 11k
     } else if (symbolsResult > 999) {
@@ -42,7 +42,7 @@ export const symbolsTime = (
   post: string,
   awl: number,
   wpm: number = config.wpm ?? 0,
-  suffix: string = config.suffix ?? '',
+  suffix: string = config.suffix ?? "",
 ): string => {
   const minutes = Math.round(getSymbols(post) / wpm)
   return getFormatTime(minutes, suffix)

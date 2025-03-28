@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { useEffect, useRef, useState } from 'react'
+import * as React from "react"
+import { useEffect, useRef, useState } from "react"
 
 interface IProps {
   style?: React.CSSProperties
@@ -45,18 +45,10 @@ export const AdjustableText: React.FC<
 
   return (
     <>
-      <span
-        ref={containerRef}
-        className="whitespace-nowrap"
-        style={{ ...style, fontSize }}
-      >
+      <span ref={containerRef} className="whitespace-nowrap" style={{ ...style, fontSize }}>
         {children}
       </span>
-      <span
-        ref={ghostRef}
-        className="invisible absolute whitespace-nowrap"
-        style={style}
-      >
+      <span ref={ghostRef} className="invisible absolute whitespace-nowrap" style={style}>
         {children}
       </span>
     </>

@@ -1,6 +1,9 @@
-import config from '@innei/prettier'
-
 export default {
-  ...config,
-  // printWidth: 120,
+  semi: false,
+  singleQuote: false,
+  printWidth: 100,
+  tabWidth: 2,
+  trailingComma: "all",
+  objectWrap: "preserve",
+  plugins: ["prettier-plugin-tailwindcss"],
 }

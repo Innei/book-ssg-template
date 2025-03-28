@@ -1,14 +1,14 @@
-'use client'
+"use client"
 
-import { useEffect } from 'react'
-import { useSetAtom } from 'jotai'
-import { usePathname } from 'next/navigation'
+import { useSetAtom } from "jotai"
+import { usePathname } from "next/navigation"
+import { useEffect } from "react"
 
-import { SEO } from '~/app.config'
-import { currentPostMetaAtom } from '~/atoms/current'
-import { useSetHeaderMetaInfo } from '~/components/header/internal/hooks'
-import { isDev } from '~/lib/env'
-import { springScrollToTop } from '~/lib/scroller'
+import { SEO } from "~/app.config"
+import { currentPostMetaAtom } from "~/atoms/current"
+import { useSetHeaderMetaInfo } from "~/components/header/internal/hooks"
+import { isDev } from "~/lib/env"
+import { springScrollToTop } from "~/lib/scroller"
 
 export const Hooks = ({
   readingTime,

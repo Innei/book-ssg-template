@@ -1,12 +1,12 @@
-'use client'
+"use client"
 
-import { useEffect } from 'react'
+import { useEffect } from "react"
 
-import { setIsInteractive } from '~/atoms'
-import { setIsPrintMode } from '~/atoms/css-media'
-import { viewportAtom } from '~/atoms/viewport'
-import { throttle } from '~/lib/lodash'
-import { jotaiStore } from '~/lib/store'
+import { setIsInteractive } from "~/atoms"
+import { setIsPrintMode } from "~/atoms/css-media"
+import { viewportAtom } from "~/atoms/viewport"
+import { throttle } from "~/lib/lodash"
+import { jotaiStore } from "~/lib/store"
 
 export const EventProvider: Component = ({ children }) => {
   useEffect(() => {
@@ -22,7 +22,7 @@ export const EventProvider: Component = ({ children }) => {
         md,
         lg,
         xl,
-        '2xl': _2xl,
+        "2xl": _2xl,
         h,
         w,
       })
@@ -30,9 +30,9 @@ export const EventProvider: Component = ({ children }) => {
 
     readViewport()
 
-    window.addEventListener('resize', readViewport)
+    window.addEventListener("resize", readViewport)
     return () => {
-      window.removeEventListener('resize', readViewport)
+      window.removeEventListener("resize", readViewport)
     }
   }, [])
 
@@ -45,17 +45,17 @@ export const EventProvider: Component = ({ children }) => {
       setIsPrintMode(!e.matches)
     }
 
-    getMediaType(window.matchMedia('screen'))
+    getMediaType(window.matchMedia("screen"))
 
     const callback = (e: MediaQueryListEvent): void => {
       getMediaType(e)
     }
     try {
-      window.matchMedia('screen').addEventListener('change', callback)
+      window.matchMedia("screen").addEventListener("change", callback)
     } catch {}
 
     return () => {
-      window.matchMedia('screen').removeEventListener('change', callback)
+      window.matchMedia("screen").removeEventListener("change", callback)
     }
   }, [])
 

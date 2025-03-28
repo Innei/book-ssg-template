@@ -1,12 +1,12 @@
-'use client'
+"use client"
 
-import { useViewport } from '~/atoms/hooks'
-import { clsxm } from '~/lib/helper'
-import { usePageScrollLocationSelector } from '~/providers/page-scroll-info-provider'
-import { useIsEoFWrappedElement } from '~/providers/wrapped-element-provider'
+import { useViewport } from "~/atoms/hooks"
+import { clsxm } from "~/lib/helper"
+import { usePageScrollLocationSelector } from "~/providers/page-scroll-info-provider"
+import { useIsEoFWrappedElement } from "~/providers/wrapped-element-provider"
 
 export const asideButtonStyles = {
-  base: 'text-[24px] opacity-80 duration-200 hover:opacity-100 relative',
+  base: "text-[24px] opacity-80 duration-200 hover:opacity-100 relative",
 }
 
 export const ActionAsideIcon: Component = (props) => {
@@ -28,10 +28,10 @@ export const ActionAsideContainer: Component = ({ className, children }) => {
   return (
     <div
       className={clsxm(
-        'absolute bottom-0 left-0 -mb-4 flex max-h-[300px] flex-col gap-6 p-4 transition-all duration-200 ease-in-out',
-        !isEOA ? 'opacity-20 hover:opacity-100' : '',
+        "absolute bottom-0 left-0 -mb-4 flex max-h-[300px] flex-col gap-6 p-4 transition-all duration-200 ease-in-out",
+        !isEOA ? "opacity-20 hover:opacity-100" : "",
         className,
-        isEndOfPage && 'bottom-[-30px] flex-row',
+        isEndOfPage && "bottom-[-30px] flex-row",
       )}
     >
       {children}

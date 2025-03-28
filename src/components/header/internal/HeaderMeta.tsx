@@ -1,11 +1,11 @@
-'use client'
+"use client"
 
-import { AnimatePresence, m } from 'framer-motion'
+import { AnimatePresence, m } from "framer-motion"
 
-import { SEO } from '~/app.config'
-import { microReboundPreset } from '~/constants/spring'
+import { SEO } from "~/app.config"
+import { microReboundPreset } from "~/constants/spring"
 
-import { useHeaderMetaInfo, useHeaderMetaShouldShow } from './hooks'
+import { useHeaderMetaInfo, useHeaderMetaShouldShow } from "./hooks"
 
 const animationProps = {
   initial: {
@@ -40,18 +40,14 @@ export const HeaderMeta = () => {
         >
           <div className="align-center flex min-w-0 shrink grow flex-col">
             <small className="min-w-0 truncate">
-              <span className="text-gray-600/60 dark:text-gray-300/60">
-                {description}
-              </span>
+              <span className="text-gray-600/60 dark:text-gray-300/60">{description}</span>
             </small>
-            <h2 className="min-w-0 truncate text-[1.2rem] font-medium leading-normal">
-              {title}
-            </h2>
+            <h2 className="min-w-0 truncate text-[1.2rem] font-medium leading-normal">{title}</h2>
           </div>
 
           <div className="hidden min-w-0 shrink flex-col text-right leading-5 lg:flex">
             <small className="min-w-0 truncate whitespace-pre text-gray-600/60 dark:text-gray-300/60">
-              {' '}
+              {" "}
               {slug}
             </small>
             <span className="font-medium text-gray-600 dark:text-gray-300">

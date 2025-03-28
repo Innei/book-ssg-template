@@ -1,18 +1,18 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
-import clsx from 'clsx'
+import clsx from "clsx"
+import { useCallback, useEffect, useRef, useState } from "react"
 
-import { useViewport } from '~/atoms/hooks'
+import { useViewport } from "~/atoms/hooks"
 
-import { useEventCallback } from '../common/use-event-callback'
+import { useEventCallback } from "../common/use-event-callback"
 
 const THRESHOLD = 0
 export const useMaskScrollArea = <T extends HTMLElement = HTMLElement>({
   ref,
-  size = 'base',
+  size = "base",
   selector,
 }: {
   ref?: React.RefObject<HTMLElement | null>
-  size?: 'base' | 'lg'
+  size?: "base" | "lg"
   selector?: string
 } = {}) => {
   const containerRef = useRef<T>(null)
@@ -45,8 +45,7 @@ export const useMaskScrollArea = <T extends HTMLElement = HTMLElement>({
     setCanScroll(true)
 
     // if $ can scroll
-    const isScrollToBottom =
-      $.scrollTop + $.clientHeight >= $.scrollHeight - THRESHOLD
+    const isScrollToBottom = $.scrollTop + $.clientHeight >= $.scrollHeight - THRESHOLD
     const isScrollToTop = $.scrollTop <= THRESHOLD
     setIsScrollToBottom(isScrollToBottom)
     setIsScrollToTop(isScrollToTop)
@@ -55,10 +54,10 @@ export const useMaskScrollArea = <T extends HTMLElement = HTMLElement>({
     const $ = getDomRef()
     if (!$) return
 
-    $.addEventListener('scroll', eventHandler)
+    $.addEventListener("scroll", eventHandler)
 
     return () => {
-      $.removeEventListener('scroll', eventHandler)
+      $.removeEventListener("scroll", eventHandler)
     }
   }, [eventHandler, getDomRef])
 
@@ -67,18 +66,18 @@ export const useMaskScrollArea = <T extends HTMLElement = HTMLElement>({
   }, [eventHandler, h])
 
   const postfixSize = {
-    base: '',
-    lg: '-lg',
+    base: "",
+    lg: "-lg",
   }[size]
 
   return [
     containerRef,
     canScroll
       ? clsx(
-          isScrollToBottom && 'mask-t',
-          isScrollToTop && 'mask-b',
-          !isScrollToBottom && !isScrollToTop && 'mask-both',
+          isScrollToBottom && "mask-t",
+          isScrollToTop && "mask-b",
+          !isScrollToBottom && !isScrollToTop && "mask-both",
         ) + postfixSize
-      : '',
+      : "",
   ] as const
 }

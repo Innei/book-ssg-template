@@ -1,12 +1,12 @@
-import type { FC } from 'react'
+import type { FC } from "react"
 
-import { Favicon } from './Favicon'
+import { Favicon } from "./Favicon"
 
 const prefixToUrlMap = {
-  GH: 'https://github.com/',
-  TW: 'https://twitter.com/',
-  TG: 'https://t.me/',
-  ZH: 'https://www.zhihu.com/people/',
+  GH: "https://github.com/",
+  TW: "https://twitter.com/",
+  TG: "https://t.me/",
+  ZH: "https://www.zhihu.com/people/",
 }
 
 export const SocialSourceLink: FC<{

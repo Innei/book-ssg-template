@@ -1,22 +1,22 @@
-'use client'
+"use client"
 
-import { DialogContent, DialogPortal, Root } from '@radix-ui/react-dialog'
-import { useState } from 'react'
-import { AnimatePresence, m } from 'framer-motion'
-import { atom, useAtomValue, useSetAtom } from 'jotai'
-import { PresentSheet } from 'rc-modal-sheet'
-import type { HTMLMotionProps } from 'framer-motion'
+import { DialogContent, DialogPortal, Root } from "@radix-ui/react-dialog"
+import type { HTMLMotionProps } from "framer-motion"
+import { AnimatePresence, m } from "framer-motion"
+import { atom, useAtomValue, useSetAtom } from "jotai"
+import { PresentSheet } from "rc-modal-sheet"
+import { useState } from "react"
 
-import { DONATE as donate } from '~/app.config'
-import { useIsMobile } from '~/atoms/hooks'
-import { MotionButtonBase } from '~/components/button'
-import { DialogOverlay } from '~/components/dialog/DialogOverlay'
-import { ImpressionView } from '~/components/shared/ImpressionTracker'
-import { TrackerAction } from '~/constants/tracker'
-import { useIsClient } from '~/hooks/common/use-is-client'
-import { clsxm } from '~/lib/helper'
+import { DONATE as donate } from "~/app.config"
+import { useIsMobile } from "~/atoms/hooks"
+import { MotionButtonBase } from "~/components/button"
+import { DialogOverlay } from "~/components/dialog/DialogOverlay"
+import { ImpressionView } from "~/components/shared/ImpressionTracker"
+import { TrackerAction } from "~/constants/tracker"
+import { useIsClient } from "~/hooks/common/use-is-client"
+import { clsxm } from "~/lib/helper"
 
-import { ActionAsideIcon } from './ActionAsideContainer'
+import { ActionAsideIcon } from "./ActionAsideContainer"
 
 // TODO this component only use once in current page.
 const positionAtom = atom({
@@ -98,14 +98,11 @@ const DonateButtonTop = () => {
   const setOverlayShow = useSetAtom(overlayShowAtom)
   const buttonPos = useAtomValue(positionAtom)
   return (
-    <ImpressionView
-      trackerMessage="Donate Show"
-      action={TrackerAction.Impression}
-    >
+    <ImpressionView trackerMessage="Donate Show" action={TrackerAction.Impression}>
       <DonateButtonInternal
         className="focus-visible:text-uk-brown-light focus-visible:!shadow-none"
         style={{
-          position: 'fixed',
+          position: "fixed",
           left: buttonPos.x,
           top: buttonPos.y,
           zIndex: 999,
@@ -119,7 +116,7 @@ const DonateButtonTop = () => {
   )
 }
 
-const DonateButtonInternal: Component<HTMLMotionProps<'button'>> = ({
+const DonateButtonInternal: Component<HTMLMotionProps<"button">> = ({
   className,
 
   ...props
@@ -128,9 +125,9 @@ const DonateButtonInternal: Component<HTMLMotionProps<'button'>> = ({
     <MotionButtonBase
       data-event="Donate click"
       aria-label="Donate to author"
-      className={clsxm('flex flex-col space-y-2', className)}
+      className={clsxm("flex flex-col space-y-2", className)}
       onClick={() => {
-        window.open(donate.link, '_blank')
+        window.open(donate.link, "_blank")
       }}
       {...props}
     >
@@ -142,9 +139,7 @@ const DonateButtonInternal: Component<HTMLMotionProps<'button'>> = ({
 export const DonateContent = () => {
   return (
     <>
-      <h2 className="mb-6 text-lg font-medium">
-        感谢您的支持，助力梦想继续前行。
-      </h2>
+      <h2 className="mb-6 text-lg font-medium">感谢您的支持，助力梦想继续前行。</h2>
       <div className="flex flex-wrap gap-4 overflow-auto center">
         {donate?.qrcode.map((src) => (
           <m.img

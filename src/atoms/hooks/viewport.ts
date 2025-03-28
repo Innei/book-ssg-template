@@ -1,15 +1,13 @@
-import { useCallback } from 'react'
-import { useAtomValue } from 'jotai'
-import { selectAtom } from 'jotai/utils'
-import type { ExtractAtomValue } from 'jotai'
+import type { ExtractAtomValue } from "jotai"
+import { useAtomValue } from "jotai"
+import { selectAtom } from "jotai/utils"
+import { useCallback } from "react"
 
-import { jotaiStore } from '~/lib/store'
+import { jotaiStore } from "~/lib/store"
 
-import { viewportAtom } from '../viewport'
+import { viewportAtom } from "../viewport"
 
-export const useViewport = <T>(
-  selector: (value: ExtractAtomValue<typeof viewportAtom>) => T,
-): T =>
+export const useViewport = <T>(selector: (value: ExtractAtomValue<typeof viewportAtom>) => T): T =>
   useAtomValue(
     selectAtom(
       viewportAtom,
@@ -18,12 +16,9 @@ export const useViewport = <T>(
   )
 
 export const useIsMobile = () =>
-  useViewport(
-    useCallback((v: ExtractAtomValue<typeof viewportAtom>) => isMobile(v), []),
-  )
+  useViewport(useCallback((v: ExtractAtomValue<typeof viewportAtom>) => isMobile(v), []))
 
-const isMobile = (v: ExtractAtomValue<typeof viewportAtom>) =>
-  (v.sm || v.md || !v.sm) && !v.lg
+const isMobile = (v: ExtractAtomValue<typeof viewportAtom>) => (v.sm || v.md || !v.sm) && !v.lg
 export const currentIsMobile = () => {
   const v = jotaiStore.get(viewportAtom)
   return isMobile(v)

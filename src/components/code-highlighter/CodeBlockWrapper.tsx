@@ -1,16 +1,16 @@
-'use client'
+"use client"
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import clsx from 'clsx'
-import type { FC } from 'react'
+import clsx from "clsx"
+import type { FC } from "react"
+import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 
-import { getViewport } from '~/atoms/hooks'
-import { useMaskScrollArea } from '~/hooks/shared/use-mask-scrollarea'
-import { clsxm } from '~/lib/helper'
+import { getViewport } from "~/atoms/hooks"
+import { useMaskScrollArea } from "~/hooks/shared/use-mask-scrollarea"
+import { clsxm } from "~/lib/helper"
 
-import { MotionButtonBase } from '../button'
-import { AutoResizeHeight } from '../shared/AutoResizeHeight'
-import styles from './CodeHighlighter.module.css'
+import { MotionButtonBase } from "../button"
+import { AutoResizeHeight } from "../shared/AutoResizeHeight"
+import styles from "./CodeHighlighter.module.css"
 
 const parseFilenameFromAttrs = (attrs: string) => {
   // filename=""
@@ -33,13 +33,7 @@ export interface CodeBlockProps {
   renderedHtml: string
 }
 export const CodeBlockWrapper: FC<CodeBlockProps> = (props) => {
-  const {
-    lang: language,
-    content: value,
-    attrs,
-    renderedHtml,
-    langIcon,
-  } = props
+  const { lang: language, content: value, attrs, renderedHtml, langIcon } = props
 
   const handleCopy = useCallback(() => {
     navigator.clipboard.writeText(value)
@@ -59,16 +53,11 @@ export const CodeBlockWrapper: FC<CodeBlockProps> = (props) => {
     if ($elScrollHeight >= halfWindowHeight) {
       setIsOverflow(true)
 
-      const $hightlighted = $el.querySelector('.highlighted, .diff')
+      const $hightlighted = $el.querySelector(".highlighted, .diff")
       if ($hightlighted) {
-        const lineHeight = Number.parseInt(
-          getComputedStyle($hightlighted).height || '0',
-          10,
-        )
-        const $code = $el.querySelector('pre > code')!
-        const childIndexInParent = Array.from($code.children).indexOf(
-          $hightlighted,
-        )
+        const lineHeight = Number.parseInt(getComputedStyle($hightlighted).height || "0", 10)
+        const $code = $el.querySelector("pre > code")!
+        const childIndexInParent = Array.from($code.children).indexOf($hightlighted)
 
         $el.scrollTop = lineHeight * childIndexInParent - 30
       }
@@ -78,22 +67,19 @@ export const CodeBlockWrapper: FC<CodeBlockProps> = (props) => {
   }, [value])
 
   const filename = useMemo(() => {
-    return parseFilenameFromAttrs(attrs || '')
+    return parseFilenameFromAttrs(attrs || "")
   }, [attrs])
   const [, maskClassName] = useMaskScrollArea({
     ref: codeBlockRef,
-    size: 'lg',
+    size: "lg",
   })
 
   return (
-    <div className={clsx(styles['code-card'], 'group')}>
+    <div className={clsx(styles["code-card"], "group")}>
       {!!filename && (
         <div className="flex w-full items-center justify-between rounded-t-xl bg-accent/20 px-4 py-2 text-sm">
           <span className="shrink-0 grow truncate">{filename}</span>
-          <span
-            className="pointer-events-none shrink-0 grow-0 text-[20px]"
-            aria-hidden
-          >
+          <span className="pointer-events-none shrink-0 grow-0 text-[20px]" aria-hidden>
             {langIcon}
           </span>
         </div>
@@ -111,10 +97,10 @@ export const CodeBlockWrapper: FC<CodeBlockProps> = (props) => {
         <MotionButtonBase
           onClick={handleCopy}
           className={clsxm(
-            'absolute right-2 top-2 z-[1] flex text-xs center',
-            'rounded-md border border-black/5 bg-accent/80 p-1.5 text-white backdrop-blur duration-200 dark:border-white/10',
-            'opacity-0 group-hover:opacity-100',
-            filename && 'top-12',
+            "absolute right-2 top-2 z-[1] flex text-xs center",
+            "rounded-md border border-black/5 bg-accent/80 p-1.5 text-white backdrop-blur duration-200 dark:border-white/10",
+            "opacity-0 group-hover:opacity-100",
+            filename && "top-12",
           )}
         >
           <i className="icon-[mingcute--copy-2-fill] size-4" />
@@ -123,8 +109,8 @@ export const CodeBlockWrapper: FC<CodeBlockProps> = (props) => {
           <div
             ref={codeBlockRef}
             className={clsxm(
-              'relative max-h-[50vh] w-full grow overflow-auto scrollbar-none',
-              !isCollapsed ? '!max-h-full' : isOverflow ? maskClassName : '',
+              "relative max-h-[50vh] w-full grow overflow-auto scrollbar-none",
+              !isCollapsed ? "!max-h-full" : isOverflow ? maskClassName : "",
             )}
             dangerouslySetInnerHTML={{
               __html: renderedHtml,
@@ -134,9 +120,9 @@ export const CodeBlockWrapper: FC<CodeBlockProps> = (props) => {
           {isOverflow && isCollapsed && (
             <div
               className={`absolute inset-x-0 bottom-0 flex justify-center py-2 duration-200 ${
-                ['mask-both-lg', 'mask-b-lg'].includes(maskClassName)
-                  ? ''
-                  : 'pointer-events-none opacity-0'
+                ["mask-both-lg", "mask-b-lg"].includes(maskClassName)
+                  ? ""
+                  : "pointer-events-none opacity-0"
               }`}
             >
               <button

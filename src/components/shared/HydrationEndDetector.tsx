@@ -1,9 +1,9 @@
-'use client'
+"use client"
 
-import { useEffect } from 'react'
-import { atom } from 'jotai'
+import { atom } from "jotai"
+import { useEffect } from "react"
 
-import { jotaiStore } from '~/lib/store'
+import { jotaiStore } from "~/lib/store"
 
 const hydrateEndAtom = atom(false)
 
