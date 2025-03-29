@@ -5,7 +5,7 @@ export default defineConfig(
   {
     formatting: false,
     lessOpinionated: true,
-    ignores: [],
+    ignores: ["./markdown/**/*"],
     preferESM: false,
     react: "next",
     tailwindCSS: true,
