@@ -20,7 +20,7 @@ export const GitHistory = ({ history }: { history: Git.TGitHistory[] }) => {
         aria-label="更新历史"
       >
         <div className="flex items-center gap-2">
-          <i className="icon-[mingcute--history-anticlockwise-line]" />
+          <i className="i-mingcute-history-anticlockwise-line" />
           <span>更新历史</span>
         </div>
 
@@ -34,7 +34,7 @@ export const GitHistory = ({ history }: { history: Git.TGitHistory[] }) => {
             return (
               <li key={item.hash} className="mt-2 flex-col gap-2 text-sm">
                 <div className="grid grid-cols-[20px_80px_120px_80px_auto] items-center">
-                  <i className="icon-[mingcute--git-commit-line] text-accent" />
+                  <i className="i-mingcute-git-commit-line text-accent" />
                   <span className="font-mono dark:bg-zinc-800">
                     <a
                       className="rounded bg-gray-200 p-1 dark:bg-zinc-800"

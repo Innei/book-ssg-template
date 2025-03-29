@@ -17,7 +17,7 @@ export const BackToTopFAB = () => {
 
   return (
     <FABBase id="to-top" aria-label="Back to top" show={shouldShow} onClick={springScrollToTop}>
-      <i className="icon-[mingcute--arow-to-up-line]" />
+      <i className="i-mingcute-arow-to-up-line" />
     </FABBase>
   )
 }

@@ -42,10 +42,11 @@ export const ReadIndicator: Component<{
       {currentPost && (
         <>
           <div className="flex shrink-0 items-center gap-1">
-            <i className="icon-[mingcute--text-line]" /> {currentPost.count}
+            <i className="i-mingcute-text-line" /> {currentPost.count}
           </div>{" "}
           <div className="flex shrink-0 items-center gap-1">
-            <i className="icon-[mingcute--alarm-2-line]" /> {currentPost.readingTime}Min
+            <i className="i-mingcute-alarm-2-line" /> {currentPost.readingTime}
+            Min
           </div>
         </>
       )}

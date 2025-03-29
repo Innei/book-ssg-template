@@ -12,7 +12,7 @@ export const HeaderDrawerButton = () => {
   const isClient = useIsClient()
   const ButtonElement = (
     <HeaderActionButton>
-      <i className="icon-[mingcute--menu-line]" />
+      <i className="i-mingcute-menu-line" />
     </HeaderActionButton>
   )
   const headerDrawerCtx = use(HeaderDrawerContentContext)

@@ -1,4 +1,4 @@
-import { addDynamicIconSelectors } from "@iconify/tailwind"
+import { getIconCollections, iconsPlugin } from "@egoist/tailwindcss-icons"
 import typography from "@tailwindcss/typography"
 import daisyui from "daisyui"
 import type { Config } from "tailwindcss"
@@ -287,7 +287,12 @@ const twConfig: Config = {
   },
 
   plugins: [
-    addDynamicIconSelectors(),
+    iconsPlugin({
+      collections: {
+        ...getIconCollections(["mingcute", "material-symbols"]),
+      },
+    }),
+
     addShortcutPlugin,
     typography,
     daisyui,

@@ -31,7 +31,7 @@ export const MLink: FC<{
               {children}
             </a>
 
-            <i className="icon-[mingcute--arrow-right-up-line] translate-y-[2px] opacity-70" />
+            <i className="i-mingcute-arrow-right-up-line translate-y-[2px] opacity-70" />
           </span>
         ),
         [children, href, title],

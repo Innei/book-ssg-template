@@ -40,3 +40,13 @@ export function codeHighlighter(
     ],
   })
 }
+
+export const parseFilenameFromAttrs = (attrs: string) => {
+  // filename=""
+
+  const match = attrs.match(/filename="([^"]+)"/)
+  if (match) {
+    return match[1]
+  }
+  return null
+}

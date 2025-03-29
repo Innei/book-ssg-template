@@ -44,7 +44,7 @@ export const MHeader = (props: HeadingProps) => {
             springScrollToElement(document.getElementById(nextId)!, -100)
           }}
         >
-          <i className="icon-[mingcute--hashtag-line]" />
+          <i className="i-mingcute-hashtag-line" />
         </span>
       )}
     </>,
