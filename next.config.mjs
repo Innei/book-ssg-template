@@ -10,7 +10,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+  webpack: (config, { webpack }) => {
     config.plugins.push(
       new webpack.optimize.MinChunkSizePlugin({
         minChunkSize: 1024 * 1024, // Minimum number of characters

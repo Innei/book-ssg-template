@@ -65,15 +65,22 @@ export async function bootstarp() {
       "utf8",
     )
   }, 800)
-  await patch()
-  const watcher = watch(pathGlob)
+  patch()
+  const watcher = watch(workdirPath, {
+    ignored: (path, stats) => stats?.isFile() && !path.endsWith(".md"), // only watch md files
+    persistent: true,
+  })
 
   watcher.on("add", (path) => {
+    console.log("add:", path)
     patch()
   })
   watcher.on("unlink", (path) => {
+    console.log("unlink:", path)
     patch()
   })
+
+  console.log("markdown watcher init:", pathGlob)
 }
 
 /**
