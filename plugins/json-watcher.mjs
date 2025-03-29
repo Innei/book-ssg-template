@@ -1,4 +1,3 @@
-/* eslint-disable unicorn/no-this-assignment */
 import { existsSync, writeFileSync } from "node:fs"
 import { readFile } from "node:fs/promises"
 import path from "node:path"
@@ -80,7 +79,7 @@ export async function bootstarp() {
     patch()
   })
 
-  console.log("markdown watcher init:", pathGlob)
+  console.log(`[${process.pid}] markdown watcher init:`, pathGlob)
 }
 
 /**
@@ -239,3 +238,5 @@ function debounce(fn, wait) {
 
   return debounced
 }
+
+bootstarp()

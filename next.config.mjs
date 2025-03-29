@@ -1,9 +1,3 @@
-import { bootstarp } from "./plugins/json-watcher.mjs"
-
-if (process.env.NODE_ENV === "development") {
-  bootstarp()
-}
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: process.env.NODE_ENV === "production" ? "export" : "standalone",

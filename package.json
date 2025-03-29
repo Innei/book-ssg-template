@@ -10,7 +10,9 @@
   },
   "scripts": {
     "build": "next build",
-    "dev": "next dev -p 9988",
+    "dev": "run-p dev:next dev:watcher",
+    "dev:next": "next dev -p 9988",
+    "dev:watcher": "node plugins/json-watcher.mjs",
     "format": "prettier --write .",
     "lint": "eslint --fix",
     "prepare": "pnpm exec simple-git-hooks",
@@ -71,6 +73,7 @@
     "eslint": "9.23.0",
     "eslint-config-hyoban": "4.0.2",
     "lint-staged": "15.5.0",
+    "npm-run-all2": "7.0.2",
     "postcss-import": "16.1.0",
     "postcss-nested": "7.0.2",
     "postcss-preset-env": "10.1.5",
