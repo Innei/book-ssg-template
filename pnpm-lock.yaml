@@ -154,8 +154,8 @@ importers:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.3)
       daisyui:
-        specifier: 4.12.23
-        version: 4.12.23(postcss@8.5.3)
+        specifier: 4.12.24
+        version: 4.12.24(postcss@8.5.3)
       eslint:
         specifier: 9.23.0
         version: 9.23.0(jiti@2.4.2)
@@ -193,8 +193,8 @@ importers:
         specifier: 2.12.1
         version: 2.12.1
       tailwind-scrollbar:
-        specifier: 4.0.1
-        version: 4.0.1(react@19.0.0)(tailwindcss@3.4.17)
+        specifier: 4.0.2
+        version: 4.0.2(react@19.0.0)(tailwindcss@3.4.17)
       tailwind-variants:
         specifier: 1.0.0
         version: 1.0.0(tailwindcss@3.4.17)
@@ -2124,8 +2124,8 @@ packages:
   dagre-d3-es@7.0.11:
     resolution: {integrity: sha512-tvlJLyQf834SylNKax8Wkzco/1ias1OPw8DcUMDE7oUIoSEW25riQVuiu/0OWEFqT0cxHT3Pa9/D82Jr47IONw==}
 
-  daisyui@4.12.23:
-    resolution: {integrity: sha512-EM38duvxutJ5PD65lO/AFMpcw+9qEy6XAZrTpzp7WyaPeO/l+F/Qiq0ECHHmFNcFXh5aVoALY4MGrrxtCiaQCQ==}
+  daisyui@4.12.24:
+    resolution: {integrity: sha512-JYg9fhQHOfXyLadrBrEqCDM6D5dWCSSiM6eTNCRrBRzx/VlOCrLS8eDfIw9RVvs64v2mJdLooKXY8EwQzoszAA==}
     engines: {node: '>=16.9.0'}
 
   dayjs@1.11.13:
@@ -4110,8 +4110,8 @@ packages:
   tailwind-merge@3.0.2:
     resolution: {integrity: sha512-l7z+OYZ7mu3DTqrL88RiKrKIqO3NcpEO8V/Od04bNpvk0kiIFndGEoqfuzvj4yuhRkHKjRkII2z+KS2HfPcSxw==}
 
-  tailwind-scrollbar@4.0.1:
-    resolution: {integrity: sha512-j2ZfUI7p8xmSQdlqaCxEb4Mha8ErvWjDVyu2Ke4IstWprQ/6TmIz1GSLE62vsTlXwnMLYhuvbFbIFzaJGOGtMg==}
+  tailwind-scrollbar@4.0.2:
+    resolution: {integrity: sha512-wAQiIxAPqk0MNTPptVe/xoyWi27y+NRGnTwvn4PQnbvB9kp8QUBiGl/wsfoVBHnQxTmhXJSNt9NHTmcz9EivFA==}
     engines: {node: '>=12.13.0'}
     peerDependencies:
       tailwindcss: 4.x
@@ -6531,7 +6531,7 @@ snapshots:
       d3: 7.9.0
       lodash-es: 4.17.21
 
-  daisyui@4.12.23(postcss@8.5.3):
+  daisyui@4.12.24(postcss@8.5.3):
     dependencies:
       css-selector-tokenizer: 0.8.0
       culori: 3.3.0
@@ -8754,7 +8754,7 @@ snapshots:
 
   tailwind-merge@3.0.2: {}
 
-  tailwind-scrollbar@4.0.1(react@19.0.0)(tailwindcss@3.4.17):
+  tailwind-scrollbar@4.0.2(react@19.0.0)(tailwindcss@3.4.17):
     dependencies:
       prism-react-renderer: 2.4.1(react@19.0.0)
       tailwindcss: 3.4.17
