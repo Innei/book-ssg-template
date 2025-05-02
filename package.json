@@ -69,7 +69,7 @@
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "autoprefixer": "^10.4.21",
-    "daisyui": "4.12.24",
+    "daisyui": "5.0.35",
     "eslint": "9.23.0",
     "eslint-config-hyoban": "4.0.3",
     "lint-staged": "15.5.1",
