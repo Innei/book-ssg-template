@@ -73,7 +73,7 @@
     "eslint": "9.23.0",
     "eslint-config-hyoban": "4.0.7",
     "lint-staged": "15.5.2",
-    "npm-run-all2": "7.0.2",
+    "npm-run-all2": "8.0.1",
     "postcss-import": "16.1.0",
     "postcss-nested": "7.0.2",
     "postcss-preset-env": "10.1.6",
