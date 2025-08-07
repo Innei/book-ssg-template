@@ -196,8 +196,8 @@ importers:
         specifier: 4.0.2
         version: 4.0.2(react@19.0.0)(tailwindcss@3.4.17)
       tailwind-variants:
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.17)
+        specifier: 2.1.0
+        version: 2.1.0(tailwind-merge@3.0.2)(tailwindcss@3.4.17)
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.17
@@ -4233,11 +4233,15 @@ packages:
     peerDependencies:
       tailwindcss: 4.x
 
-  tailwind-variants@1.0.0:
-    resolution: {integrity: sha512-2WSbv4ulEEyuBKomOunut65D8UZwxrHoRfYnxGcQNnHqlSCp2+B7Yz2W+yrNDrxRodOXtGD/1oCcKGNBnUqMqA==}
+  tailwind-variants@2.1.0:
+    resolution: {integrity: sha512-82m0eRex0z6A3GpvfoTCpHr+wWJmbecfVZfP3mqLoDxeya5tN4mYJQZwa5Aw1hRZTedwpu1D2JizYenoEdyD8w==}
     engines: {node: '>=16.x', pnpm: '>=7.x'}
     peerDependencies:
+      tailwind-merge: '>=3.0.0'
       tailwindcss: '*'
+    peerDependenciesMeta:
+      tailwind-merge:
+        optional: true
 
   tailwindcss@3.4.17:
     resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
@@ -5330,7 +5334,7 @@ snapshots:
     dependencies:
       fast-glob: 3.3.3
       postcss: 8.5.3
-      synckit: 0.11.8
+      synckit: 0.11.11
       tailwind-api-utils: 1.0.2(tailwindcss@3.4.17)
       tailwindcss: 3.4.17
 
@@ -8983,10 +8987,11 @@ snapshots:
     transitivePeerDependencies:
       - react
 
-  tailwind-variants@1.0.0(tailwindcss@3.4.17):
+  tailwind-variants@2.1.0(tailwind-merge@3.0.2)(tailwindcss@3.4.17):
     dependencies:
-      tailwind-merge: 3.0.2
       tailwindcss: 3.4.17
+    optionalDependencies:
+      tailwind-merge: 3.0.2
 
   tailwindcss@3.4.17:
     dependencies:
