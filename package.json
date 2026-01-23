@@ -37,7 +37,7 @@
     "jotai": "2.12.5",
     "js-yaml": "4.1.1",
     "katex": "0.16.22",
-    "lodash": "4.17.21",
+    "lodash": "4.17.23",
     "markdown-to-jsx": "npm:@innei/markdown-to-jsx@7.2.1-beta.6",
     "medium-zoom": "1.1.0",
     "mermaid": "11.6.0",
