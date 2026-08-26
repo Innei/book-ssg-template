@@ -35,7 +35,7 @@
     "globby": "^14.1.0",
     "immer": "10.1.1",
     "jotai": "2.12.5",
-    "js-yaml": "4.1.1",
+    "js-yaml": "4.3.1",
     "katex": "0.16.22",
     "lodash": "4.17.23",
     "markdown-to-jsx": "npm:@innei/markdown-to-jsx@7.2.1-beta.6",
