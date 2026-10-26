@@ -61,7 +61,7 @@
     "@egoist/tailwindcss-icons": "1.9.0",
     "@iconify-json/material-symbols": "1.2.30",
     "@iconify-json/mingcute": "1.2.3",
-    "@innei/prettier": "0.15.0",
+    "@innei/prettier": "1.0.0",
     "@shikijs/transformers": "3.2.2",
     "@tailwindcss/typography": "0.5.16",
     "@types/js-yaml": "4.0.9",
